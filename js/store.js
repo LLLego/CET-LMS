@@ -1,16 +1,77 @@
 /**
  * Reactive state management for CET LMS
  * Proxy-based store with change notifications
+ * Integrates with Firebase RTDB for cross-device sync
  */
 
 import { loadState, saveState, getDefaultState } from './db.js';
 import { todayKey, yesterdayKey } from './utils.js';
+import { saveToFirebase, onRemoteSync, isRemoteUpdate, pullFromFirebase } from './firebase.js';
 
 class Store {
   constructor() {
     this._state = loadState();
     this._listeners = new Map();
     this._idCounter = 0;
+    this._firebaseSynced = false;
+
+    // Listen for remote state changes
+    onRemoteSync((remoteState) => {
+      this._applyRemote(remoteState);
+    });
+  }
+
+  /**
+   * Apply remote state from Firebase (merge, don't overwrite)
+   * @private
+   */
+  _applyRemote(remote) {
+    const defaults = getDefaultState();
+    let changed = false;
+
+    for (const key of Object.keys(remote)) {
+      if (key === '_lastSync') continue;
+      const remoteVal = remote[key];
+      const localVal = this._state[key];
+
+      // For objects (subjectProgress, flashcardKnown, etc.), deep merge
+      if (remoteVal && typeof remoteVal === 'object' && !Array.isArray(remoteVal) &&
+          localVal && typeof localVal === 'object' && !Array.isArray(localVal)) {
+        const merged = { ...localVal };
+        for (const k of Object.keys(remoteVal)) {
+          if (JSON.stringify(merged[k]) !== JSON.stringify(remoteVal[k])) {
+            merged[k] = remoteVal[k];
+            changed = true;
+          }
+        }
+        this._state[key] = merged;
+      } else {
+        // For primitives and arrays, prefer the newer value
+        if (JSON.stringify(localVal) !== JSON.stringify(remoteVal)) {
+          this._state[key] = remoteVal;
+          changed = true;
+        }
+      }
+    }
+
+    if (changed) {
+      // Persist merged state to localStorage
+      saveState(this._state);
+      // Notify all listeners
+      this._notify('*', this._state, null);
+    }
+  }
+
+  /**
+   * Initial sync: pull remote state and merge
+   */
+  async initialSync() {
+    if (this._firebaseSynced) return;
+    const remote = await pullFromFirebase();
+    if (remote) {
+      this._applyRemote(remote);
+    }
+    this._firebaseSynced = true;
   }
 
   /**
@@ -167,10 +228,11 @@ class Store {
   }
 
   /**
-   * Persist state to localStorage
+   * Persist state to localStorage and Firebase
    */
   _save() {
     saveState(this._state);
+    saveToFirebase(this._state);
   }
 }
 

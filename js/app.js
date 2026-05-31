@@ -1,6 +1,7 @@
 /**
  * CET LMS — Application Entry Point
  * Initializes modules, registers routes, mounts sidebar
+ * Firebase sync + auth login flow
  */
 
 import router from './router.js';
@@ -9,6 +10,7 @@ import Theme from './theme.js';
 import Audio from './audio.js';
 import searchOverlay from './components/SearchOverlay.js';
 import toast from './components/Toast.js';
+import { initFirebase, login, autoLogin, logout, checkUsername, isFirebaseReady, getCurrentUser } from './firebase.js';
 
 import renderDashboard from './pages/DashboardPage.js';
 import renderSubjects from './pages/SubjectsPage.js';
@@ -56,10 +58,31 @@ function withErrorBoundary(handler) {
 /**
  * Initialize the application
  */
-function init() {
+async function init() {
   // Initialize modules
   Theme.init();
 
+  // Initialize Firebase (non-blocking — falls back to local-only)
+  const firebaseOk = await initFirebase();
+
+  // Try auto-login from saved session
+  const autoLoggedIn = await autoLogin();
+
+  if (autoLoggedIn) {
+    // Pull remote state and merge
+    await store.initialSync();
+    showUserBadge();
+    bootApp();
+  } else {
+    // Show login modal
+    showLoginModal();
+  }
+}
+
+/**
+ * Boot the actual app (after auth)
+ */
+function bootApp() {
   // Register routes (with error boundaries)
   router
     .register('dashboard', withErrorBoundary(renderDashboard))
@@ -100,7 +123,168 @@ function init() {
   // Animate nav icons on first load
   animateNavIcons();
 
+  // Update sync indicator
+  updateSyncIndicator();
+
   console.log('◆ CET LMS initialized');
+}
+
+// ══════════════════════════════════════════════
+// LOGIN MODAL
+// ══════════════════════════════════════════════
+
+function showLoginModal() {
+  const overlay = document.getElementById('loginOverlay');
+  if (!overlay) return;
+  overlay.classList.remove('hidden');
+
+  const usernameInput = document.getElementById('loginUsername');
+  const passwordInput = document.getElementById('loginPassword');
+  const loginBtn = document.getElementById('loginBtn');
+  const errorEl = document.getElementById('loginError');
+  const offlineBadge = document.getElementById('loginOfflineBadge');
+
+  // Show offline badge if Firebase isn't available
+  if (!isFirebaseReady() && offlineBadge) {
+    offlineBadge.style.display = 'inline-block';
+  }
+
+  // Focus username input
+  setTimeout(() => usernameInput && usernameInput.focus(), 100);
+
+  // Login button handler
+  loginBtn.addEventListener('click', async () => {
+    await handleLogin();
+  });
+
+  // Enter key on password field
+  passwordInput.addEventListener('keydown', async (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      await handleLogin();
+    }
+  });
+
+  // Enter key on username field — move to password
+  usernameInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      passwordInput.focus();
+    }
+  });
+}
+
+async function handleLogin() {
+  const usernameInput = document.getElementById('loginUsername');
+  const passwordInput = document.getElementById('loginPassword');
+  const loginBtn = document.getElementById('loginBtn');
+  const errorEl = document.getElementById('loginError');
+
+  const username = usernameInput.value.trim();
+  const password = passwordInput.value;
+
+  if (!username) {
+    showLoginError('Please enter a username');
+    usernameInput.focus();
+    return;
+  }
+  if (!password) {
+    showLoginError('Please enter a password');
+    passwordInput.focus();
+    return;
+  }
+  if (password.length < 4) {
+    showLoginError('Password must be at least 4 characters');
+    passwordInput.focus();
+    return;
+  }
+
+  loginBtn.disabled = true;
+  loginBtn.textContent = 'Signing in...';
+  hideLoginError();
+
+  try {
+    const result = await login(username, password);
+
+    if (result.success) {
+      // Hide modal
+      document.getElementById('loginOverlay').classList.add('hidden');
+
+      // Pull and merge remote state
+      await store.initialSync();
+
+      // Show user badge
+      showUserBadge();
+
+      // Boot the app
+      bootApp();
+
+      if (result.isNew) {
+        toast.success(`Welcome, ${username}! Your progress will sync across devices.`);
+      } else {
+        toast.info(`Welcome back, ${username}!`);
+      }
+    } else {
+      showLoginError(result.error || 'Login failed');
+    }
+  } catch (err) {
+    showLoginError('Connection error — try again');
+    console.error('[CET] Login error:', err);
+  } finally {
+    loginBtn.disabled = false;
+    loginBtn.textContent = 'Sign In';
+  }
+}
+
+function showLoginError(msg) {
+  const el = document.getElementById('loginError');
+  if (el) {
+    el.textContent = msg;
+    el.style.display = 'block';
+  }
+}
+
+function hideLoginError() {
+  const el = document.getElementById('loginError');
+  if (el) el.style.display = 'none';
+}
+
+// ══════════════════════════════════════════════
+// USER BADGE (sidebar)
+// ══════════════════════════════════════════════
+
+function showUserBadge() {
+  const user = getCurrentUser();
+  if (!user) return;
+
+  const badge = document.getElementById('userBadge');
+  if (!badge) return;
+
+  const initial = user.username.charAt(0).toUpperCase();
+  badge.innerHTML = `
+    <div class="user-avatar">${initial}</div>
+    <span class="user-name">${user.username}</span>
+    <button class="user-logout" onclick="window.__cetLogout()" title="Sign out">⏻</button>
+  `;
+  badge.style.display = 'flex';
+
+  // Expose logout globally
+  window.__cetLogout = () => {
+    logout();
+    store.resetAll();
+    location.reload();
+  };
+}
+
+function updateSyncIndicator() {
+  const indicator = document.getElementById('syncIndicator');
+  if (!indicator) return;
+
+  if (isFirebaseReady() && getCurrentUser()) {
+    indicator.innerHTML = '<span class="sync-dot"></span> Synced';
+  } else {
+    indicator.innerHTML = '<span class="sync-dot offline"></span> Local only';
+  }
 }
 
 /**

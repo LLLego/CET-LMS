@@ -40,14 +40,51 @@
 
  <!-- PWA manifest -->
  <link rel="manifest" href="manifest.json?v=4">
+ 
+ <!-- Login modal styles -->
+ <link rel="stylesheet" href="css/pages/login.css?v=1">
 </head>
 <body>
+<!-- Login Modal -->
+<div class="login-overlay hidden" id="loginOverlay">
+  <div class="login-modal">
+    <div class="login-brand"><span>◆</span> CET <span>LMS</span></div>
+    <div class="login-subtitle">Sign in to sync your progress across devices</div>
+    
+    <div class="login-field">
+      <label for="loginUsername">Username</label>
+      <input type="text" id="loginUsername" placeholder="Enter your name" autocomplete="username" autocapitalize="none" spellcheck="false">
+    </div>
+    
+    <div class="login-field">
+      <label for="loginPassword">Password</label>
+      <input type="password" id="loginPassword" placeholder="Enter your password" autocomplete="current-password">
+    </div>
+    
+    <button class="login-btn" id="loginBtn">Sign In</button>
+    
+    <div class="login-error" id="loginError"></div>
+    
+    <span class="login-offline-badge" id="loginOfflineBadge" style="display:none;">Offline mode — progress saved locally</span>
+    
+    <div class="login-hint">First time? Pick a username and password to create your account.</div>
+  </div>
+</div>
+
 <div class="app">
   <!-- Sidebar -->
   <nav class="sidebar" id="sidebar" role="navigation" aria-label="Main navigation">
     <div class="sidebar-brand">
       <h1><span>◆</span> CET <span>LMS</span></h1>
       <p>College Entrance Test Review</p>
+    </div>
+
+    <!-- User badge (populated by JS after login) -->
+    <div class="user-badge" id="userBadge" style="display:none;"></div>
+    
+    <!-- Sync indicator -->
+    <div class="sync-indicator" id="syncIndicator">
+      <span class="sync-dot offline"></span> Local only
     </div>
 
     <div class="nav-item active" data-page="dashboard" role="button" tabindex="0" aria-label="Dashboard">
@@ -293,7 +330,12 @@
 })();
 </script>
 
+<!-- Firebase SDK (compat — exposes global `firebase`) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js"></script>
+
 <!-- JavaScript entry point (ES module) -->
-<script type="module" src="js/app.js?v=8"></script>
+<script type="module" src="js/app.js?v=9"></script>
 </body>
 </html>

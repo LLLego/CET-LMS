@@ -1,0 +1,18 @@
+{
+  "rules": {
+    "cet": {
+      "users": {
+        "$uid": {
+          "auth": {
+            ".read": "auth !== null",
+            ".write": "auth !== null"
+          },
+          "progress": {
+            ".read": "auth !== null",
+            ".write": "auth !== null"
+          }
+        }
+      }
+    }
+  }
+}
