@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CET LMS — Your College Entrance Test Study Hub</title>
+ <meta name="description" content="Premium Learning Management System for CET review. Powered by real textbook content.">
+ <meta name="theme-color" content="#1a1a17">
+ 
+ <!-- Prevent caching - force fresh load -->
+ <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+ <meta http-equiv="Pragma" content="no-cache">
+ <meta http-equiv="Expires" content="0">
+ 
+<blank>
+  <!-- Preload font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Stylesheets (modular) -->
+ <link rel="stylesheet" href="css/reset.css?v=8">
+ <link rel="stylesheet" href="css/variables.css?v=8">
+ <link rel="stylesheet" href="css/typography.css?v=8">
+ <link rel="stylesheet" href="css/layout.css?v=8">
+ <link rel="stylesheet" href="css/components.css?v=8">
+ <link rel="stylesheet" href="css/animations.css?v=8">
+ <link rel="stylesheet" href="css/utilities.css?v=8">
+
+<!-- Component styles -->
+ <link rel="stylesheet" href="css/components/selection.css?v=8">
+
+<!-- Page-specific styles -->
+ <link rel="stylesheet" href="css/pages/dashboard.css?v=8">
+ <link rel="stylesheet" href="css/pages/subjects.css?v=8">
+ <link rel="stylesheet" href="css/pages/quiz.css?v=8">
+ <link rel="stylesheet" href="css/pages/flashcards.css?v=8">
+ <link rel="stylesheet" href="css/pages/timer.css?v=8">
+ <link rel="stylesheet" href="css/pages/progress.css?v=8">
+ <link rel="stylesheet" href="css/pages/reader.css?v=9">
+
+ <!-- PWA manifest -->
+ <link rel="manifest" href="manifest.json?v=4">
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <nav class="sidebar" id="sidebar" role="navigation" aria-label="Main navigation">
+    <div class="sidebar-brand">
+      <h1><span>◆</span> CET <span>LMS</span></h1>
+      <p>College Entrance Test Review</p>
+    </div>
+
+    <div class="nav-item active" data-page="dashboard" role="button" tabindex="0" aria-label="Dashboard">
+      <span class="nav-icon">▥</span>
+      <span class="nav-label">Dashboard</span>
+    </div>
+    <div class="nav-item" data-page="subjects" role="button" tabindex="0" aria-label="Subjects">
+      <span class="nav-icon">▸</span>
+      <span class="nav-label">Subjects</span>
+    </div>
+    <div class="nav-item" data-page="reader" role="button" tabindex="0" aria-label="Textbook Reader">
+      <span class="nav-icon">▸</span>
+      <span class="nav-label">Reader</span>
+    </div>
+    <div class="nav-item" data-page="quiz" role="button" tabindex="0" aria-label="Quiz Mode">
+      <span class="nav-icon">✎</span>
+      <span class="nav-label">Quiz</span>
+    </div>
+    <div class="nav-item" data-page="flashcards" role="button" tabindex="0" aria-label="Flashcards">
+      <span class="nav-icon">♢</span>
+      <span class="nav-label">Flashcards</span>
+    </div>
+    <div class="nav-item" data-page="timer" role="button" tabindex="0" aria-label="Study Timer">
+      <span class="nav-icon">◷</span>
+      <span class="nav-label">Timer</span>
+    </div>
+    <div class="nav-item" data-page="progress" role="button" tabindex="0" aria-label="Progress">
+      <span class="nav-icon">▲</span>
+      <span class="nav-label">Progress</span>
+    </div>
+
+    <div class="sidebar-footer">
+      <div class="sidebar-footer-row">
+        <span class="streak-display" id="sidebarStreak">◆ <span id="streakCount">0</span></span>
+        <div style="display:flex;gap:4px;">
+          <button class="footer-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark/light theme (D)">☼</button>
+          <button class="footer-btn" id="muteToggle" aria-label="Toggle sound" title="Toggle sound (M)">♪</button>
+        </div>
+      </div>
+      <div class="footer-version" title="All data is stored in your browser's localStorage">CET LMS v2.0 · Data saved locally</div>
+    </div>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main class="main" id="mainContent">
+
+    <!-- Dashboard -->
+    <div class="page" id="page-dashboard">
+      <div class="page-header">
+        <h2>Dashboard</h2>
+        <p class="subtitle" id="greeting">Welcome back! Ready to study?</p>
+      </div>
+      <div class="stats-row stagger-children" id="statsRow">
+        <div class="stat-card">
+          <div class="stat-num blue" id="statStreak">0</div>
+          <div class="stat-label">◆ Day Streak</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num green" id="statAccuracy">0%</div>
+          <div class="stat-label">✓ Accuracy</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num orange" id="statAnswered">0</div>
+          <div class="stat-label">✎ Questions Done</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num accent" id="statSessions">0</div>
+          <div class="stat-label">◷ Study Sessions</div>
+        </div>
+      </div>
+      <div id="quickResume" style="display:none;"></div>
+      <div class="section-title">◆ Your Subjects</div>
+      <div class="subject-grid" id="dashSubjects"></div>
+      <div style="margin-top:24px;">
+        <div class="section-title">▥ This Week</div>
+        <div class="week-chart" id="weekChart"></div>
+        <div style="margin-bottom:24px;"></div>
+      </div>
+    </div>
+
+    <!-- Subjects -->
+    <div class="page" id="page-subjects">
+      <div class="page-header">
+        <h2>All Subjects</h2>
+        <p class="subtitle">Choose a subject to study</p>
+      </div>
+      <div class="subject-grid" id="subjGrid"></div>
+    </div>
+
+    <!-- Subject Detail -->
+    <div class="page" id="page-subject-detail">
+      <button class="back-btn" onclick="router.navigate('subjects')">← Back to Subjects</button>
+      <div class="subject-header" id="subjDetailHeader"></div>
+      <div class="chapters-list" id="chapterList"></div>
+    </div>
+
+    <!-- Textbook Reader -->
+    <div class="page" id="page-reader">
+      <div id="readerContent"></div>
+    </div>
+
+    <!-- Quiz -->
+    <div class="page" id="page-quiz">
+      <div class="page-header">
+        <h2>✎ Quiz Mode</h2>
+        <p class="subtitle">Test your knowledge</p>
+      </div>
+      <div id="quizSubjectSelect" class="quiz-subject-select">
+        <label for="quizSubjectChoice">Choose a subject to quiz on:</label>
+        <select class="input select" id="quizSubjectChoice">
+          <option value="">— Select a subject —</option>
+        </select>
+      </div>
+      <div id="quizArea" style="display:none;">
+        <div class="quiz-header">
+          <h3 id="quizTitle">Quiz</h3>
+          <div class="quiz-meta">
+            <span id="quizProgress">Question 1 of 10</span>
+          </div>
+        </div>
+        <div class="quiz-progress" id="quizDots"></div>
+        <div id="quizContent"></div>
+        <div style="text-align:center;margin-top:16px;">
+          <button class="btn btn-ghost" id="quizBackBtn" onclick="exitQuiz()">Exit Quiz</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flashcards -->
+    <div class="page" id="page-flashcards">
+      <div class="page-header">
+        <h2>♢ Flashcards</h2>
+        <p class="subtitle">Quick review of key terms</p>
+      </div>
+      <div id="fcSubjectSelect" class="quiz-subject-grid"></div>
+      <div id="fcArea" style="display:none;">
+        <div style="margin-bottom:16px;">
+          <button class="btn btn-ghost" onclick="fcBackToSubjects()" style="font-size:14px;">← Back to subjects</button>
+        </div>
+        <div class="fc-progress" id="fcProgress"><div class="fill" style="width:0%"></div></div>
+        <div class="flashcard-container" onclick="flipFlashcard()">
+          <div class="flashcard" id="fcCard">
+            <div class="flashcard-face front">
+              <div class="fc-label">Term</div>
+              <div class="fc-term" id="fcTerm">Loading...</div>
+              <div class="fc-hint">Tap to flip</div>
+            </div>
+            <div class="flashcard-face back">
+              <div class="fc-label">Definition</div>
+              <div class="fc-def" id="fcDef">Loading...</div>
+            </div>
+          </div>
+        </div>
+        <div class="fc-controls">
+          <button class="fc-btn prev" onclick="prevCard()">◀ Previous</button>
+          <button class="fc-btn know" onclick="knowCard()">✓ Know</button>
+          <button class="fc-btn review" onclick="reviewCard()">⟳ Review</button>
+          <button class="fc-btn next" onclick="nextCard()">Next ▶</button>
+        </div>
+        <div class="fc-counter" id="fcCounter">Card 1 / 1</div>
+      </div>
+    </div>
+
+    <!-- Timer -->
+    <div class="page" id="page-timer">
+      <div class="page-header">
+        <h2>◷ Study Timer</h2>
+        <p class="subtitle">Pomodoro-style focus sessions</p>
+      </div>
+      <div class="timer-mode-toggle">
+        <button class="timer-mode-btn active" id="timerModeFocus">Focus (25m)</button>
+        <button class="timer-mode-btn" id="timerModeBreak">Break (5m)</button>
+      </div>
+      <div class="timer-display">
+        <div class="time" id="timerDisplay">25:00</div>
+        <div class="time-label" id="timerLabel">Focus</div>
+        <div class="timer-controls">
+          <button class="timer-btn start" id="timerStartBtn">▶ Start</button>
+          <button class="timer-btn reset" id="timerResetBtn">↺ Reset</button>
+        </div>
+      </div>
+      <div style="margin-bottom:16px;">
+        <label for="timerSubject" style="font-size:13px;color:var(--text-secondary);display:block;margin-bottom:6px;">Log this session under:</label>
+        <select class="input select" id="timerSubject">
+          <option value="General Study">General Study</option>
+        </select>
+      </div>
+      <div class="timer-stats">
+        <span>Today: <strong id="todayTime">0m</strong></span>
+        <span>Sessions: <strong id="totalSessions">0</strong></span>
+      </div>
+      <div class="section-title">Recent Sessions</div>
+      <div class="sessions-list" id="sessionsList">
+        <div class="empty-state">No study sessions yet. Start a timer to track your progress!</div>
+      </div>
+    </div>
+
+    <!-- Progress -->
+    <div class="page" id="page-progress">
+      <div id="progressContent"></div>
+    </div>
+  </main>
+</div>
+
+<!-- Skip to main content link -->
+<a href="#mainContent" class="sr-only">Skip to main content</a>
+
+<!-- Auto-refresh: reload every 30min to pick up data changes (skips if mid-quiz/flashcard) -->
+<script>
+(function() {
+  var INTERVAL = 30 * 60 * 1000; // 30 minutes
+  var lastRefresh = Date.now();
+
+  function isSafeToReload() {
+    // Don't reload if user is actively in a quiz or flashcard session
+    var quizActive = document.querySelector('.quiz-card, .quiz-question, .quiz-active');
+    var fcActive = document.querySelector('.flashcard-active, .fc-card.flipped');
+    var timerRunning = document.querySelector('.timer-running');
+    if (quizActive || fcActive || timerRunning) return false;
+    return true;
+  }
+
+  function checkRefresh() {
+    if (Date.now() - lastRefresh >= INTERVAL) {
+      if (isSafeToReload()) {
+        // Bust caches and reload
+        if ('caches' in window) {
+          caches.keys().then(function(names) {
+            names.forEach(function(n) { caches.delete(n); });
+            location.reload(true);
+          });
+        } else {
+          location.reload(true);
+        }
+      } else {
+        // Retry in 5 min if user is mid-session
+        lastRefresh = Date.now() - INTERVAL + 5 * 60 * 1000;
+      }
+    }
+  }
+
+  setInterval(checkRefresh, 60 * 1000); // Check every minute
+})();
+</script>
+
+<!-- JavaScript entry point (ES module) -->
+<script type="module" src="js/app.js?v=8"></script>
+</body>
+</html>

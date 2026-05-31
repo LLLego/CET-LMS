@@ -1,0 +1,124 @@
+/* Progress page specific styles */
+
+.progress-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.progress-stat {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  text-align: center;
+}
+
+.progress-stat .stat-num {
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-bold);
+}
+
+.progress-stat .stat-label {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  margin-top: var(--space-1);
+}
+
+.progress-stat .stat-num.green { color: var(--color-success); }
+.progress-stat .stat-num.blue { color: var(--color-secondary); }
+.progress-stat .stat-num.orange { color: var(--color-warning); }
+.progress-stat .stat-num.accent { color: var(--color-primary); }
+.progress-stat .stat-num.red { color: var(--color-error); }
+
+/* Subject breakdown */
+.subject-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.subject-breakdown-item {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-4) var(--space-5);
+}
+
+.subject-breakdown-item .sb-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
+.subject-breakdown-item .sb-name {
+  font-weight: var(--weight-medium);
+  font-size: var(--text-sm);
+}
+
+.subject-breakdown-item .sb-stats {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+}
+
+/* Weakest subject alert */
+.weakness-alert {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-error-bg);
+  border: 1px solid var(--color-error);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  color: var(--color-error);
+  margin-bottom: var(--space-5);
+}
+
+.weakness-alert .wa-icon {
+  font-size: var(--text-xl);
+}
+
+/* Weekly trend */
+.trend-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-5);
+}
+
+.trend-card .trend-icon {
+  font-size: var(--text-2xl);
+}
+
+.trend-card .trend-text {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.trend-card .trend-text strong {
+  color: var(--color-success);
+}
+
+@media (max-width: 768px) {
+  .progress-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .progress-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .subject-breakdown-item {
+    padding: var(--space-3);
+  }
+}

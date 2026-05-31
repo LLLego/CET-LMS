@@ -1,0 +1,82 @@
+[
+  {
+    "id": "math",
+    "name": "Mathematics",
+    "file": "CET_Math_V12.pdf",
+    "page_count": 192,
+    "chapter_count": 9,
+    "emoji": "🔢",
+    "color": "oklch(0.60 0.18 250)",
+    "icon": "function-square"
+  },
+  {
+    "id": "science",
+    "name": "Science",
+    "file": "CET_Science_V12.pdf",
+    "page_count": 93,
+    "chapter_count": 7,
+    "emoji": "🔬",
+    "color": "oklch(0.65 0.22 145)",
+    "icon": "flask"
+  },
+  {
+    "id": "english",
+    "name": "English",
+    "file": "CET_English_V12.pdf",
+    "page_count": 102,
+    "chapter_count": 8,
+    "emoji": "📝",
+    "color": "oklch(0.70 0.20 75)",
+    "icon": "book-open"
+  },
+  {
+    "id": "filipino",
+    "name": "Filipino",
+    "file": "CET_Filipino_V12.pdf",
+    "page_count": 37,
+    "chapter_count": 5,
+    "emoji": "🇵🇭",
+    "color": "oklch(0.60 0.20 15)",
+    "icon": "globe"
+  },
+  {
+    "id": "abstract",
+    "name": "Abstract Reasoning",
+    "file": "CET_Abstract_V12.pdf",
+    "page_count": 50,
+    "chapter_count": 5,
+    "emoji": "🧩",
+    "color": "oklch(0.55 0.18 290)",
+    "icon": "grid"
+  },
+  {
+    "id": "geninfo",
+    "name": "General Information",
+    "file": "CET_GenInfo_V12.pdf",
+    "page_count": 70,
+    "chapter_count": 7,
+    "emoji": "🌏",
+    "color": "oklch(0.60 0.16 340)",
+    "icon": "compass"
+  },
+  {
+    "id": "examspec",
+    "name": "Exam-Specific",
+    "file": "CET_ExamSpecific_V12.pdf",
+    "page_count": 32,
+    "chapter_count": 3,
+    "emoji": "🎯",
+    "color": "oklch(0.62 0.18 190)",
+    "icon": "target"
+  },
+  {
+    "id": "specialized",
+    "name": "Specialized Topics",
+    "file": "CET_Specialized_V12.pdf",
+    "page_count": 29,
+    "chapter_count": 3,
+    "emoji": "⚡",
+    "color": "oklch(0.62 0.20 55)",
+    "icon": "zap"
+  }
+]

@@ -1,0 +1,634 @@
+/* Textbook Reader page specific styles */
+
+.reader-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 0;
+  min-height: 70vh;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.reader-outline {
+  background: var(--bg-surface);
+  border-right: 1px solid var(--border);
+  padding: 0;
+  position: sticky;
+  top: 0;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.reader-outline h2 {
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: var(--space-4);
+  margin: 0;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-elevated);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+}
+
+.reader-outline-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  transition: transform var(--duration-fast) ease, opacity var(--duration-fast) ease, box-shadow var(--duration-fast) ease;
+}
+
+.reader-outline-item:hover {
+  background: var(--bg-hover);
+  color: var(--text);
+}
+
+.reader-outline-item.active {
+  background: var(--color-primary-glow);
+  color: var(--color-primary);
+  border-left: 3px solid var(--color-primary);
+  padding-left: calc(var(--space-4) - 3px);
+}
+
+.reader-outline-item:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.reader-outline-item .outline-check {
+  font-size: 12px;
+  width: 16px;
+  text-align: center;
+}
+
+.reader-outline-item .outline-star {
+  margin-left: auto;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity var(--duration-fast) ease;
+}
+
+.reader-outline-item .outline-star.active {
+  opacity: 1;
+}
+
+.reader-pane {
+  min-width: 0;
+  padding: var(--space-6);
+  background: var(--bg-surface);
+  overflow-y: auto;
+}
+
+.reader-toolbar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-4);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+  flex-wrap: wrap;
+  box-shadow: var(--shadow-sm);
+}
+
+.reader-toolbar .toolbar-divider {
+  width: 1px;
+  height: 24px;
+  background: var(--border);
+  margin: 0 var(--space-1);
+}
+
+.reader-toolbar .font-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-weight: var(--weight-bold);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  transition: transform var(--duration-fast) ease, opacity var(--duration-fast) ease, box-shadow var(--duration-fast) ease;
+  background: none;
+  border: none;
+  font-family: inherit;
+}
+
+.reader-toolbar .font-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text);
+}
+
+.reader-toolbar .font-btn.active {
+  background: var(--color-primary-glow);
+  color: var(--color-primary);
+}
+
+.reader-toolbar .reader-search-btn,
+.reader-toolbar .reader-night-btn,
+.reader-toolbar .reader-serif-btn {
+  margin-left: 0;
+}
+
+.reader-toolbar .reader-right-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin-left: auto;
+}
+
+.reader-content {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  max-width: 100%;
+  margin: 0;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.reader-content .section-title {
+  font-size: var(--text-5xl);
+  font-weight: var(--weight-bold);
+  margin-bottom: var(--space-8);
+  color: var(--text);
+  padding-bottom: var(--space-6);
+  border-bottom: 3px solid var(--color-primary);
+  letter-spacing: -0.02em;
+}
+
+.reader-content p {
+  line-height: 1.9;
+  margin-bottom: 24px;
+  color: var(--text-secondary);
+  font-size: 19px;
+  max-width: 70ch;
+  font-weight: var(--weight-normal);
+}
+
+/* Night mode for reader */
+.reader-content.night-mode {
+  background: var(--bg-inset);
+  border-color: var(--border);
+  color: var(--text-secondary);
+}
+
+.reader-content.night-mode p {
+  color: var(--text-secondary);
+}
+
+.reader-content.night-mode .section-title {
+  color: var(--text);
+}
+
+.reader-content.night-mode .reader-heading {
+  color: var(--text);
+  border-bottom-color: var(--border);
+}
+
+.reader-content.serif-body {
+  font-family: var(--font-serif);
+  line-height: var(--leading-relaxed);
+}
+
+.reader-content.serif-body p {
+  font-size: 17px;
+}
+
+.reader-content .section-title {
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-bold);
+  margin-bottom: var(--space-4);
+  color: var(--text);
+}
+
+.reader-content p {
+  line-height: 1.75;
+  margin-bottom: 16px;
+  color: var(--text-secondary);
+}
+
+.reader-progress-bar {
+  height: 4px;
+  background: var(--bg-hover);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: var(--space-4);
+}
+
+.reader-progress-bar .fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-hover));
+  border-radius: 2px;
+  transition: width 0.5s var(--ease-snappy);
+}
+
+.reader-section-end-quiz {
+  margin-top: var(--space-6);
+  padding: var(--space-4);
+  background: var(--color-primary-glow);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.reader-section-end-quiz p {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-3);
+}
+
+/* Content block styles */
+.reader-heading {
+  margin: var(--space-6) 0 var(--space-3);
+  padding: var(--space-2) 0;
+  font-size: var(--text-xl);
+  font-weight: var(--weight-bold);
+  color: var(--text);
+  border-bottom: 2px solid var(--border);
+  max-width: 70ch;
+}
+
+.reader-heading:first-child {
+  margin-top: 0;
+}
+
+.definition {
+  margin: var(--space-5) 0;
+  padding: var(--space-5);
+  background: var(--color-secondary-glow);
+  border-left: 4px solid var(--color-secondary);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  max-width: 70ch;
+}
+
+.definition .term {
+  font-weight: var(--weight-bold);
+  color: var(--text);
+  font-size: var(--text-xl);
+  margin-right: var(--space-2);
+}
+
+.definition .def-value {
+  color: var(--text-secondary);
+  font-size: var(--text-lg);
+}
+
+.example {
+  margin: var(--space-5) 0;
+  padding: var(--space-5);
+  background: var(--color-primary-glow);
+  border-left: 4px solid var(--color-primary);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  max-width: 70ch;
+}
+
+.example strong {
+  display: block;
+  margin-bottom: var(--space-2);
+  color: var(--color-primary);
+}
+
+.formula {
+  margin: var(--space-3) 0;
+  padding: var(--space-4);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--text);
+  text-align: center;
+  white-space: pre-line;
+  line-height: var(--leading-relaxed);
+}
+
+.practice-problem {
+  margin: var(--space-3) 0;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-warning);
+  color: var(--text);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+}
+
+.note {
+  margin: var(--space-3) 0;
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-hover);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.tip {
+  margin: var(--space-3) 0;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-success-bg);
+  border: 1px solid var(--color-success);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  color: var(--color-success);
+}
+
+.reader-content .reader-table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-5) 0;
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.reader-content .reader-table thead {
+  background: var(--color-primary-glow);
+}
+
+.reader-content .reader-table th {
+  padding: var(--space-3) var(--space-4);
+  text-align: left;
+  font-weight: var(--weight-semibold);
+  color: var(--text);
+  border-bottom: 2px solid var(--color-primary);
+  font-size: var(--text-sm);
+}
+
+.reader-content .reader-table td {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
+.reader-content .reader-table .row-even {
+  background: var(--bg-surface);
+}
+
+.reader-content .reader-table .row-odd {
+  background: var(--bg-elevated);
+}
+
+.reader-content .reader-table tbody tr:hover {
+  background: var(--bg-hover);
+}
+
+.reader-content .reader-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Night mode table overrides */
+.reader-content.night-mode .reader-table {
+  border-color: var(--border);
+}
+
+.reader-content.night-mode .reader-table th {
+  background: var(--bg-hover);
+  border-bottom-color: var(--border-hover);
+  color: var(--text);
+}
+
+.reader-content.night-mode .reader-table td {
+  border-bottom-color: var(--border);
+  color: var(--text-secondary);
+}
+
+.reader-content.night-mode .reader-table .row-even {
+  background: var(--bg-inset);
+}
+
+.reader-content.night-mode .reader-table .row-odd {
+  background: var(--bg-surface);
+}
+
+/* Math notation — proper font stack for Unicode math symbols */
+.math-notation {
+  font-family: 'Cambria Math', 'Latin Modern Math', 'STIX Two Math', Georgia, serif;
+  font-size: var(--text-base);
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+/* Formula blocks — keep serif but don't force it on long text blocks */
+.formula {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.8;
+}
+/* Only apply math font to short formula expressions, not wall-of-text */
+.formula:where(:not(:has(p)), :not(:has(br + br))) {
+  font-family: 'Cambria Math', 'Latin Modern Math', 'STIX Two Math', Georgia, serif;
+}
+
+/* Diagram container */
+.diagram-container {
+  margin: var(--space-5) 0;
+  padding: var(--space-4);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  text-align: center;
+  overflow: hidden;
+}
+
+.diagram-container svg {
+  max-width: 100%;
+  height: auto;
+  max-height: 420px;
+}
+
+.reader-content.night-mode .diagram-container {
+  background: var(--bg-surface);
+  border-color: var(--border);
+}
+
+.reader-content.night-mode .diagram-container svg text {
+  fill: var(--text-secondary);
+}
+
+.reader-content.night-mode .diagram-container svg .set-label,
+.reader-content.night-mode .diagram-container svg .chain-label {
+  fill: var(--text);
+}
+
+/* Scroll to top button */
+.reader-scroll-top {
+  position: fixed;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--text-secondary);
+  box-shadow: var(--shadow-lg);
+  transition: transform var(--duration-fast) var(--ease-snappy), opacity var(--duration-fast) var(--ease-snappy), box-shadow var(--duration-fast) var(--ease-snappy);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.reader-scroll-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.reader-scroll-top:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  opacity: 1;
+}
+
+.reader-scroll-top:hover {
+  background: var(--bg-hover);
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .reader-layout {
+    grid-template-columns: 1fr;
+  }
+  .reader-outline {
+    display: none;
+  }
+  .reader-outline.mobile-open {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: var(--z-overlay);
+    max-height: 100vh;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .reader-content {
+    padding: var(--space-4);
+  }
+}
+
+/* In-chapter search highlights */
+.search-match-highlight {
+  background: var(--color-warning-bg);
+  border-left: 3px solid var(--color-warning);
+  padding-left: var(--space-2);
+  transition: background 0.3s;
+}
+
+mark.search-mark {
+  background: var(--color-search-mark);
+  color: inherit;
+  padding: 1px 3px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+/* Definition hierarchy — structured number sets, classifications */
+.definition-hierarchy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin: var(--space-4) 0;
+  padding: var(--space-4);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.hierarchy-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--space-2) var(--space-3);
+  border-left: 3px solid var(--color-primary);
+  background: var(--bg-surface);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.hierarchy-term {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--color-primary);
+}
+
+.hierarchy-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Property Details — structured definition cards */
+.property-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin: var(--space-4) 0;
+  padding: 0;
+}
+
+.property-field {
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-elevated);
+  border-left: 4px solid var(--color-primary);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  line-height: 1.7;
+}
+
+.property-example {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-success-bg);
+  border-left: 4px solid var(--color-success);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  line-height: 1.7;
+}
+
+.property-label {
+  font-weight: 700;
+  color: var(--color-primary);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.property-example .property-label {
+  color: var(--color-success);
+}
+
+.property-value {
+  color: var(--text);
+  font-size: 15px;
+}
+

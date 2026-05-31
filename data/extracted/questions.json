@@ -1,0 +1,7218 @@
+[
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Which of the following statements is TRUE?",
+    "options": [
+      {
+        "text": "This is a common misconception about the topic",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Every concept here will not be defined from",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "This statement is contradicted by current research",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Every concept here will be defined from",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Every concept here will be defined from",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-9379fee3"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "hard",
+    "type": "comparison",
+    "question": "Which of the following is correct about more. That feeling — “this and that” — is where all of mathematics?",
+    "options": [
+      {
+        "text": "more. That feeling — “this is equal to that” — is where all of mathematics",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "more. That feeling — “this is greater than that” — is where all of mathematics",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "that” — is where all of mathematics is greater than more. That feeling — “this",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "more. That feeling — “this is smaller than that” — is where all of mathematics",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "more. That feeling — “this is more than that” — is where all of mathematics",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-93f4b30d"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "The Number System",
+    "question": "What is the term for 'A Hierarchy of Sets'?",
+    "options": [
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "The Number System",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "What one mistake",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "real numbers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "The Number System: The Number System: A Hierarchy of Sets",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-2d695a0c"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "But not all numbers",
+    "question": "What is the term for 'the same. Just like you have different words for “one cat”'?",
+    "options": [
+      {
+        "text": "Negative numbers",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "But not all numbers",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "But not all numbers: But not all numbers are the same. Just like you have different words for “one cat”",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-28f15411"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "And there",
+    "question": "What is the term for 'no “smallest” either — you can always go negative. This simple fact'?",
+    "options": [
+      {
+        "text": "And there",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "Sum of digits",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Negative numbers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Number System",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "And there: And there is no “smallest” either — you can always go negative. This simple fact",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-aa21531d"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "What they",
+    "question": "What is the term for 'What they are'?",
+    "options": [
+      {
+        "text": "What one mistake",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "These rules",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "What they",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "What they: What they are",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-3ec05b69"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Integers",
+    "question": "What is the term for 'rational! Every integer can be written as itself over 1'?",
+    "options": [
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Integers",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "real numbers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Integers: Integers ARE rational! Every integer can be written as itself over 1",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-a676981c"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "every number",
+    "question": "What is the term for 'a fraction. Picture a perfect square with sides of'?",
+    "options": [
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Negative numbers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "wall",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "every number",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "every number: every number is a fraction. Picture a perfect square with sides of",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-5ccba11a"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Which of these",
+    "question": "What is the term for 'rational? (a) √7, (b) 0.333…, (c) √16, (d) e'?",
+    "options": [
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "But not all numbers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Number System",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Which of these",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Which of these: Which of these is rational? (a) √7, (b) 0.333…, (c) √16, (d) e",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-4a8cc9f2"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "If a number",
+    "question": "What is the term for 'rational and positive, which MUST be true?'?",
+    "options": [
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "If a number",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "wall",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "If a number: If a number is rational and positive, which MUST be true?",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-08f6b359"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Which number",
+    "question": "What is the term for 'NOT rational?'?",
+    "options": [
+      {
+        "text": "Which number",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Which number: Which number is NOT rational?",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-6f7b6267"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Which statement",
+    "question": "What is the term for 'ALWAYS true?'?",
+    "options": [
+      {
+        "text": "Which statement",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Which statement: Which statement is ALWAYS true?",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-42eec411"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Number System",
+    "question": "What is the term for 'A Hierarchy of Sets — shows how number sets nest inside each'?",
+    "options": [
+      {
+        "text": "Integers",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Number System",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "All points",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "A number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Number System: Number System: A Hierarchy of Sets — shows how number sets nest inside each",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-0e586d6b"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "NON-perfect-square",
+    "question": "What is the term for 'ALWAYS irrational. Don’t let (b) √9 trick you — √9'?",
+    "options": [
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "NON-perfect-square",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "Sum of digits",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "NON-perfect-square: NON-perfect-square is ALWAYS irrational. Don’t let (b) √9 trick you — √9",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-2e1e8875"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "All points",
+    "question": "What is the term for 'Real numbers (ℝ)'?",
+    "options": [
+      {
+        "text": "Which statement",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "All points",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "NON-perfect-square",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Integers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "All points: All points are Real numbers (ℝ)",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-0eb1be1c"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "These",
+    "question": "What is the term for 'inside ℝbut NOT inside ℚ'?",
+    "options": [
+      {
+        "text": "Which statement",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Exactly ONE",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "These",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "These: These are inside ℝbut NOT inside ℚ",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-a402c01f"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Imagine math",
+    "question": "What is the term for 'a game. For the game to be fair, everyone has to follow the same'?",
+    "options": [
+      {
+        "text": "These rules",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "NON-perfect-square",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Imagine math",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "Number System",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Imagine math: Imagine math is a game. For the game to be fair, everyone has to follow the same",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-2",
+    "id": "q-auto-247bca41"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "properties of operations",
+    "question": "What is the term for 'The properties of operations are these rules. They tell us: - Can we swap'?",
+    "options": [
+      {
+        "text": "A number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Integers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "These rules",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "properties of operations: The properties of operations are these rules. They tell us: - Can we swap",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-2",
+    "id": "q-auto-72486320"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "wall",
+    "question": "What is the term for 'the same height. The distributive property is like a crane: it lifts'?",
+    "options": [
+      {
+        "text": "wall",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "A number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Sum of digits",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "And there",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "wall: wall is the same height. The distributive property is like a crane: it lifts",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-2",
+    "id": "q-auto-d1be7c1d"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "These rules",
+    "question": "What is the term for 'These rules aren’t boring — they’re the reason math works at all! Ali'?",
+    "options": [
+      {
+        "text": "number line",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "These rules",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "These rules: These rules aren’t boring — they’re the reason math works at all! Ali",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-2",
+    "id": "q-auto-d1518eed"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many times does it have?",
+    "options": [
+      {
+        "text": "4 times",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "12 times",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "5 times",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "2 times",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "It’s tested 3-4 times per exam, and knowing it cold saves you 2 minutes",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-2",
+    "id": "q-auto-66a73cb9"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Arithmetic tricks",
+    "question": "What is the term for 'shortcuts — they help you solve problems faster, and on the'?",
+    "options": [
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "All points",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Arithmetic tricks: Arithmetic tricks are shortcuts — they help you solve problems faster, and on the",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-3",
+    "id": "q-auto-5defcc7a"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "A number",
+    "question": "What is the term for 'A number is'?",
+    "options": [
+      {
+        "text": "A number",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "real numbers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Number System",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "What they",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "A number: A number is",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-3",
+    "id": "q-auto-be853aa7"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Last digit",
+    "question": "What is the term for 'even (0, 2, 4, 6, 8)'?",
+    "options": [
+      {
+        "text": "Last digit",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "real numbers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Last digit: Last digit is even (0, 2, 4, 6, 8)",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-3",
+    "id": "q-auto-00263683"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Sum of digits",
+    "question": "What is the term for 'divisible by 3'?",
+    "options": [
+      {
+        "text": "NON-perfect-square",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Integers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "But not all numbers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Sum of digits",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Sum of digits: Sum of digits is divisible by 3",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-3",
+    "id": "q-auto-e514dac2"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Sum of digits",
+    "question": "What is the term for 'divisible by 9'?",
+    "options": [
+      {
+        "text": "wall",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "And there",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Negative numbers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Sum of digits",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Sum of digits: Sum of digits is divisible by 9",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-3",
+    "id": "q-auto-d1be7c1d"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "real numbers",
+    "question": "What is the term for 'The real numbers are the complete number system — every single point on the'?",
+    "options": [
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "What they",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "real numbers",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "real numbers: The real numbers are the complete number system — every single point on the",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-3",
+    "id": "q-auto-098f981f"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "number line",
+    "question": "What is the term for 'The number line is continuous — no gaps. Between any two real numbers, there’s'?",
+    "options": [
+      {
+        "text": "number line",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "number line: The number line is continuous — no gaps. Between any two real numbers, there’s",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-3",
+    "id": "q-auto-47553346"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Exactly ONE",
+    "question": "What is the term for 'true: a < b, a = b, or a > b'?",
+    "options": [
+      {
+        "text": "Exactly ONE",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "number line",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Exactly ONE: Exactly ONE is true: a < b, a = b, or a > b",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-3",
+    "id": "q-auto-0e23a5dc"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Negative numbers",
+    "question": "What is the term for 'to the left of 0; positives to the right'?",
+    "options": [
+      {
+        "text": "Negative numbers",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "real numbers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Negative numbers: Negative numbers are to the left of 0; positives to the right",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-3",
+    "id": "q-auto-4df2752c"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "All integers",
+    "question": "What is the term for 'rational (can write as n/1), NOT the other way'?",
+    "options": [
+      {
+        "text": "NON-perfect-square",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "All integers",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "All integers: All integers are rational (can write as n/1), NOT the other way",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-3",
+    "id": "q-auto-c9708142"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "The Number System",
+    "question": "What is the term for 'A Hierarchy of Sets — shows ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ with'?",
+    "options": [
+      {
+        "text": "number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "The Number System",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "The Number System: The Number System: A Hierarchy of Sets — shows ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ with",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-3",
+    "id": "q-auto-08f6b359"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "number",
+    "question": "What is the term for 'an integer IV. The set of real numbers is the union of rationals and irrationals'?",
+    "options": [
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "All points",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Integers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "number",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "number: number is an integer IV. The set of real numbers is the union of rationals and irrationals",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-3",
+    "id": "q-auto-cf678ef0"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Between any two reals",
+    "question": "What is the term for 'another real'?",
+    "options": [
+      {
+        "text": "Between any two reals",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "every number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Between any two reals: Between any two reals is another real",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-3",
+    "id": "q-auto-fbe4ebfe"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Arithmetic operations",
+    "question": "What is the term for 'the four basic tools of math. Think of them as the'?",
+    "options": [
+      {
+        "text": "And there",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Arithmetic operations",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "What one mistake",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Arithmetic operations: Arithmetic operations are the four basic tools of math. Think of them as the",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-5",
+    "id": "q-auto-2e1e8875"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Exponents",
+    "question": "What is the term for 'shorthand for repeated multiplication. Instead of writing 2 ×'?",
+    "options": [
+      {
+        "text": "What one mistake",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Exponents",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "The Number System",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Exponents: Exponents are shorthand for repeated multiplication. Instead of writing 2 ×",
+    "subject_id": "math",
+    "chapter_id": "chmath-9",
+    "section_id": "secmath-9-1-7",
+    "id": "q-auto-97419d12"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Writing very large or very small numbers as",
+    "question": "What is the term for 'a × 10^n, where 1 ≤ a < 10'?",
+    "options": [
+      {
+        "text": "Negative numbers",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Writing very large or very small numbers as",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "real numbers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "every number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Writing very large or very small numbers as: Writing very large or very small numbers as: a × 10^n, where 1 ≤ a < 10",
+    "subject_id": "math",
+    "chapter_id": "chmath-9",
+    "section_id": "secmath-9-1-7",
+    "id": "q-auto-d0574a4d"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Key CET trap",
+    "question": "What is the term for 'A fraction like (2+3)/(4−1) means both numerator and denominator must'?",
+    "options": [
+      {
+        "text": "wall",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Key CET trap",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Key CET trap: Key CET trap: A fraction like (2+3)/(4−1) means both numerator and denominator must",
+    "subject_id": "math",
+    "chapter_id": "chmath-9",
+    "section_id": "secmath-9-1-8",
+    "id": "q-auto-d0574a4d"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "What one mistake",
+    "question": "What is the term for 'you most likely to make on this topic?'?",
+    "options": [
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Exactly ONE",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "What one mistake",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "A number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "What one mistake: What one mistake are you most likely to make on this topic?",
+    "subject_id": "math",
+    "chapter_id": "chmath-9",
+    "section_id": "secmath-9-1-8",
+    "id": "q-auto-6956ccfd"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many Sections does it have?",
+    "options": [
+      {
+        "text": "2 Sections",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "3 Sections",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "0 Sections",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "1 Sections",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Complete mastery of: - All Section 2.1 material (Variables) - Chapter 1 Sections 1.1-1.5",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-b3c81fff"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many sections does it have?",
+    "options": [
+      {
+        "text": "2 sections",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "3 sections",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "0 sections",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "1 sections",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Equations, Word Problems) - All Chapter 1 sections (full prerequisite set)",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-b3c81fff"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Inequalities",
+    "question": "What is the term for 'like equations, but instead of saying two things are equal, they'?",
+    "options": [
+      {
+        "text": "Number System",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "And there",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Inequalities",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Inequalities: Inequalities are like equations, but instead of saying two things are equal, they",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-2e1e8875"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "say one",
+    "question": "What is the term for 'greater than/less than the other. Graphs on a number line show all'?",
+    "options": [
+      {
+        "text": "say one",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "Negative numbers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Imagine math",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Sum of digits",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "say one: say one is greater than/less than the other. Graphs on a number line show all",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-5defcc7a"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Inequalities",
+    "question": "What is the term for 'equations with wiggle room. Instead of x being exactly 2, x can be'?",
+    "options": [
+      {
+        "text": "Which statement",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "every number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Inequalities",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "What they",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Inequalities: Inequalities are equations with wiggle room. Instead of x being exactly 2, x can be",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-34ee3c4f"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "interval notation",
+    "question": "What is the term for 'The interval notation is a short way to write all those infinite numbers:'?",
+    "options": [
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Exactly ONE",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "What they",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "interval notation",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "interval notation: The interval notation is a short way to write all those infinite numbers:",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-915d11f4"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "part with inequalities",
+    "question": "What is the term for 'flipping the sign when multiplying/dividing by'?",
+    "options": [
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Which statement",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "part with inequalities",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "All points",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "part with inequalities: part with inequalities is flipping the sign when multiplying/dividing by",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-08d3c81f"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "interval method",
+    "question": "What is the term for 'The interval method is super useful for CET exams, it saves time'?",
+    "options": [
+      {
+        "text": "Which statement",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "interval method",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "Number System",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "The Number System",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "interval method: The interval method is super useful for CET exams, it saves time",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-4df0a91a"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Infinity",
+    "question": "What is the term for 'not a number, always use parentheses with ∞'?",
+    "options": [
+      {
+        "text": "Infinity",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "But not all numbers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Imagine math",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "real numbers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Infinity: Infinity is not a number, always use parentheses with ∞",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-0ae0e000"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "If the valley",
+    "question": "What is the term for 'above ground (D < 0), it never crosses — no real'?",
+    "options": [
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "And there",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "NON-perfect-square",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "If the valley",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "If the valley: If the valley is above ground (D < 0), it never crosses — no real",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-08d3c81f"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "formula",
+    "question": "What is the term for 'The formula is just geometry in algebraic form! Completing the square'?",
+    "options": [
+      {
+        "text": "Imagine math",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "These rules",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "formula",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "formula: The formula is just geometry in algebraic form! Completing the square",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-1",
+    "id": "q-auto-4df0a91a"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Polynomial functions",
+    "question": "What is the term for 'sums of power terms: f(x) = aₙxⁿ + … + a₁x + a₀. The'?",
+    "options": [
+      {
+        "text": "Polynomial functions",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "real numbers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Exactly ONE",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Polynomial functions: Polynomial functions are sums of power terms: f(x) = aₙxⁿ + … + a₁x + a₀. The",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-4-4",
+    "id": "q-auto-5defcc7a"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Factor Theorem",
+    "question": "What is the term for 'The Factor Theorem is the fastest way to check if (x-a) is a factor: just'?",
+    "options": [
+      {
+        "text": "Factor Theorem",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "NON-perfect-square",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Imagine math",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Factor Theorem: The Factor Theorem is the fastest way to check if (x-a) is a factor: just",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-4-4",
+    "id": "q-auto-944bd7ad"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Rational functions",
+    "question": "What is the term for 'fractions with variables in the denominator. f(x) = 1/(x −'?",
+    "options": [
+      {
+        "text": "Rational functions",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "every number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Rational functions: Rational functions are fractions with variables in the denominator. f(x) = 1/(x −",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-4-7",
+    "id": "q-auto-2e1e8875"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many hours does it have?",
+    "options": [
+      {
+        "text": "5 hours",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "6 hours",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "15 hours",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "7 hours",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Example 2 (Standard): Bacteria doubles every hour from 100. After 5 hours? Solution:",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-4-7",
+    "id": "q-auto-3ce40e3a"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Polygons",
+    "question": "What is the term for 'closed shapes with straight sides. Quadrilaterals are 4-sided'?",
+    "options": [
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Integers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Polygons",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Polygons: Polygons are closed shapes with straight sides. Quadrilaterals are 4-sided",
+    "subject_id": "math",
+    "chapter_id": "chmath-3",
+    "section_id": "secmath-3-5-4",
+    "id": "q-auto-247bca41"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Rectangle",
+    "question": "What is the term for 'A = length × width'?",
+    "options": [
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Imagine math",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Number System",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Rectangle",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Rectangle: Rectangle: A = length × width",
+    "subject_id": "math",
+    "chapter_id": "chmath-3",
+    "section_id": "secmath-3-5-4",
+    "id": "q-auto-0ad97954"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Parallelogram",
+    "question": "What is the term for 'A = base × height'?",
+    "options": [
+      {
+        "text": "These rules",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Which statement",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Parallelogram",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Parallelogram: Parallelogram: A = base × height",
+    "subject_id": "math",
+    "chapter_id": "chmath-3",
+    "section_id": "secmath-3-5-4",
+    "id": "q-auto-aa21531d"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Trapezoid",
+    "question": "What is the term for 'A = (1/2) × (base₁ + base₂) × height'?",
+    "options": [
+      {
+        "text": "Which statement",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "number line",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Trapezoid",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Trapezoid: Trapezoid: A = (1/2) × (base₁ + base₂) × height",
+    "subject_id": "math",
+    "chapter_id": "chmath-3",
+    "section_id": "secmath-3-5-4",
+    "id": "q-auto-34ee3c4f"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Perimeter",
+    "question": "What is the term for 'the distance around a shape — how much fencing you need. Area is'?",
+    "options": [
+      {
+        "text": "Perimeter",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Sum of digits",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Perimeter: Perimeter is the distance around a shape — how much fencing you need. Area is",
+    "subject_id": "math",
+    "chapter_id": "chmath-3",
+    "section_id": "secmath-3-5-5",
+    "id": "q-auto-97419d12"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Trapezoid",
+    "question": "What is the term for 'A = ½·(b₁ + b₂)·h'?",
+    "options": [
+      {
+        "text": "Exactly ONE",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "What one mistake",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Trapezoid",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Trapezoid: Trapezoid: A = ½·(b₁ + b₂)·h",
+    "subject_id": "math",
+    "chapter_id": "chmath-3",
+    "section_id": "secmath-3-5-5",
+    "id": "q-auto-7d01fa58"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Regular polygon",
+    "question": "What is the term for 'A = ½·a·P (a = apothem, P = perimeter)'?",
+    "options": [
+      {
+        "text": "What one mistake",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "What they",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Regular polygon",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "real numbers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Regular polygon: Regular polygon: A = ½·a·P (a = apothem, P = perimeter)",
+    "subject_id": "math",
+    "chapter_id": "chmath-3",
+    "section_id": "secmath-3-5-5",
+    "id": "q-auto-915d11f4"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Solution",
+    "question": "What is the term for 'A = ½(6+10)×4 = ½(16)×4 = 32cm²'?",
+    "options": [
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "number line",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Solution",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Solution: Solution: A = ½(6+10)×4 = ½(16)×4 = 32cm²",
+    "subject_id": "math",
+    "chapter_id": "chmath-3",
+    "section_id": "secmath-3-5-5",
+    "id": "q-auto-102a4d58"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Surface",
+    "question": "What is the term for 'Surface area is the total area of all faces of a 3D shape — how much wrapping'?",
+    "options": [
+      {
+        "text": "But not all numbers",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "And there",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Surface",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Surface: Surface area is the total area of all faces of a 3D shape — how much wrapping",
+    "subject_id": "math",
+    "chapter_id": "chmath-3",
+    "section_id": "secmath-3-5-6",
+    "id": "q-auto-2e1e8875"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Surface",
+    "question": "What is the term for 'Surface Area'?",
+    "options": [
+      {
+        "text": "Surface",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "Number System",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Sum of digits",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Surface: Surface Area",
+    "subject_id": "math",
+    "chapter_id": "chmath-3",
+    "section_id": "secmath-3-5-6",
+    "id": "q-auto-a4f400bd"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "How far apart two points",
+    "question": "What is the term for 'How far apart two points are'?",
+    "options": [
+      {
+        "text": "Exactly ONE",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "How far apart two points",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "How far apart two points: How far apart two points are",
+    "subject_id": "math",
+    "chapter_id": "chmath-3",
+    "section_id": "secmath-3-5-7",
+    "id": "q-auto-4df0a91a"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Lines",
+    "question": "What is the term for 'perpendicular'?",
+    "options": [
+      {
+        "text": "Which statement",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "A number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Lines",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "All points",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Lines: Lines are perpendicular",
+    "subject_id": "math",
+    "chapter_id": "chmath-3",
+    "section_id": "secmath-3-5-7",
+    "id": "q-auto-001c72a9"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Identities",
+    "question": "What is the term for 'equations that are TRUE for ALL values of θ. The big 3: 1'?",
+    "options": [
+      {
+        "text": "Identities",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "wall",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Negative numbers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "What they",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Identities: Identities are equations that are TRUE for ALL values of θ. The big 3: 1.",
+    "subject_id": "math",
+    "chapter_id": "chmath-4",
+    "section_id": "secmath-4-6-3",
+    "id": "q-auto-97419d12"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Trig identities",
+    "question": "What is the term for 'like LEGO blocks — you can rearrange them'?",
+    "options": [
+      {
+        "text": "All points",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Trig identities",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Trig identities: Trig identities are like LEGO blocks — you can rearrange them",
+    "subject_id": "math",
+    "chapter_id": "chmath-4",
+    "section_id": "secmath-4-6-3",
+    "id": "q-auto-915d11f4"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Trigonometry",
+    "question": "What is the term for 'Trigonometry isn’t just about triangles on paper — it’s about measuring the real'?",
+    "options": [
+      {
+        "text": "Trigonometry",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "All points",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Trigonometry: Trigonometry isn’t just about triangles on paper — it’s about measuring the real",
+    "subject_id": "math",
+    "chapter_id": "chmath-4",
+    "section_id": "secmath-4-6-7",
+    "id": "q-auto-2e1e8875"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "boat",
+    "question": "What is the term for '25°. Distance from cliff base? Solution: tan25° = 50/d. d = 50/tan25° ≈ 50/0.466 ≈'?",
+    "options": [
+      {
+        "text": "boat",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "boat: boat is 25°. Distance from cliff base? Solution: tan25° = 50/d. d = 50/tan25° ≈ 50/0.466 ≈",
+    "subject_id": "math",
+    "chapter_id": "chmath-4",
+    "section_id": "secmath-4-6-7",
+    "id": "q-auto-34ee3c4f"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Integral",
+    "question": "What is the term for 'Integral Area'?",
+    "options": [
+      {
+        "text": "number line",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "real numbers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Integral",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Integral: Integral Area",
+    "subject_id": "math",
+    "chapter_id": "chmath-6",
+    "section_id": "secmath-6-8-4",
+    "id": "q-auto-d5846502"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Variance",
+    "question": "What is the term for 'in squared units, SD is in original units — SD is always easier'?",
+    "options": [
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Variance",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "real numbers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Integers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Variance: Variance is in squared units, SD is in original units — SD is always easier",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-9-1",
+    "id": "q-auto-0249f941"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Combinations",
+    "question": "What is the term for 'for unordered groups (teams: ABC = BCA). Factorial (n!) is'?",
+    "options": [
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Combinations",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "But not all numbers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Combinations: Combinations are for unordered groups (teams: ABC = BCA). Factorial (n!) is",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-6",
+    "id": "q-auto-5defcc7a"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many people does it have?",
+    "options": [
+      {
+        "text": "3 people",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "2 people",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "4 people",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "1 people",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Imagine 3 people: A, B, C. Permutations of 2: AB, BA, AC, CA, BC, CB (6 total,",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-6",
+    "id": "q-auto-63c25bcb"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Factorial",
+    "question": "What is the term for 'like a chain reaction: 5! = 5×4×3×2×1 = 120'?",
+    "options": [
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "What they",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "All points",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Factorial",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Factorial: Factorial is like a chain reaction: 5! = 5×4×3×2×1 = 120.",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-6",
+    "id": "q-auto-a402c01f"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "here",
+    "question": "What is the term for 'mixing up nPr and nCr'?",
+    "options": [
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "here",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "NON-perfect-square",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "here: here is mixing up nPr and nCr.",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-6",
+    "id": "q-auto-944bd7ad"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "nCr",
+    "question": "What is the term for 'always smaller than nPr for the same n and r, because it'?",
+    "options": [
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Imagine math",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Sum of digits",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "nCr",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "nCr: nCr is always smaller than nPr for the same n and r, because it",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-1-6",
+    "id": "q-auto-6de2cc92"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "this",
+    "question": "What is the term for 'a shortcut for large r values'?",
+    "options": [
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "These rules",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "this",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "The Number System",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "this: this is a shortcut for large r values.",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-9-3",
+    "id": "q-auto-0249f941"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "A probability distribution",
+    "question": "What is the term for 'a list of all possible outcomes and their probabilities'?",
+    "options": [
+      {
+        "text": "A probability distribution",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Sum of digits",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Negative numbers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "A probability distribution: A probability distribution is a list of all possible outcomes and their probabilities.",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-9-4",
+    "id": "q-auto-5defcc7a"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "binomial distribution",
+    "question": "What is the term for 'The binomial distribution is for yes/no experiments (10 coin flips, how many'?",
+    "options": [
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Negative numbers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "binomial distribution",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "binomial distribution: The binomial distribution is for yes/no experiments (10 coin flips, how many",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-9-4",
+    "id": "q-auto-97419d12"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "binomial distribution",
+    "question": "What is the term for 'The binomial distribution is counting heads in 10 coin flips. The probabilities form'?",
+    "options": [
+      {
+        "text": "binomial distribution",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "Integers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "And there",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "What one mistake",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "binomial distribution: The binomial distribution is counting heads in 10 coin flips. The probabilities form",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-9-4",
+    "id": "q-auto-d0574a4d"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "normal curve",
+    "question": "What is the term for 'The normal curve is the same shape but smooth, for continuous data'?",
+    "options": [
+      {
+        "text": "number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "NON-perfect-square",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "normal curve",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "normal curve: The normal curve is the same shape but smooth, for continuous data",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-9-4",
+    "id": "q-auto-a4f400bd"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "individual events",
+    "question": "What is the term for 'random, the total clusters around the mean. Ali'?",
+    "options": [
+      {
+        "text": "A number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "individual events",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "real numbers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "individual events: individual events are random, the total clusters around the mean. Ali",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-9-4",
+    "id": "q-auto-f4669d81"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "mean",
+    "question": "What is the term for 'np — easy to remember: number of trials times probability of'?",
+    "options": [
+      {
+        "text": "every number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Number System",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "mean",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "The Number System",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "mean: mean is np — easy to remember: number of trials times probability of",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-9-4",
+    "id": "q-auto-209a7163"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "THE ONE THING TO NEVER FORGET",
+    "question": "What is the term for 'The 68-95-99.7 rule only applies to normal'?",
+    "options": [
+      {
+        "text": "A number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "wall",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "THE ONE THING TO NEVER FORGET",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "THE ONE THING TO NEVER FORGET: THE ONE THING TO NEVER FORGET: The 68-95-99.7 rule only applies to normal",
+    "subject_id": "math",
+    "chapter_id": "chmath-1",
+    "section_id": "secmath-1-9-4",
+    "id": "q-auto-a2583e8c"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Correlation measures how strongly two variables",
+    "question": "What is the term for 'related. Positive correlation:'?",
+    "options": [
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Exactly ONE",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "And there",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Correlation measures how strongly two variables",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Correlation measures how strongly two variables: Correlation measures how strongly two variables are related. Positive correlation:",
+    "subject_id": "math",
+    "chapter_id": "chmath-2",
+    "section_id": "secmath-2-2-1",
+    "id": "q-auto-5defcc7a"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Regression",
+    "question": "What is the term for 'the line that best fits the data points to make predictions'?",
+    "options": [
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Number System",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Regression",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Regression: Regression is the line that best fits the data points to make predictions.",
+    "subject_id": "math",
+    "chapter_id": "chmath-2",
+    "section_id": "secmath-2-2-1",
+    "id": "q-auto-0249f941"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many hours does score for someone who studied 5 hours. Correlation have?",
+    "options": [
+      {
+        "text": "5 hours",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "4 hours",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "3 hours",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "15 hours",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "score for someone who studied 5 hours. Correlation is not causation!",
+    "subject_id": "math",
+    "chapter_id": "chmath-2",
+    "section_id": "secmath-2-2-1",
+    "id": "q-auto-cec6d11f"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "This",
+    "question": "What is the term for 'the most important rule in statistics. Just because two things'?",
+    "options": [
+      {
+        "text": "This",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Integers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "This: This is the most important rule in statistics. Just because two things",
+    "subject_id": "math",
+    "chapter_id": "chmath-2",
+    "section_id": "secmath-2-2-1",
+    "id": "q-auto-f4669d81"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "universe",
+    "question": "What is the term for 'The universe is full of coincidences that look like patterns. Ali Abdaal'?",
+    "options": [
+      {
+        "text": "universe",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "A number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "The Number System",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "universe: The universe is full of coincidences that look like patterns. Ali Abdaal",
+    "subject_id": "math",
+    "chapter_id": "chmath-2",
+    "section_id": "secmath-2-2-1",
+    "id": "q-auto-209a7163"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "All terms defined here",
+    "question": "What is the term for 'used in Ch10-11 (Biology I & II)'?",
+    "options": [
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "All terms defined here",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "NON-perfect-square",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "All terms defined here: All terms defined here are used in Ch10-11 (Biology I & II)",
+    "subject_id": "science",
+    "chapter_id": "chscience-10",
+    "section_id": "secscience-10-10-1",
+    "id": "q-auto-0e4eb49d"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "and animals",
+    "question": "What is the term for 'made of cells. Rudolf Virchow (1858) added the final piece: cells only'?",
+    "options": [
+      {
+        "text": "and animals",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "NON-perfect-square",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "and animals: and animals are made of cells. Rudolf Virchow (1858) added the final piece: cells only",
+    "subject_id": "science",
+    "chapter_id": "chscience-10",
+    "section_id": "secscience-10-10-1",
+    "id": "q-auto-29b29da4"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Theory",
+    "question": "What is the term for 'A well-tested, widely accepted explanation of a natural phenomenon (not a'?",
+    "options": [
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "every number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Theory",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "But not all numbers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Theory: Theory: A well-tested, widely accepted explanation of a natural phenomenon (not a",
+    "subject_id": "science",
+    "chapter_id": "chscience-10",
+    "section_id": "secscience-10-10-1",
+    "id": "q-auto-94ad66f3"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Viruses",
+    "question": "What is the term for 'The Exception Test Viruses have genetic material (DNA/RNA) and can'?",
+    "options": [
+      {
+        "text": "A number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Viruses",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Viruses: Viruses: The Exception Test Viruses have genetic material (DNA/RNA) and can",
+    "subject_id": "science",
+    "chapter_id": "chscience-10",
+    "section_id": "secscience-10-10-1",
+    "id": "q-auto-470ca474"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "host cell -",
+    "question": "What is the term for 'not made of cells - Conclusion: Viruses are NOT alive (fail 3+'?",
+    "options": [
+      {
+        "text": "What they",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "real numbers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "host cell -",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "host cell -: host cell - Are not made of cells - Conclusion: Viruses are NOT alive (fail 3+",
+    "subject_id": "science",
+    "chapter_id": "chscience-10",
+    "section_id": "secscience-10-10-1",
+    "id": "q-auto-99026ff6"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Homeostasis",
+    "question": "What is the term for 'like your body’s air conditioner. If it gets too hot, you sweat to cool'?",
+    "options": [
+      {
+        "text": "number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Homeostasis",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "every number",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Homeostasis: Homeostasis is like your body’s air conditioner. If it gets too hot, you sweat to cool",
+    "subject_id": "science",
+    "chapter_id": "chscience-10",
+    "section_id": "secscience-10-10-1",
+    "id": "q-auto-469d3243"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "three",
+    "question": "What is the term for 'made of cells (1 or more). Step 3: Verify — bacteria (1 cell), human (60T), whale'?",
+    "options": [
+      {
+        "text": "NON-perfect-square",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Exactly ONE",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "three",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "three: three are made of cells (1 or more). Step 3: Verify — bacteria (1 cell), human (60T), whale",
+    "subject_id": "science",
+    "chapter_id": "chscience-10",
+    "section_id": "secscience-10-10-1",
+    "id": "q-auto-aa9a0c0a"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Crystallization",
+    "question": "What is the term for 'NOT a characteristic of life — it is a physical process of'?",
+    "options": [
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Crystallization",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "But not all numbers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "What one mistake",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Crystallization: Crystallization is NOT a characteristic of life — it is a physical process of",
+    "subject_id": "science",
+    "chapter_id": "chscience-10",
+    "section_id": "secscience-10-10-1",
+    "id": "q-auto-b3058532"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Viruses",
+    "question": "What is the term for 'NOT alive — they fail 3+ core characteristics (no cells, no'?",
+    "options": [
+      {
+        "text": "Viruses",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "NON-perfect-square",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Viruses: Viruses are NOT alive — they fail 3+ core characteristics (no cells, no",
+    "subject_id": "science",
+    "chapter_id": "chscience-10",
+    "section_id": "secscience-10-10-1",
+    "id": "q-auto-02c3bb20"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Animals",
+    "question": "What is the term for 'the most visible and diverse kingdom of life. From a microscopic worm to a'?",
+    "options": [
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Animals",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "number",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Animals: Animals are the most visible and diverse kingdom of life. From a microscopic worm to a",
+    "subject_id": "science",
+    "chapter_id": "chscience-10",
+    "section_id": "secscience-10-11-4",
+    "id": "q-auto-50695700"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Taxonomy",
+    "question": "What is the term for 'like organizing a library: - Kingdom = All non-fiction books (very broad) -'?",
+    "options": [
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Taxonomy",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "Exactly ONE",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Taxonomy: Taxonomy is like organizing a library: - Kingdom = All non-fiction books (very broad) -",
+    "subject_id": "science",
+    "chapter_id": "chscience-10",
+    "section_id": "secscience-10-11-4",
+    "id": "q-auto-3f84d34b"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Kingdom",
+    "question": "What is the term for 'broadest, Species is most specific'?",
+    "options": [
+      {
+        "text": "Sum of digits",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "number line",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "These rules",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Kingdom",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Kingdom: Kingdom is broadest, Species is most specific",
+    "subject_id": "science",
+    "chapter_id": "chscience-10",
+    "section_id": "secscience-10-11-4",
+    "id": "q-auto-bbad7ffa"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Spine",
+    "question": "What is the term for 'posterior to heart | | Superior (Cranial) | Toward head | Head is superior to'?",
+    "options": [
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "What they",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Spine",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "Exactly ONE",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Spine: Spine is posterior to heart | | Superior (Cranial) | Toward head | Head is superior to",
+    "subject_id": "science",
+    "chapter_id": "chscience-10",
+    "section_id": "secscience-10-11-5",
+    "id": "q-auto-8ef1e913"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Fingers",
+    "question": "What is the term for 'distal to wrist |'?",
+    "options": [
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Sum of digits",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Fingers",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "every number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Fingers: Fingers are distal to wrist |",
+    "subject_id": "science",
+    "chapter_id": "chscience-10",
+    "section_id": "secscience-10-11-5",
+    "id": "q-auto-32770f9b"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Body planes",
+    "question": "What is the term for 'like cutting a cake: - Sagittal = Cut into left and right halves - Coronal ='?",
+    "options": [
+      {
+        "text": "What they",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Body planes",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "And there",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Imagine math",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Body planes: Body planes are like cutting a cake: - Sagittal = Cut into left and right halves - Coronal =",
+    "subject_id": "science",
+    "chapter_id": "chscience-10",
+    "section_id": "secscience-10-11-5",
+    "id": "q-auto-61bc9c69"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "a patient",
+    "question": "What is the term for 'lying face-down, “anterior” still means the front of the body (now facing the'?",
+    "options": [
+      {
+        "text": "All points",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "What they",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "a patient",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "a patient: a patient is lying face-down, “anterior” still means the front of the body (now facing the",
+    "subject_id": "science",
+    "chapter_id": "chscience-10",
+    "section_id": "secscience-10-11-5",
+    "id": "q-auto-6485281f"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "An atom",
+    "question": "What is the term for 'like a tiny solar system. The nucleus (the sun) contains protons (positive)'?",
+    "options": [
+      {
+        "text": "An atom",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Sum of digits",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "An atom: An atom is like a tiny solar system. The nucleus (the sun) contains protons (positive)",
+    "subject_id": "science",
+    "chapter_id": "chscience-12",
+    "section_id": "secscience-12-12-1",
+    "id": "q-auto-50695700"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "an atom",
+    "question": "What is the term for 'actually empty space — if the nucleus were the size of a marble, the atom'?",
+    "options": [
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "an atom",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "What they",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "an atom: an atom is actually empty space — if the nucleus were the size of a marble, the atom",
+    "subject_id": "science",
+    "chapter_id": "chscience-12",
+    "section_id": "secscience-12-12-1",
+    "id": "q-auto-3c195aa8"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "An atom",
+    "question": "What is the term for 'a nucleus (the boss — protons and neutrons hang out here) surrounded by an'?",
+    "options": [
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "every number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "wall",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "An atom",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "An atom: An atom is a nucleus (the boss — protons and neutrons hang out here) surrounded by an",
+    "subject_id": "science",
+    "chapter_id": "chscience-12",
+    "section_id": "secscience-12-12-1",
+    "id": "q-auto-32770f9b"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Electron configuration",
+    "question": "What is the term for 'like filling a movie theater: - Shells = Floor levels (ground'?",
+    "options": [
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "real numbers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Electron configuration",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Electron configuration: Electron configuration is like filling a movie theater: - Shells = Floor levels (ground",
+    "subject_id": "science",
+    "chapter_id": "chscience-12",
+    "section_id": "secscience-12-12-2",
+    "id": "q-auto-1a3c61ef"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "periodic table",
+    "question": "What is the term for 'The periodic table is not just a list — it’s an organized map. Elements in the same column'?",
+    "options": [
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "periodic table",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "real numbers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "periodic table: The periodic table is not just a list — it’s an organized map. Elements in the same column",
+    "subject_id": "science",
+    "chapter_id": "chscience-12",
+    "section_id": "secscience-12-12-3",
+    "id": "q-auto-e706c0b3"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "some",
+    "question": "What is the term for 'takers (nonmetals), and some are sharers'?",
+    "options": [
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Imagine math",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "some",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "some: some are takers (nonmetals), and some are sharers.",
+    "subject_id": "science",
+    "chapter_id": "chscience-12",
+    "section_id": "secscience-12-12-5",
+    "id": "q-auto-29b29da4"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Which group",
+    "question": "What is the term for 'MOST reactive? (A) Noble Gases (B) Alkali Metals (C) Alkaline'?",
+    "options": [
+      {
+        "text": "Which group",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "But not all numbers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "The Number System",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "A number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Which group: Which group is MOST reactive? (A) Noble Gases (B) Alkali Metals (C) Alkaline",
+    "subject_id": "science",
+    "chapter_id": "chscience-12",
+    "section_id": "secscience-12-12-8",
+    "id": "q-auto-e706c0b3"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Which",
+    "question": "What is the term for 'a cation? (A) Cl⁻ (B) O²⁻ (C) Na⁺ (D) F⁻'?",
+    "options": [
+      {
+        "text": "NON-perfect-square",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Which",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "But not all numbers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Which: Which is a cation? (A) Cl⁻ (B) O²⁻ (C) Na⁺ (D) F⁻",
+    "subject_id": "science",
+    "chapter_id": "chscience-12",
+    "section_id": "secscience-12-12-8",
+    "id": "q-auto-38b5e492"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Hydrogen",
+    "question": "What is the term for 'NOT an alkali metal — it’s placed above Group 1 but is a'?",
+    "options": [
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Negative numbers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Hydrogen",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "Which statement",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Hydrogen: Hydrogen is NOT an alkali metal — it’s placed above Group 1 but is a",
+    "subject_id": "science",
+    "chapter_id": "chscience-12",
+    "section_id": "secscience-12-12-10",
+    "id": "q-auto-0e4eb49d"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "A mole",
+    "question": "What is the term for 'just a counting unit — like a “dozen” (12) or a “gross” (144), but much bigger:'?",
+    "options": [
+      {
+        "text": "A mole",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "The Number System",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "A mole: A mole is just a counting unit — like a “dozen” (12) or a “gross” (144), but much bigger:",
+    "subject_id": "science",
+    "chapter_id": "chscience-12",
+    "section_id": "secscience-12-13-2",
+    "id": "q-auto-50695700"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many grams does it have?",
+    "options": [
+      {
+        "text": "10 grams",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "14 grams",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "11 grams",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "12 grams",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "has a mass of exactly 12 grams. The mole connects the invisible world of atoms to the",
+    "subject_id": "science",
+    "chapter_id": "chscience-12",
+    "section_id": "secscience-12-6-022",
+    "id": "q-auto-147270ef"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Limiting Reactant",
+    "question": "What is the term for 'The reactant that runs out first (limits product amount). Excess'?",
+    "options": [
+      {
+        "text": "Imagine math",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Limiting Reactant",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "And there",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Limiting Reactant: Limiting Reactant: The reactant that runs out first (limits product amount). Excess",
+    "subject_id": "science",
+    "chapter_id": "chscience-12",
+    "section_id": "secscience-12-12-01",
+    "id": "q-auto-29b29da4"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Reactant",
+    "question": "What is the term for 'The reactant left over after reaction stops. Percent Yield: (Actual yield /'?",
+    "options": [
+      {
+        "text": "Reactant",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "real numbers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "But not all numbers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Reactant: Reactant: The reactant left over after reaction stops. Percent Yield: (Actual yield /",
+    "subject_id": "science",
+    "chapter_id": "chscience-12",
+    "section_id": "secscience-12-12-01",
+    "id": "q-auto-2572d9a9"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Gas molecules",
+    "question": "What is the term for 'like hyperactive kids in a room — if you squeeze the room smaller'?",
+    "options": [
+      {
+        "text": "All points",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Gas molecules",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Gas molecules: Gas molecules are like hyperactive kids in a room — if you squeeze the room smaller",
+    "subject_id": "science",
+    "chapter_id": "chscience-12",
+    "section_id": "secscience-12-13-3",
+    "id": "q-auto-2572d9a9"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "how many moles of solute",
+    "question": "What is the term for 'in each liter of solution'?",
+    "options": [
+      {
+        "text": "All points",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "how many moles of solute",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "how many moles of solute: how many moles of solute are in each liter of solution.",
+    "subject_id": "science",
+    "chapter_id": "chscience-12",
+    "section_id": "secscience-12-13-4",
+    "id": "q-auto-cf29bc33"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Acids",
+    "question": "What is the term for 'sour (think lemon juice), bases are bitter (think baking soda). The pH scale'?",
+    "options": [
+      {
+        "text": "But not all numbers",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Acids",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Acids: Acids are sour (think lemon juice), bases are bitter (think baking soda). The pH scale",
+    "subject_id": "science",
+    "chapter_id": "chscience-12",
+    "section_id": "secscience-12-13-5",
+    "id": "q-auto-e706c0b3"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Which",
+    "question": "What is the term for 'a base? (A) HCl (B) H₂SO₄ (C) NaOH (D) CH₃COOH'?",
+    "options": [
+      {
+        "text": "Which",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Imagine math",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Which: Which is a base? (A) HCl (B) H₂SO₄ (C) NaOH (D) CH₃COOH",
+    "subject_id": "science",
+    "chapter_id": "chscience-12",
+    "section_id": "secscience-12-13-7",
+    "id": "q-auto-38b5e492"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Motion",
+    "question": "What is the term for 'everywhere — a jeepney accelerating, a basketball falling, your hand moving'?",
+    "options": [
+      {
+        "text": "Negative numbers",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Motion",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Motion: Motion is everywhere — a jeepney accelerating, a basketball falling, your hand moving",
+    "subject_id": "science",
+    "chapter_id": "chscience-14",
+    "section_id": "secscience-14-14-1",
+    "id": "q-auto-50695700"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Free Fall",
+    "question": "What is the term for 'a = g = 9.8 m/s² (≈ 10 m/s² for quick CET calculations) - Objects accelerate'?",
+    "options": [
+      {
+        "text": "Free Fall",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "But not all numbers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "wall",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Free Fall: Free Fall: a = g = 9.8 m/s² (≈ 10 m/s² for quick CET calculations) - Objects accelerate",
+    "subject_id": "science",
+    "chapter_id": "chscience-14",
+    "section_id": "secscience-14-14-1",
+    "id": "q-auto-27cd1219"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Solution",
+    "question": "What is the term for 'a = Δv/Δt = (30 − 10)/5 = 20/5 = 4 m/s² Answer: 4 m/s²'?",
+    "options": [
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Exactly ONE",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Solution",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "number line",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Solution: Solution: a = Δv/Δt = (30 − 10)/5 = 20/5 = 4 m/s² Answer: 4 m/s².",
+    "subject_id": "science",
+    "chapter_id": "chscience-14",
+    "section_id": "secscience-14-14-1",
+    "id": "q-auto-29901d9e"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Acceleration due to gravity",
+    "question": "What is the term for 'constant at −9.8 m/s² throughout motion. Step 3: Many'?",
+    "options": [
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Acceleration due to gravity",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "real numbers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Acceleration due to gravity: Acceleration due to gravity is constant at −9.8 m/s² throughout motion. Step 3: Many",
+    "subject_id": "science",
+    "chapter_id": "chscience-14",
+    "section_id": "secscience-14-14-1",
+    "id": "q-auto-470ca474"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Energy",
+    "question": "What is the term for 'never created or destroyed — it just changes form. When you lift a book, you'?",
+    "options": [
+      {
+        "text": "Which statement",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "number line",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Energy",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Energy: Energy is never created or destroyed — it just changes form. When you lift a book, you",
+    "subject_id": "science",
+    "chapter_id": "chscience-14",
+    "section_id": "secscience-14-14-3",
+    "id": "q-auto-e706c0b3"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Momentum",
+    "question": "What is the term for '“mass in motion” — p = mv. A freight train moving slowly has huge'?",
+    "options": [
+      {
+        "text": "Momentum",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "All points",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "number line",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Momentum: Momentum is “mass in motion” — p = mv. A freight train moving slowly has huge",
+    "subject_id": "science",
+    "chapter_id": "chscience-14",
+    "section_id": "secscience-14-14-5",
+    "id": "q-auto-e706c0b3"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "A wave",
+    "question": "What is the term for 'a disturbance that carries energy without moving matter. Think of ripples on a'?",
+    "options": [
+      {
+        "text": "A wave",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "The Number System",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "What they",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "A wave: A wave is a disturbance that carries energy without moving matter. Think of ripples on a",
+    "subject_id": "science",
+    "chapter_id": "chscience-15",
+    "section_id": "secscience-15-15-1",
+    "id": "q-auto-cf29bc33"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Sound and light",
+    "question": "What is the term for 'both waves, but they’re fundamentally different. Sound needs air (or'?",
+    "options": [
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Sound and light",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "But not all numbers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Imagine math",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Sound and light: Sound and light are both waves, but they’re fundamentally different. Sound needs air (or",
+    "subject_id": "science",
+    "chapter_id": "chscience-15",
+    "section_id": "secscience-15-15-2",
+    "id": "q-auto-e706c0b3"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Electricity",
+    "question": "What is the term for 'the flow of electrons — like water flowing through pipes. Voltage is the'?",
+    "options": [
+      {
+        "text": "wall",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Which statement",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Sum of digits",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Electricity",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Electricity: Electricity is the flow of electrons — like water flowing through pipes. Voltage is the",
+    "subject_id": "science",
+    "chapter_id": "chscience-15",
+    "section_id": "secscience-15-15-4",
+    "id": "q-auto-e706c0b3"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "resistance",
+    "question": "What is the term for 'how narrow the pipe is. Ohm’s Law (V = IR) connects these three: more'?",
+    "options": [
+      {
+        "text": "resistance",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "NON-perfect-square",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Number System",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "resistance: resistance is how narrow the pipe is. Ohm’s Law (V = IR) connects these three: more",
+    "subject_id": "science",
+    "chapter_id": "chscience-15",
+    "section_id": "secscience-15-15-4",
+    "id": "q-auto-cf29bc33"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Electricity and magnetism",
+    "question": "What is the term for 'two sides of the same coin. Run current through a wire →'?",
+    "options": [
+      {
+        "text": "Negative numbers",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "But not all numbers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "All points",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Electricity and magnetism",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Electricity and magnetism: Electricity and magnetism are two sides of the same coin. Run current through a wire →",
+    "subject_id": "science",
+    "chapter_id": "chscience-15",
+    "section_id": "secscience-15-15-5",
+    "id": "q-auto-e706c0b3"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "We",
+    "question": "What is the term for 'a tiny speck in an unimaginably vast universe. The Sun is one of ~200-400 billion'?",
+    "options": [
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "A number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "We",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "We: We are a tiny speck in an unimaginably vast universe. The Sun is one of ~200-400 billion",
+    "subject_id": "science",
+    "chapter_id": "chscience-15",
+    "section_id": "secscience-15-15-7",
+    "id": "q-auto-e706c0b3"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Which",
+    "question": "What is the term for 'NOT a gas planet? (A) Jupiter (B) Saturn (C) Earth (D) Neptune'?",
+    "options": [
+      {
+        "text": "NON-perfect-square",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Which statement",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Which",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Which: Which is NOT a gas planet? (A) Jupiter (B) Saturn (C) Earth (D) Neptune",
+    "subject_id": "science",
+    "chapter_id": "chscience-15",
+    "section_id": "secscience-15-15-9",
+    "id": "q-auto-b0a54da1"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Marble",
+    "question": "What is the term for 'metamorphic (from limestone), NOT igneous'?",
+    "options": [
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Marble",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "But not all numbers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "And there",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Marble: Marble is metamorphic (from limestone), NOT igneous",
+    "subject_id": "science",
+    "chapter_id": "chscience-15",
+    "section_id": "secscience-15-15-11",
+    "id": "q-auto-cf29bc33"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Environmental",
+    "question": "What is the term for 'Environmental Issues: Climate change — rising seas, stronger typhoons;'?",
+    "options": [
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "What one mistake",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Environmental",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Environmental: Environmental Issues: Climate change — rising seas, stronger typhoons;",
+    "subject_id": "science",
+    "chapter_id": "chscience-11",
+    "section_id": "secscience-11-16-5",
+    "id": "q-auto-2572d9a9"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "One Thing to Never Forget",
+    "question": "What is the term for 'The 10% rule applies to energy, not biomass or'?",
+    "options": [
+      {
+        "text": "One Thing to Never Forget",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "Sum of digits",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "These rules",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "All points",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "One Thing to Never Forget: One Thing to Never Forget: The 10% rule applies to energy, not biomass or",
+    "subject_id": "science",
+    "chapter_id": "chscience-11",
+    "section_id": "secscience-11-16-7",
+    "id": "q-auto-38b5e492"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Corals",
+    "question": "What is the term for 'keystone species — not just “important,” but essential'?",
+    "options": [
+      {
+        "text": "A number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "All points",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "But not all numbers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Corals",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Corals: Corals are keystone species — not just “important,” but essential",
+    "subject_id": "science",
+    "chapter_id": "chscience-11",
+    "section_id": "secscience-11-16-8",
+    "id": "q-auto-3c195aa8"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many Parts does it have?",
+    "options": [
+      {
+        "text": "8 Parts",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "7 Parts",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "10 Parts",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "9 Parts",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Master the fundamentals of 17.1 The 8 Parts of Speech before moving on.",
+    "subject_id": "english",
+    "chapter_id": "chenglish-17",
+    "section_id": "secenglish-17-17-1",
+    "id": "q-auto-619d78ff"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many Parts does Understanding 17.1 The 8 Parts of Speech have?",
+    "options": [
+      {
+        "text": "6 Parts",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "8 Parts",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "10 Parts",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "24 Parts",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Understanding 17.1 The 8 Parts of Speech is key to performing well on the CET. Focus",
+    "subject_id": "english",
+    "chapter_id": "chenglish-17",
+    "section_id": "secenglish-17-17-1",
+    "id": "q-auto-0e66e65d"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many types does it have?",
+    "options": [
+      {
+        "text": "7 types",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "9 types",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "8 types",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "24 types",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "on core concepts and their application. 3. The Build-Up Parts of Speech (8 types): Part of Speech Definition",
+    "subject_id": "english",
+    "chapter_id": "chenglish-17",
+    "section_id": "secenglish-17-17-1",
+    "id": "q-auto-c7c10529"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many miles does it have?",
+    "options": [
+      {
+        "text": "9 miles",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "3 miles",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "4 miles",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "2 miles",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "to present (“I have walked 3 miles today.” / “I have lived here for 5 years.”) - Past",
+    "subject_id": "english",
+    "chapter_id": "chenglish-17",
+    "section_id": "secenglish-17-17-4",
+    "id": "q-auto-08e9625d"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many years does it have?",
+    "options": [
+      {
+        "text": "15 years",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "6 years",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "5 years",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "7 years",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Example 1 (Concrete): Q: “I ______ English for 5 years.” (started 5 years ago, still",
+    "subject_id": "english",
+    "chapter_id": "chenglish-17",
+    "section_id": "secenglish-17-17-4",
+    "id": "q-auto-4b25c2fb"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Actor",
+    "question": "What is the term for 'unimportant: “Rice is grown in the Philippines.” (Who grows it?) 3. Formal/'?",
+    "options": [
+      {
+        "text": "A number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "What one mistake",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "number",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Actor",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Actor: Actor is unimportant: “Rice is grown in the Philippines.” (Who grows it?) 3. Formal/",
+    "subject_id": "english",
+    "chapter_id": "chenglish-17",
+    "section_id": "secenglish-17-17-5",
+    "id": "q-auto-8caa88e7"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Overusing passive - Passive",
+    "question": "What is the term for 'wordier and less clear (use active when possible)'?",
+    "options": [
+      {
+        "text": "Overusing passive - Passive",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "Imagine math",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Which statement",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "What one mistake",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Overusing passive - Passive: Overusing passive - Passive is wordier and less clear (use active when possible)",
+    "subject_id": "english",
+    "chapter_id": "chenglish-17",
+    "section_id": "secenglish-17-17-5",
+    "id": "q-auto-d34fff32"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Patterns",
+    "question": "What is the term for 'everywhere once you train your eye to see them. The CET tests your ability'?",
+    "options": [
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Patterns",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "All points",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "number line",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Patterns: Patterns are everywhere once you train your eye to see them. The CET tests your ability",
+    "subject_id": "english",
+    "chapter_id": "chenglish-18",
+    "section_id": "secenglish-18-18-1",
+    "id": "q-auto-897fc310"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Syntax",
+    "question": "What is the term for 'The arrangement of words/phrases to create well-formed sentences'?",
+    "options": [
+      {
+        "text": "What they",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Syntax",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Syntax: Syntax: The arrangement of words/phrases to create well-formed sentences.",
+    "subject_id": "english",
+    "chapter_id": "chenglish-18",
+    "section_id": "secenglish-18-18-1",
+    "id": "q-auto-381a3bd6"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "of books",
+    "question": "What is the term for 'heavy.” (Subject = box, singular)'?",
+    "options": [
+      {
+        "text": "every number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "And there",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "of books",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "of books: of books is heavy.” (Subject = box, singular)",
+    "subject_id": "english",
+    "chapter_id": "chenglish-18",
+    "section_id": "secenglish-18-18-2",
+    "id": "q-auto-3955b53f"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "CET",
+    "question": "What is the term for 'The CET is as much about strategy as it is about knowledge. Knowing the format,'?",
+    "options": [
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Imagine math",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "every number",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "CET",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "CET: The CET is as much about strategy as it is about knowledge. Knowing the format,",
+    "subject_id": "english",
+    "chapter_id": "chenglish-19",
+    "section_id": "secenglish-19-19-1",
+    "id": "q-auto-897fc310"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Many academic words",
+    "question": "What is the term for 'the same in Filipino academic writing'?",
+    "options": [
+      {
+        "text": "number line",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "NON-perfect-square",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Many academic words",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "A number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Many academic words: Many academic words are the same in Filipino academic writing",
+    "subject_id": "english",
+    "chapter_id": "chenglish-19",
+    "section_id": "secenglish-19-19-1",
+    "id": "q-auto-17215dca"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Bill Gates",
+    "question": "What is the term for 'a philanthropist'?",
+    "options": [
+      {
+        "text": "Bill Gates",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "number line",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Negative numbers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Bill Gates: Bill Gates is a philanthropist.",
+    "subject_id": "english",
+    "chapter_id": "chenglish-19",
+    "section_id": "secenglish-19-19-4",
+    "id": "q-auto-3955b53f"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "prince",
+    "question": "What is the term for 'The prince is the successor to the throne.'?",
+    "options": [
+      {
+        "text": "prince",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "Negative numbers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Integers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "What they",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "prince: The prince is the successor to the throne.",
+    "subject_id": "english",
+    "chapter_id": "chenglish-19",
+    "section_id": "secenglish-19-19-4",
+    "id": "q-auto-0f9b6a2b"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "He",
+    "question": "What is the term for 'amenable to new ideas'?",
+    "options": [
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "real numbers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "He",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "He: He is amenable to new ideas.",
+    "subject_id": "english",
+    "chapter_id": "chenglish-20",
+    "section_id": "secenglish-20-20-1",
+    "id": "q-auto-b90d3c67"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Patience",
+    "question": "What is the term for 'intrinsic to teaching'?",
+    "options": [
+      {
+        "text": "Patience",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "All points",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Sum of digits",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "A number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Patience: Patience is intrinsic to teaching.",
+    "subject_id": "english",
+    "chapter_id": "chenglish-20",
+    "section_id": "secenglish-20-20-1",
+    "id": "q-auto-e6af668e"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Smartphones",
+    "question": "What is the term for 'ubiquitous now'?",
+    "options": [
+      {
+        "text": "And there",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "NON-perfect-square",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "real numbers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Smartphones",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Smartphones: Smartphones are ubiquitous now.",
+    "subject_id": "english",
+    "chapter_id": "chenglish-20",
+    "section_id": "secenglish-20-20-1",
+    "id": "q-auto-9601056f"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Many advanced words",
+    "question": "What is the term for 'used in Filipino academic writing'?",
+    "options": [
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Many advanced words",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "wall",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "What one mistake",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Many advanced words: Many advanced words are used in Filipino academic writing",
+    "subject_id": "english",
+    "chapter_id": "chenglish-20",
+    "section_id": "secenglish-20-20-1",
+    "id": "q-auto-debf1ec9"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "company",
+    "question": "What is the term for 'The company is in the red this quarter.'?",
+    "options": [
+      {
+        "text": "Exactly ONE",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "company",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "What they",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "company: The company is in the red this quarter.",
+    "subject_id": "english",
+    "chapter_id": "chenglish-20",
+    "section_id": "secenglish-20-20-2",
+    "id": "q-auto-8caa88e7"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Patalim ng",
+    "question": "What is the term for 'Patalim ng isip'?",
+    "options": [
+      {
+        "text": "Patalim ng",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "What one mistake",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "And there",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Exactly ONE",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Patalim ng: Patalim ng isip",
+    "subject_id": "english",
+    "chapter_id": "chenglish-20",
+    "section_id": "secenglish-20-20-3",
+    "id": "q-auto-b90d3c67"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many Types does it have?",
+    "options": [
+      {
+        "text": "4 Types",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "2 Types",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "3 Types",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "5 Types",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "3. The Build-Up 4 Types of Context Clues:",
+    "subject_id": "english",
+    "chapter_id": "chenglish-20",
+    "section_id": "secenglish-20-20-5",
+    "id": "q-auto-2acdae45"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Main Idea - What",
+    "question": "What is the term for 'the text MOSTLY about?'?",
+    "options": [
+      {
+        "text": "Exactly ONE",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Main Idea - What",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Main Idea - What: Main Idea - What is the text MOSTLY about?",
+    "subject_id": "english",
+    "chapter_id": "chenglish-21",
+    "section_id": "secenglish-21-21-1",
+    "id": "q-auto-f26b6afa"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Inference - What",
+    "question": "What is the term for 'IMPLICIT (not directly stated)?'?",
+    "options": [
+      {
+        "text": "Inference - What",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "All points",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "The Number System",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Inference - What: Inference - What is IMPLICIT (not directly stated)?",
+    "subject_id": "english",
+    "chapter_id": "chenglish-21",
+    "section_id": "secenglish-21-21-1",
+    "id": "q-auto-3955b53f"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Picking a detail as main idea - Main idea",
+    "question": "What is the term for 'BIGGER (summarizes all)'?",
+    "options": [
+      {
+        "text": "Exactly ONE",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Picking a detail as main idea - Main idea",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Picking a detail as main idea - Main idea: Picking a detail as main idea - Main idea is BIGGER (summarizes all)",
+    "subject_id": "english",
+    "chapter_id": "chenglish-21",
+    "section_id": "secenglish-21-21-2",
+    "id": "q-auto-57c5c378"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many hours does Example: - Text: “JM have?",
+    "options": [
+      {
+        "text": "3 hours",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "5 hours",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "15 hours",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "4 hours",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Example: - Text: “JM has studied 5 hours, drank 3 coffees, and looks exhausted.” - Fact:",
+    "subject_id": "english",
+    "chapter_id": "chenglish-21",
+    "section_id": "secenglish-21-21-3",
+    "id": "q-auto-e14a3868"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many years does Example 1 (Concrete): Q: Text: “Lola Maria have?",
+    "options": [
+      {
+        "text": "32 years",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "28 years",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "31 years",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "30 years",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Example 1 (Concrete): Q: Text: “Lola Maria has owned her sari-sari store for 30 years.",
+    "subject_id": "english",
+    "chapter_id": "chenglish-21",
+    "section_id": "secenglish-21-21-3",
+    "id": "q-auto-da392c8e"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many Steps does it have?",
+    "options": [
+      {
+        "text": "5 Steps",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "6 Steps",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "7 Steps",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "15 Steps",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "3. The Build-Up The CET Reading Strategy (5 Steps):",
+    "subject_id": "english",
+    "chapter_id": "chenglish-21",
+    "section_id": "secenglish-21-21-6",
+    "id": "q-auto-2acdae45"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many hours does lazy. - B) JM have?",
+    "options": [
+      {
+        "text": "11 hours",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "12 hours",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "30 hours",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "10 hours",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "lazy. - B) JM is preparing for an exam. - C) JM hates coffee. - D) JM studied for 10 hours.",
+    "subject_id": "english",
+    "chapter_id": "chenglish-21",
+    "section_id": "secenglish-21-21-6",
+    "id": "q-auto-da392c8e"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many years does 8. Text: “Lola have?",
+    "options": [
+      {
+        "text": "32 years",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "28 years",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "30 years",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "31 years",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "8. Text: “Lola has owned sari-sari store for 30 years. Everyone knows her.” What",
+    "subject_id": "english",
+    "chapter_id": "chenglish-21",
+    "section_id": "secenglish-21-21-6",
+    "id": "q-auto-783d9896"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Analogy Format",
+    "question": "What is the term for 'A : B :: C : D (A is to B as C is to D)'?",
+    "options": [
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Number System",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "These rules",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Analogy Format",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Analogy Format: Analogy Format: A : B :: C : D (A is to B as C is to D)",
+    "subject_id": "english",
+    "chapter_id": "chenglish-22",
+    "section_id": "secenglish-22-22-1",
+    "id": "q-auto-f26b6afa"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Hot and Warm",
+    "question": "What is the term for 'synonyms, like Cold and'?",
+    "options": [
+      {
+        "text": "What they",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "number line",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "And there",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Hot and Warm",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Hot and Warm: Hot and Warm are synonyms, like Cold and",
+    "subject_id": "english",
+    "chapter_id": "chenglish-22",
+    "section_id": "secenglish-22-22-1",
+    "id": "q-auto-57d8c9f0"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Hot",
+    "question": "What is the term for 'opposite of Cold, like Happy is'?",
+    "options": [
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Hot",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "And there",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Hot: Hot is opposite of Cold, like Happy is",
+    "subject_id": "english",
+    "chapter_id": "chenglish-22",
+    "section_id": "secenglish-22-22-1",
+    "id": "q-auto-e3b03bbc"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Wheel",
+    "question": "What is the term for 'PART of Car, like Page is PART of'?",
+    "options": [
+      {
+        "text": "Integers",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Number System",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Wheel",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Wheel: Wheel is PART of Car, like Page is PART of",
+    "subject_id": "english",
+    "chapter_id": "chenglish-22",
+    "section_id": "secenglish-22-22-1",
+    "id": "q-auto-17215dca"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Rose",
+    "question": "What is the term for 'a TYPE of Flower, like Dog is a TYPE'?",
+    "options": [
+      {
+        "text": "Rose",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "Integers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "These rules",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Rose: Rose is a TYPE of Flower, like Dog is a TYPE",
+    "subject_id": "english",
+    "chapter_id": "chenglish-22",
+    "section_id": "secenglish-22-22-1",
+    "id": "q-auto-5b98e349"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Pen",
+    "question": "What is the term for 'USED to Write, like Knife is USED to'?",
+    "options": [
+      {
+        "text": "Exactly ONE",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "NON-perfect-square",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Pen",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Pen: Pen is USED to Write, like Knife is USED to",
+    "subject_id": "english",
+    "chapter_id": "chenglish-22",
+    "section_id": "secenglish-22-22-1",
+    "id": "q-auto-512672e7"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Warm",
+    "question": "What is the term for 'LESS Hot, like Cool is LESS Cold'?",
+    "options": [
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "wall",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Warm",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Warm: Warm is LESS Hot, like Cool is LESS Cold",
+    "subject_id": "english",
+    "chapter_id": "chenglish-22",
+    "section_id": "secenglish-22-22-1",
+    "id": "q-auto-dc3fccb6"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "birds",
+    "question": "What is the term for 'penguins. - D) Some birds are not penguins. Answer: A) Penguin can'?",
+    "options": [
+      {
+        "text": "All points",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "birds",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "birds: birds are penguins. - D) Some birds are not penguins. Answer: A) Penguin can",
+    "subject_id": "english",
+    "chapter_id": "chenglish-22",
+    "section_id": "secenglish-22-22-2",
+    "id": "q-auto-978d1a66"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Socrates",
+    "question": "What is the term for 'mortal. - Result: VALID deduction = 100% certain (if premises true)'?",
+    "options": [
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "A number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Socrates",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Socrates: Socrates is mortal. - Result: VALID deduction = 100% certain (if premises true)",
+    "subject_id": "english",
+    "chapter_id": "chenglish-22",
+    "section_id": "secenglish-22-22-3",
+    "id": "q-auto-b90d3c67"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Distract from main",
+    "question": "What is the term for 'Distract from main issue'?",
+    "options": [
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Distract from main",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "And there",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Distract from main: Distract from main issue",
+    "subject_id": "english",
+    "chapter_id": "chenglish-22",
+    "section_id": "secenglish-22-22-4",
+    "id": "q-auto-852c923f"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "dogs",
+    "question": "What is the term for 'Buddy. - C) Buddy has no tail. - D) Some dogs have no tails'?",
+    "options": [
+      {
+        "text": "dogs",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "Integers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "What they",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "every number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "dogs: dogs are Buddy. - C) Buddy has no tail. - D) Some dogs have no tails.",
+    "subject_id": "english",
+    "chapter_id": "chenglish-22",
+    "section_id": "secenglish-22-22-5",
+    "id": "q-auto-1ea5e0c2"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Fast",
+    "question": "What is the term for 'OPPOSITE Slow 9. A - Deductive: All dogs → tails, Buddy → dog, ∴ Buddy →'?",
+    "options": [
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Fast",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Exactly ONE",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Fast: Fast is OPPOSITE Slow 9. A - Deductive: All dogs → tails, Buddy → dog, ∴ Buddy →",
+    "subject_id": "english",
+    "chapter_id": "chenglish-22",
+    "section_id": "secenglish-22-22-5",
+    "id": "q-auto-6f56d90d"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Parenthetical",
+    "question": "What is the term for 'The book, which is red, is mine'?",
+    "options": [
+      {
+        "text": "Parenthetical",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "These rules",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Parenthetical: Parenthetical: The book, which is red, is mine.",
+    "subject_id": "english",
+    "chapter_id": "chenglish-24",
+    "section_id": "secenglish-24-24-2",
+    "id": "q-auto-352db6bc"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Coordinate adjectives",
+    "question": "What is the term for 'A hot, humid day'?",
+    "options": [
+      {
+        "text": "Sum of digits",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Coordinate adjectives",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "Which statement",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Coordinate adjectives: Coordinate adjectives: A hot, humid day.",
+    "subject_id": "english",
+    "chapter_id": "chenglish-24",
+    "section_id": "secenglish-24-24-2",
+    "id": "q-auto-17215dca"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Possessive",
+    "question": "What is the term for 'The girl’s book (singular), The girls’ books (plural)'?",
+    "options": [
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Number System",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "But not all numbers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Possessive",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Possessive: Possessive: The girl’s book (singular), The girls’ books (plural)",
+    "subject_id": "english",
+    "chapter_id": "chenglish-24",
+    "section_id": "secenglish-24-24-2",
+    "id": "q-auto-852c923f"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "books",
+    "question": "What is the term for 'on the table. - B) The girls’ books are on the table. - C) The girls books'?",
+    "options": [
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Integers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "books",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "books: books are on the table. - B) The girls’ books are on the table. - C) The girls books",
+    "subject_id": "english",
+    "chapter_id": "chenglish-24",
+    "section_id": "secenglish-24-24-2",
+    "id": "q-auto-ddbf6442"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "books",
+    "question": "What is the term for 'on the table. (Plural “girls” + apostrophe at END = girls’'?",
+    "options": [
+      {
+        "text": "books",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "A number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "properties of operations",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "books: books are on the table. (Plural “girls” + apostrophe at END = girls’",
+    "subject_id": "english",
+    "chapter_id": "chenglish-24",
+    "section_id": "secenglish-24-24-2",
+    "id": "q-auto-dc3fccb6"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "box of books",
+    "question": "What is the term for 'The box of books are heavy.'?",
+    "options": [
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "These rules",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "box of books",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "box of books: The box of books are heavy.",
+    "subject_id": "english",
+    "chapter_id": "chenglish-24",
+    "section_id": "secenglish-24-24-3",
+    "id": "q-auto-57d8c9f0"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Due to the fact that she",
+    "question": "What is the term for 'happy, everyone knows. - B) Because she is happy, everyone'?",
+    "options": [
+      {
+        "text": "Exactly ONE",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Due to the fact that she",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "These rules",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "number line",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Due to the fact that she: Due to the fact that she is happy, everyone knows. - B) Because she is happy, everyone",
+    "subject_id": "english",
+    "chapter_id": "chenglish-24",
+    "section_id": "secenglish-24-24-5",
+    "id": "q-auto-17215dca"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "sequences - Math",
+    "question": "What is the term for 'Fun - Number patterns, sequences - Softschools.com - Pattern'?",
+    "options": [
+      {
+        "text": "sequences - Math",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "These rules",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "sequences - Math: sequences - Math is Fun - Number patterns, sequences - Softschools.com - Pattern",
+    "subject_id": "abstract",
+    "chapter_id": "chabstract-30",
+    "section_id": "secabstract-30-30-4",
+    "id": "q-auto-b177d743"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many layers does it have?",
+    "options": [
+      {
+        "text": "4 layers",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "6 layers",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "2 layers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "12 layers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "5. B) 4 (1 punch × 4 layers = 4 holes ✓) 6. D) 8 (All 8 corners have 3 painted faces ✓) 7.",
+    "subject_id": "abstract",
+    "chapter_id": "chabstract-32",
+    "section_id": "secabstract-32-32-4",
+    "id": "q-auto-3b4d78a3"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Laguna",
+    "question": "What is the term for 'North of Manila ✓) 9. B) Sphere (Circle → Sphere ✓) 10. B) d (Mirror flips'?",
+    "options": [
+      {
+        "text": "Laguna",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "These rules",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Laguna: Laguna is North of Manila ✓) 9. B) Sphere (Circle → Sphere ✓) 10. B) d (Mirror flips",
+    "subject_id": "abstract",
+    "chapter_id": "chabstract-32",
+    "section_id": "secabstract-32-32-4",
+    "id": "q-auto-89fdfe14"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "North",
+    "question": "What is the term for 'UP - Lagi ay Hilaga sa taas sa mapa'?",
+    "options": [
+      {
+        "text": "North",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "number line",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Sum of digits",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Integers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "North: North is UP - Lagi ay Hilaga sa taas sa mapa",
+    "subject_id": "abstract",
+    "chapter_id": "chabstract-32",
+    "section_id": "secabstract-32-32-4",
+    "id": "q-auto-f9fa437b"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "reasoning - Math",
+    "question": "What is the term for 'Fun - 2D/3D shapes, nets - Softschools.com - Spatial games and'?",
+    "options": [
+      {
+        "text": "reasoning - Math",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "NON-perfect-square",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Which statement",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "reasoning - Math: reasoning - Math is Fun - 2D/3D shapes, nets - Softschools.com - Spatial games and",
+    "subject_id": "abstract",
+    "chapter_id": "chabstract-32",
+    "section_id": "secabstract-32-32-4",
+    "id": "q-auto-0cb46acc"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many Types does Understanding 33.1 Simple Machines (6 Types) have?",
+    "options": [
+      {
+        "text": "7 Types",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "6 Types",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "5 Types",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "18 Types",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Understanding 33.1 Simple Machines (6 Types) is key to performing well on the CET.",
+    "subject_id": "abstract",
+    "chapter_id": "chabstract-33",
+    "section_id": "secabstract-33-33-1",
+    "id": "q-auto-3ccb97cc"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "History on the CET",
+    "question": "What is the term for 'History on the CET isn’t about memorizing every date — it’s about understanding cause'?",
+    "options": [
+      {
+        "text": "What one mistake",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "History on the CET",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "number line",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Imagine math",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "History on the CET: History on the CET isn’t about memorizing every date — it’s about understanding cause",
+    "subject_id": "geninfo",
+    "chapter_id": "chgeninfo-35",
+    "section_id": "secgeninfo-35-35-2",
+    "id": "q-auto-9b39bb0c"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "soon as a stable government",
+    "question": "What is the term for 'established”) - 1934: Tydings-McDuffie Act (set 10-year'?",
+    "options": [
+      {
+        "text": "The Number System",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "soon as a stable government",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Exactly ONE",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "soon as a stable government: soon as a stable government is established”) - 1934: Tydings-McDuffie Act (set 10-year",
+    "subject_id": "geninfo",
+    "chapter_id": "chgeninfo-36",
+    "section_id": "secgeninfo-36-36-1",
+    "id": "q-auto-4a14461d"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many branches does it have?",
+    "options": [
+      {
+        "text": "1 branches",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "3 branches",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "4 branches",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "2 branches",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "1987) 4. 1987 (Current): Corazon Aquino, democratic, 3 branches",
+    "subject_id": "geninfo",
+    "chapter_id": "chgeninfo-37",
+    "section_id": "secgeninfo-37-37-1",
+    "id": "q-auto-c40b3a4b"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many Branches does it have?",
+    "options": [
+      {
+        "text": "3 Branches",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "4 Branches",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "2 Branches",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "6 Branches",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Master the fundamentals of 37.2 Branches of Government (3 Branches) before moving",
+    "subject_id": "geninfo",
+    "chapter_id": "chgeninfo-37",
+    "section_id": "secgeninfo-37-37-2",
+    "id": "q-auto-20794630"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "how they interact",
+    "question": "What is the term for 'essential for the General Information section'?",
+    "options": [
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "how they interact",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "What they",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Negative numbers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "how they interact: how they interact is essential for the General Information section.",
+    "subject_id": "geninfo",
+    "chapter_id": "chgeninfo-37",
+    "section_id": "secgeninfo-37-37-2",
+    "id": "q-auto-bde697ce"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Current",
+    "question": "What is the term for 'Current Issues (2024-2026): - West Philippine Sea (WPS): Territorial disputes with'?",
+    "options": [
+      {
+        "text": "Current",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "wall",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Current: Current Issues (2024-2026): - West Philippine Sea (WPS): Territorial disputes with",
+    "subject_id": "geninfo",
+    "chapter_id": "chgeninfo-37",
+    "section_id": "secgeninfo-37-37-4",
+    "id": "q-auto-de8af6a9"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Current",
+    "question": "What is the term for 'Current Issues (2024-2026):'?",
+    "options": [
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Current",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "Exactly ONE",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Sum of digits",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Current: Current Issues (2024-2026):",
+    "subject_id": "geninfo",
+    "chapter_id": "chgeninfo-37",
+    "section_id": "secgeninfo-37-37-4",
+    "id": "q-auto-3a598ba7"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Borneo",
+    "question": "What is the term for 'Borneo island (Sabah dispute)'?",
+    "options": [
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "every number",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Borneo",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Borneo: Borneo island (Sabah dispute)",
+    "subject_id": "geninfo",
+    "chapter_id": "chgeninfo-38",
+    "section_id": "secgeninfo-38-38-4",
+    "id": "q-auto-900bf486"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many provinces does it have?",
+    "options": [
+      {
+        "text": "7 provinces",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "4 provinces",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "15 provinces",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "5 provinces",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "BARMM: Muslim Mindanao (5 provinces)",
+    "subject_id": "geninfo",
+    "chapter_id": "chgeninfo-38",
+    "section_id": "secgeninfo-38-38-4",
+    "id": "q-auto-82339a9e"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Current",
+    "question": "What is the term for 'Current Issues (2024-2026): - Climate Change: Global warming, rising sea levels,'?",
+    "options": [
+      {
+        "text": "These",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Arithmetic tricks",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "wall",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Current",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Current: Current Issues (2024-2026): - Climate Change: Global warming, rising sea levels,",
+    "subject_id": "geninfo",
+    "chapter_id": "chgeninfo-39",
+    "section_id": "secgeninfo-39-39-5",
+    "id": "q-auto-de8af6a9"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Contemporary",
+    "question": "What is the term for 'Contemporary Issues = Kasalukuyang Isyu'?",
+    "options": [
+      {
+        "text": "These rules",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "What one mistake",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Contemporary",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Contemporary: Contemporary Issues = Kasalukuyang Isyu",
+    "subject_id": "geninfo",
+    "chapter_id": "chgeninfo-39",
+    "section_id": "secgeninfo-39-39-5",
+    "id": "q-auto-f2fcf243"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Key",
+    "question": "What is the term for 'Key Issues'?",
+    "options": [
+      {
+        "text": "Which of these",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Which number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Key",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "A number",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Key: Key Issues",
+    "subject_id": "geninfo",
+    "chapter_id": "chgeninfo-41",
+    "section_id": "secgeninfo-41-41-3",
+    "id": "q-auto-de8af6a9"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Global",
+    "question": "What is the term for 'Global Issues: - Russia-Ukraine War (2022+): PH supports Ukraine (UN votes) -'?",
+    "options": [
+      {
+        "text": "Number System",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Global",
+        "isCorrect": true,
+        "id": "b"
+      },
+      {
+        "text": "number",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "What one mistake",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Global: Global Issues: - Russia-Ukraine War (2022+): PH supports Ukraine (UN votes) -",
+    "subject_id": "geninfo",
+    "chapter_id": "chgeninfo-41",
+    "section_id": "secgeninfo-41-41-3",
+    "id": "q-auto-72f3aac6"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Global",
+    "question": "What is the term for 'Global Issues: - Climate Change: Heatwaves, floods, COP summits (PH vulnerable) -'?",
+    "options": [
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "All points",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Global",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "What one mistake",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Global: Global Issues: - Climate Change: Heatwaves, floods, COP summits (PH vulnerable) -",
+    "subject_id": "geninfo",
+    "chapter_id": "chgeninfo-41",
+    "section_id": "secgeninfo-41-41-4",
+    "id": "q-auto-f2fcf243"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "agreements - UN News - Global",
+    "question": "What is the term for 'agreements - UN News - Global issues, PH contributions'?",
+    "options": [
+      {
+        "text": "real numbers",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "agreements - UN News - Global",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "What they",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "agreements - UN News - Global: agreements - UN News - Global issues, PH contributions",
+    "subject_id": "geninfo",
+    "chapter_id": "chgeninfo-41",
+    "section_id": "secgeninfo-41-41-4",
+    "id": "q-auto-53612fb5"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Performance under pressure",
+    "question": "What is the term for 'a skill. The students who master exam-day stress'?",
+    "options": [
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Imagine math",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Last digit",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Performance under pressure",
+        "isCorrect": true,
+        "id": "d"
+      }
+    ],
+    "explanation": "Performance under pressure: Performance under pressure is a skill. The students who master exam-day stress",
+    "subject_id": "examspec",
+    "chapter_id": "chexamspec-43",
+    "section_id": "secexamspec-43-43-1",
+    "id": "q-auto-6b60c758"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "Dogs",
+    "question": "What is the term for 'loyal pets (Covers whole passage ✓'?",
+    "options": [
+      {
+        "text": "Dogs",
+        "isCorrect": true,
+        "id": "a"
+      },
+      {
+        "text": "These rules",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "Imagine math",
+        "isCorrect": false,
+        "id": "c"
+      },
+      {
+        "text": "Number System",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Dogs: Dogs are loyal pets (Covers whole passage ✓",
+    "subject_id": "examspec",
+    "chapter_id": "chexamspec-44",
+    "section_id": "secexamspec-44-44-3",
+    "id": "q-auto-4afb65c9"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "easy",
+    "type": "definition",
+    "term": "No C",
+    "question": "What is the term for 'B Answer: A) All C are B (Deductive logic ✓'?",
+    "options": [
+      {
+        "text": "If a number",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "Between any two reals",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "No C",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "All integers",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "No C: No C are B Answer: A) All C are B (Deductive logic ✓",
+    "subject_id": "examspec",
+    "chapter_id": "chexamspec-44",
+    "section_id": "secexamspec-44-44-5",
+    "id": "q-auto-6abe1dc7"
+  },
+  {
+    "source_type": "auto-generated",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "How many parts does it have?",
+    "options": [
+      {
+        "text": "1 parts",
+        "isCorrect": false,
+        "id": "a"
+      },
+      {
+        "text": "4 parts",
+        "isCorrect": false,
+        "id": "b"
+      },
+      {
+        "text": "3 parts",
+        "isCorrect": true,
+        "id": "c"
+      },
+      {
+        "text": "5 parts",
+        "isCorrect": false,
+        "id": "d"
+      }
+    ],
+    "explanation": "Example 1 (Concrete): Q: Freud’s 3 parts of personality? - A) Id, Ego, Superego ✓ -",
+    "subject_id": "specialized",
+    "chapter_id": "chspecialized-45",
+    "section_id": "secspecialized-45-45-3",
+    "id": "q-auto-bb8ef175"
+  }
+]

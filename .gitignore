@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+scripts/__pycache__/
+.hermes/
+*.backup
+*.bak2
+*.post_spacefix
+node_modules/
+.env
+*.bak
+*.bak2
+*.backup
+*.post_spacefix
+*.full_backup
+*_backup
+*.pre_dedup_bak
+*.pre_merge_bak

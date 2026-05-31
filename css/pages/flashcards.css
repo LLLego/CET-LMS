@@ -1,0 +1,211 @@
+/* Flashcards page specific styles */
+
+.flashcard-container {
+  perspective: 1000px;
+  margin-bottom: var(--space-5);
+  cursor: pointer;
+  min-height: 220px;
+}
+
+.flashcard {
+  position: relative;
+  width: 100%;
+  min-height: 220px;
+  transition: transform 0.5s var(--ease-snappy);
+  transform-style: preserve-3d;
+}
+
+.flashcard.flipped {
+  transform: rotateY(180deg);
+}
+
+.flashcard-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  padding: var(--space-8);
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 220px;
+}
+
+.flashcard-face.back {
+  transform: rotateY(180deg);
+}
+
+.flashcard-face .fc-label {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  margin-bottom: var(--space-2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: var(--weight-semibold);
+}
+
+.flashcard-face .fc-term {
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+}
+
+.flashcard-face .fc-def {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
+  max-width: 500px;
+}
+
+.flashcard-face .fc-hint {
+  position: absolute;
+  bottom: var(--space-4);
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  opacity: 0.6;
+}
+
+/* Controls */
+.fc-controls {
+  display: flex;
+  gap: var(--space-2);
+  justify-content: center;
+  margin-top: var(--space-5);
+  flex-wrap: wrap;
+}
+
+.fc-btn {
+  padding: var(--space-2) var(--space-5);
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  cursor: pointer;
+  transition: transform var(--duration-fast) var(--ease-snappy), opacity var(--duration-fast) var(--ease-snappy), box-shadow var(--duration-fast) var(--ease-snappy);
+}
+
+.fc-btn:hover {
+  transform: translateY(-1px);
+}
+
+.fc-btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.fc-btn:active {
+  transform: translateY(0);
+}
+
+.fc-btn.prev {
+  background: var(--bg-hover);
+  color: var(--text-secondary);
+}
+.fc-btn.prev:hover {
+  background: var(--border);
+  color: var(--text);
+}
+
+.fc-btn.next {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+.fc-btn.next:hover {
+  background: var(--color-primary-hover);
+}
+
+.fc-btn.know {
+  background: var(--color-success);
+  color: var(--text);
+}
+.fc-btn.know:hover {
+  filter: brightness(1.1);
+}
+
+.fc-btn.review {
+  background: var(--color-warning);
+  color: var(--text);
+}
+.fc-btn.review:hover {
+  filter: brightness(1.1);
+}
+
+/* Progress bar */
+.fc-progress {
+  height: 6px;
+  background: var(--bg-hover);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: var(--space-4);
+}
+
+.fc-progress .fill {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-hover));
+  transition: width 0.4s var(--ease-snappy);
+}
+
+.fc-counter {
+  text-align: center;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  margin-top: var(--space-3);
+}
+
+.fc-deck-complete {
+  text-align: center;
+  padding: var(--space-8);
+}
+
+.fc-deck-complete .fc-complete-icon {
+  font-size: 48px;
+  margin-bottom: var(--space-4);
+}
+
+.fc-deck-complete h3 {
+  margin-bottom: var(--space-2);
+}
+
+.fc-deck-complete p {
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+}
+
+@media (max-width: 768px) {
+  .flashcard-face {
+    padding: var(--space-6);
+    min-height: 180px;
+  }
+
+  .flashcard-face .fc-term {
+    font-size: var(--text-xl);
+  }
+
+  .fc-controls {
+    gap: var(--space-1);
+  }
+
+  .fc-btn {
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--text-xs);
+  }
+}
+
+@media (max-width: 480px) {
+  .flashcard-face {
+    padding: var(--space-5);
+    min-height: 160px;
+  }
+
+  .fc-controls {
+    flex-wrap: wrap;
+  }
+}

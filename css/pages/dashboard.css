@@ -1,0 +1,158 @@
+/* Dashboard page specific styles */
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  margin-bottom: var(--space-7);
+}
+
+.stat-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  text-align: center;
+  transition: transform var(--duration-fast) var(--ease-snappy), opacity var(--duration-fast) var(--ease-snappy), box-shadow var(--duration-fast) var(--ease-snappy);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gradient top border always visible */
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  opacity: 0.6;
+  transition: opacity var(--duration-fast) var(--ease-snappy);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+/* Color-coded gradient top borders */
+.stat-card:nth-child(1)::before { background: linear-gradient(90deg, var(--color-secondary), var(--color-primary)); }
+.stat-card:nth-child(2)::before { background: linear-gradient(90deg, var(--color-success), var(--color-primary)); }
+.stat-card:nth-child(3)::before { background: linear-gradient(90deg, var(--color-warning), var(--color-orange-accent)); }
+.stat-card:nth-child(4)::before { background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); }
+
+.stat-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.stat-card:hover::before {
+  opacity: 1;
+  height: 4px;
+}
+
+.stat-card .stat-num {
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-bold);
+  line-height: 1;
+}
+
+.stat-card .stat-label {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  margin-top: var(--space-1);
+}
+
+/* Quick Resume Card */
+.quick-resume {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  margin-bottom: var(--space-6);
+  cursor: pointer;
+  transition: transform var(--duration-fast) var(--ease-snappy), opacity var(--duration-fast) var(--ease-snappy), box-shadow var(--duration-fast) var(--ease-snappy);
+}
+
+.quick-resume:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.quick-resume .qr-title {
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-sm);
+  color: var(--text);
+  margin-bottom: var(--space-1);
+}
+
+.quick-resume .qr-subtitle {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+}
+
+/* Week Chart */
+.week-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-3);
+  height: 100px;
+  padding: var(--space-4);
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.week-bar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.week-bar .bar {
+  width: 100%;
+  max-width: 32px;
+  border-radius: 4px 4px 0 0;
+  background: linear-gradient(180deg, var(--color-primary), var(--color-primary-hover));
+  transition: height 0.6s var(--ease-snappy);
+  min-height: 4px;
+}
+
+.week-bar .bar-label {
+  font-size: 10px;
+  color: var(--text-tertiary);
+}
+
+.section-title {
+  font-size: var(--text-base);
+  font-weight: var(--weight-semibold);
+  margin-bottom: var(--space-4);
+  color: var(--text);
+}
+
+/* ===== Responsive Breakpoints ===== */
+@media (max-width: 768px) {
+  .stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .week-chart {
+    height: 80px;
+    gap: var(--space-2);
+    padding: var(--space-3);
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-row {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    padding: var(--space-3);
+  }
+
+  .stat-card .stat-num {
+    font-size: var(--text-2xl);
+  }
+}

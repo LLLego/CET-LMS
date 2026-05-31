@@ -1,0 +1,126 @@
+/* ===== Typography — CET LMS ===== */
+/* Outfit for headings, Plus Jakarta Sans for UI, Noto Serif for reading */
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: var(--text-3xl); font-weight: var(--weight-extrabold); letter-spacing: -0.025em; }
+h2 { font-size: var(--text-2xl); letter-spacing: -0.02em; }
+h3 { font-size: var(--text-xl); }
+h4 { font-size: var(--text-lg); }
+
+p {
+  margin-bottom: var(--space-4);
+  line-height: var(--leading-normal);
+}
+
+small, .text-sm {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.text-xs {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+}
+
+.text-mono {
+  font-family: var(--font-mono);
+}
+
+.text-serif {
+  font-family: var(--font-serif);
+}
+
+/* ===== Reader typography — long-form content ===== */
+.reader-text {
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--text);
+}
+
+.reader-text h2 {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  margin-top: var(--space-10);
+  margin-bottom: var(--space-5);
+}
+
+.reader-text h3 {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  margin-top: var(--space-10);
+  margin-bottom: var(--space-4);
+}
+
+.reader-text p {
+  margin-bottom: var(--space-6);
+  line-height: var(--leading-relaxed);
+}
+
+.reader-text .definition {
+  background: var(--color-secondary-glow);
+  border-left: 3px solid var(--color-secondary);
+  padding: var(--space-4) var(--space-5);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  margin: var(--space-5) 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+}
+
+.reader-text .definition .term {
+  font-weight: var(--weight-bold);
+  color: var(--color-secondary);
+}
+
+.reader-text .example {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  margin: var(--space-5) 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+}
+
+.reader-text .example::before {
+  content: "📝 Example";
+  display: block;
+  font-family: var(--font-heading);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: var(--space-2);
+}
+
+.reader-text .formula {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  text-align: center;
+  padding: var(--space-5);
+  margin: var(--space-5) 0;
+  background: var(--bg-inset);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  line-height: var(--leading-relaxed);
+}
