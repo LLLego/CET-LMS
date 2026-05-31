@@ -7,13 +7,13 @@
 // FIREBASE CONFIG — Replace with your project
 // ══════════════════════════════════════════════
 const FIREBASE_CONFIG = {
-  apiKey: "REPLACE_WITH_YOUR_API_KEY",
-  authDomain: "REPLACE_WITH_YOUR_PROJECT.firebaseapp.com",
-  databaseURL: "https://REPLACE_WITH_YOUR_PROJECT-default-rtdb.firebaseio.com",
-  projectId: "REPLACE_WITH_YOUR_PROJECT",
-  storageBucket: "REPLACE_WITH_YOUR_PROJECT.appspot.com",
-  messagingSenderId: "REPLACE_WITH_YOUR_SENDER_ID",
-  appId: "REPLACE_WITH_YOUR_APP_ID"
+  apiKey: "AIzaSyBBsCXpvxinl5VF9L33UGWmpWOm6xv4L00",
+  authDomain: "cetlms-61bc5.firebaseapp.com",
+  databaseURL: "https://cetlms-61bc5-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "cetlms-61bc5",
+  storageBucket: "cetlms-61bc5.firebasestorage.app",
+  messagingSenderId: "840813082507",
+  appId: "1:840813082507:web:4f9dd62b73dd74066ea18e"
 };
 
 // ══════════════════════════════════════════════
