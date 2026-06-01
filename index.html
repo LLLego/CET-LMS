@@ -42,32 +42,43 @@
  <link rel="manifest" href="manifest.json?v=4">
  
  <!-- Login modal styles -->
- <link rel="stylesheet" href="css/pages/login.css?v=1">
+ <link rel="stylesheet" href="css/pages/login.css?v=2">
 </head>
 <body>
 <!-- Login Modal -->
 <div class="login-overlay hidden" id="loginOverlay">
   <div class="login-modal">
     <div class="login-brand"><span>◆</span> CET <span>LMS</span></div>
-    <div class="login-subtitle">Sign in to sync your progress across devices</div>
-    
-    <div class="login-field">
-      <label for="loginUsername">Username</label>
-      <input type="text" id="loginUsername" placeholder="Enter your name" autocomplete="username" autocapitalize="none" spellcheck="false">
+
+    <!-- Step 1: Choice screen -->
+    <div id="loginChoice">
+      <div class="login-subtitle">Your College Entrance Test Study Hub</div>
+      <div class="login-choice-buttons">
+        <button class="login-btn login-btn-primary" id="loginChoiceSignIn">Sign In</button>
+        <button class="login-btn login-btn-secondary" id="loginChoiceRegister">Create Account</button>
+      </div>
+      <span class="login-offline-badge" id="loginOfflineBadge" style="display:none;">Offline mode — progress saved locally</span>
     </div>
-    
-    <div class="login-field">
-      <label for="loginPassword">Password</label>
-      <input type="password" id="loginPassword" placeholder="Enter your password" autocomplete="current-password">
+
+    <!-- Step 2: Form (shared for login + register) -->
+    <div id="loginForm" style="display:none;">
+      <div class="login-subtitle" id="loginFormSubtitle">Sign in to sync your progress across devices</div>
+      <div class="login-back" id="loginBack">← Back</div>
+
+      <div class="login-field">
+        <label for="loginUsername">Username</label>
+        <input type="text" id="loginUsername" placeholder="Enter your name" autocomplete="username" autocapitalize="none" spellcheck="false">
+      </div>
+
+      <div class="login-field">
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" placeholder="Enter your password" autocomplete="current-password">
+      </div>
+
+      <button class="login-btn login-btn-primary" id="loginBtn">Sign In</button>
+
+      <div class="login-error" id="loginError"></div>
     </div>
-    
-    <button class="login-btn" id="loginBtn">Sign In</button>
-    
-    <div class="login-error" id="loginError"></div>
-    
-    <span class="login-offline-badge" id="loginOfflineBadge" style="display:none;">Offline mode — progress saved locally</span>
-    
-    <div class="login-hint">First time? Pick a username and password to create your account.</div>
   </div>
 </div>
 

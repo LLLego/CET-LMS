@@ -138,30 +138,67 @@ function showLoginModal() {
   if (!overlay) return;
   overlay.classList.remove('hidden');
 
+  const choiceEl = document.getElementById('loginChoice');
+  const formEl = document.getElementById('loginForm');
+  const choiceSignIn = document.getElementById('loginChoiceSignIn');
+  const choiceRegister = document.getElementById('loginChoiceRegister');
+  const backBtn = document.getElementById('loginBack');
+  const subtitle = document.getElementById('loginFormSubtitle');
+  const loginBtn = document.getElementById('loginBtn');
   const usernameInput = document.getElementById('loginUsername');
   const passwordInput = document.getElementById('loginPassword');
-  const loginBtn = document.getElementById('loginBtn');
-  const errorEl = document.getElementById('loginError');
   const offlineBadge = document.getElementById('loginOfflineBadge');
+
+  // Track mode: 'login' or 'register'
+  let mode = 'login';
+
+  function showChoice() {
+    choiceEl.style.display = '';
+    formEl.style.display = 'none';
+    hideLoginError();
+    usernameInput.value = '';
+    passwordInput.value = '';
+  }
+
+  function showForm(m) {
+    mode = m;
+    choiceEl.style.display = 'none';
+    formEl.style.display = '';
+    hideLoginError();
+    if (m === 'register') {
+      subtitle.textContent = 'Pick a username and password to create your account';
+      loginBtn.textContent = 'Create Account';
+      usernameInput.placeholder = 'Choose a username';
+      passwordInput.placeholder = 'Choose a password';
+    } else {
+      subtitle.textContent = 'Sign in to sync your progress across devices';
+      loginBtn.textContent = 'Sign In';
+      usernameInput.placeholder = 'Enter your username';
+      passwordInput.placeholder = 'Enter your password';
+    }
+    setTimeout(() => usernameInput.focus(), 100);
+  }
 
   // Show offline badge if Firebase isn't available
   if (!isFirebaseReady() && offlineBadge) {
     offlineBadge.style.display = 'inline-block';
   }
 
-  // Focus username input
-  setTimeout(() => usernameInput && usernameInput.focus(), 100);
+  // Choice buttons
+  choiceSignIn.addEventListener('click', () => showForm('login'));
+  choiceRegister.addEventListener('click', () => showForm('register'));
+  backBtn.addEventListener('click', showChoice);
 
-  // Login button handler
+  // Login/Register button handler
   loginBtn.addEventListener('click', async () => {
-    await handleLogin();
+    await handleLogin(mode);
   });
 
   // Enter key on password field
   passwordInput.addEventListener('keydown', async (e) => {
     if (e.key === 'Enter') {
       e.preventDefault();
-      await handleLogin();
+      await handleLogin(mode);
     }
   });
 
@@ -172,9 +209,12 @@ function showLoginModal() {
       passwordInput.focus();
     }
   });
+
+  // Start on choice screen
+  showChoice();
 }
 
-async function handleLogin() {
+async function handleLogin(mode = 'login') {
   const usernameInput = document.getElementById('loginUsername');
   const passwordInput = document.getElementById('loginPassword');
   const loginBtn = document.getElementById('loginBtn');
@@ -200,7 +240,8 @@ async function handleLogin() {
   }
 
   loginBtn.disabled = true;
-  loginBtn.textContent = 'Signing in...';
+  const btnText = mode === 'register' ? 'Creating account...' : 'Signing in...';
+  loginBtn.textContent = btnText;
   hideLoginError();
 
   try {
@@ -225,14 +266,19 @@ async function handleLogin() {
         toast.info(`Welcome back, ${username}!`);
       }
     } else {
-      showLoginError(result.error || 'Login failed');
+      // If in register mode and user already exists, hint to sign in instead
+      if (mode === 'register' && result.error === 'Wrong password') {
+        showLoginError('This username is already taken. Try signing in instead.');
+      } else {
+        showLoginError(result.error || 'Login failed');
+      }
     }
   } catch (err) {
     showLoginError('Connection error — try again');
     console.error('[CET] Login error:', err);
   } finally {
     loginBtn.disabled = false;
-    loginBtn.textContent = 'Sign In';
+    loginBtn.textContent = mode === 'register' ? 'Create Account' : 'Sign In';
   }
 }
 
