@@ -190,16 +190,26 @@ function startQuiz(subjectId, chapterId, difficultyFilter) {
     }
   }
   
+  // Shuffle questions AND shuffle answer options for each question
+  const shuffledQuestions = shuffle(questions).map(q => {
+    const indices = shuffle([0, 1, 2, 3]);
+    return {
+      ...q,
+      _shuffledOpts: indices.map(i => q.opts[i]),
+      _shuffledAns: indices.indexOf(q.ans),
+    };
+  });
+
   quizState = {
     subjectId,
     chapterId,
     difficultyFilter,
-    questions: shuffle(questions),
+    questions: shuffledQuestions,
     current: 0,
-    answers: new Array(questions.length).fill(null),
+    answers: new Array(shuffledQuestions.length).fill(null),
     done: false,
     selected: false,
-    hints: new Array(questions.length).fill(false),
+    hints: new Array(shuffledQuestions.length).fill(false),
   };
 
   const subj = SUBJECTS.find(s => s.id === subjectId);
@@ -235,7 +245,7 @@ function renderQuestion() {
     const dot = document.createElement('div');
     dot.className = 'quiz-dot';
     if (answers[i] !== null) {
-      dot.classList.add(answers[i] === questions[i].ans ? 'correct' : 'wrong');
+      dot.classList.add(answers[i] === questions[i]._shuffledAns ? 'correct' : 'wrong');
     }
     if (i === current) dot.classList.add('current');
     dot.textContent = i + 1;
@@ -259,7 +269,7 @@ function renderQuestion() {
     ${quizState.hints[current] ? '<div class="hint-text">✧ Hint: Think carefully about each option before selecting.</div>' : ''}
     <button class="hint-btn" id="hintBtn">✧ Hint</button>
     <div class="quiz-options" id="qOptions">
-      ${q.opts.map((opt, i) => `
+      ${q._shuffledOpts.map((opt, i) => `
         <div class="quiz-option" data-idx="${i}" onclick="handleQuizAnswer(${i})" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();handleQuizAnswer(${i})}" style="animation-delay:${i * 50}ms">
           <span class="letter">${'ABCD'[i]}</span>
           <span>${escapeHTML(opt)}</span>
@@ -322,13 +332,13 @@ function showFeedback(current) {
   const { answers, questions } = quizState;
   const idx = answers[current];
   if (idx === null) return;
-  const isCorrect = idx === questions[current].ans;
+  const isCorrect = idx === questions[current]._shuffledAns;
 
   const resultDiv = document.getElementById('qResult');
   resultDiv.innerHTML = `
     <div class="quiz-result-text ${isCorrect ? 'correct' : 'wrong'}">
       ${isCorrect ? '✓ Correct!' : '✗ Incorrect'}
-      ${!isCorrect ? `<div class="explanation">Correct answer: <strong>${'ABCD'[questions[current].ans]}. ${escapeHTML(questions[current].opts[questions[current].ans])}</strong></div>` : ''}
+      ${!isCorrect ? `<div class="explanation">Correct answer: <strong>${'ABCD'[questions[current]._shuffledAns]}. ${escapeHTML(questions[current]._shuffledOpts[questions[current]._shuffledAns])}</strong></div>` : ''}
       ${questions[current].explanation ? `<div class="quiz-explanation-box">💡 ${escapeHTML(questions[current].explanation)}</div>` : ''}
     </div>
   `;
@@ -337,8 +347,8 @@ function showFeedback(current) {
   const options = document.querySelectorAll('.quiz-option');
   options.forEach((opt, i) => {
     opt.classList.add('disabled');
-    if (i === questions[current].ans) opt.classList.add('correct');
-    if (i === idx && idx !== questions[current].ans) opt.classList.add('wrong');
+    if (i === questions[current]._shuffledAns) opt.classList.add('correct');
+    if (i === idx && idx !== questions[current]._shuffledAns) opt.classList.add('wrong');
     if (i === idx) opt.classList.add('selected');
   });
 }
@@ -348,7 +358,7 @@ function showResults() {
   const { questions, answers, subjectId } = quizState;
   quizState.done = true;
 
-  const correct = answers.filter((a, i) => a === questions[i].ans).length;
+  const correct = answers.filter((a, i) => a === questions[i]._shuffledAns).length;
   const total = questions.length;
   const pct = Math.round((correct / total) * 100);
 
@@ -375,12 +385,12 @@ function showResults() {
     </div>
     <h3 style="font-size:16px;font-weight:600;margin-bottom:12px;">Review Questions</h3>
     ${questions.map((q, i) => `
-      <div class="quiz-question-card" style="${answers[i] !== q.ans ? 'border-color:var(--color-error);' : 'border-color:var(--color-success);'}">
-        <div class="q-label" style="margin-bottom:4px;">Q${i+1} ${answers[i] === q.ans ? '✓' : '✗'}</div>
+      <div class="quiz-question-card" style="${answers[i] !== q._shuffledAns ? 'border-color:var(--color-error);' : 'border-color:var(--color-success);'}">
+        <div class="q-label" style="margin-bottom:4px;">Q${i+1} ${answers[i] === q._shuffledAns ? '✓' : '✗'}</div>
         <div class="q-text" style="font-size:14px;margin-bottom:8px;">${escapeHTML(q.q)}</div>
         <div style="font-size:13px;color:var(--text-secondary);">
-          Your answer: <strong>${answers[i] !== null ? escapeHTML(q.opts[answers[i]]) : 'Not answered'}</strong>
-          ${answers[i] !== q.ans ? `<br>Correct: <strong style="color:var(--color-success);">${escapeHTML(q.opts[q.ans])}</strong>` : ''}
+          Your answer: <strong>${answers[i] !== null ? escapeHTML(q._shuffledOpts[answers[i]]) : 'Not answered'}</strong>
+          ${answers[i] !== q._shuffledAns ? `<br>Correct: <strong style="color:var(--color-success);">${escapeHTML(q._shuffledOpts[q._shuffledAns])}</strong>` : ''}
         </div>
         ${q.explanation ? `<div class="quiz-explanation-box" style="margin-top:8px;">💡 ${escapeHTML(q.explanation)}</div>` : ''}
       </div>
@@ -430,7 +440,7 @@ window.handleQuizAnswer = function(idx) {
   quizState.selected = true;
   answers[current] = idx;
 
-  const isCorrect = idx === questions[current].ans;
+  const isCorrect = idx === questions[current]._shuffledAns;
   store.recordAnswer(quizState.subjectId, isCorrect);
 
   if (isCorrect) {
