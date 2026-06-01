@@ -19914,6 +19914,66 @@
           "difficulty": "medium",
           "explanation": "Magandang research question ay tiyak (specific), may saklaw (scope), at maaaring sagutin gamit ang datos. Ang malawak na tanong ay mahirap imbestigahan.",
           "chapter": "chfilipino-29"
+        },
+        {
+          "q": "Ano ang tatlong yugto ng proseso ng pagsulat?",
+          "opts": [
+            "Pre-writing, Drafting, Revising",
+            "Reading, Writing, Counting",
+            "Planning, Drawing, Coloring",
+            "Typing, Printing, Publishing"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Tatlong yugto: Pre-writing (pag-iisip at pagre-research), Drafting (pagsulat ng unang bersyon), Revising (pag-edit at pagpapabuti)."
+        },
+        {
+          "q": "Ano ang pagkakaiba ng verbal at non-verbal na komunikasyon?",
+          "opts": [
+            "Verbal = gamit ang salita (pasulat/pasalita); Non-verbal = galaw, mukha, tono",
+            "Pareho lang sila",
+            "Verbal = pasalita lang; Non-verbal = pasulat lang",
+            "Mas importante ang non-verbal"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Verbal — gumagamit ng salita (pasalita o pasulat). Non-verbal — wika ng katawan, ekspresyon ng mukha, tono ng boses, galaw. Parehong mahalaga sa komunikasyon."
+        },
+        {
+          "q": "Ano ang talumpati?",
+          "opts": [
+            "Isang pormal na pagsasalita sa harap ng maraming tao na may panimula, katawan, at konklusyon",
+            "Isang uri ng sanaysay",
+            "Isang kanta",
+            "Isang liham"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Talumpati — pormal na pagsasalita sa harap ng maraming tao. May panimula (hook at thesis), katawan (mga argumento), at konklusyon (buod at panawagan)."
+        },
+        {
+          "q": "Ano ang Copyright at Fair Use?",
+          "opts": [
+            "Ang Copyright ay legal na karapatan ng creator; Fair Use ay limitadong paggamit nang walang pahintulot para sa edukasyon o pagsusuri",
+            "Pareho lang sila",
+            "Ang Copyright ay para sa musika lang",
+            "Ang Fair Use ay nangangahulugang libre lahat"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Copyright — legal na karapatan ng creator sa kanyang likha. Fair Use — limitadong paggamit ng copyrighted material nang walang pahintulot para sa edukasyon, pagsusuri, o balita."
+        },
+        {
+          "q": "Ano ang research ethics?",
+          "opts": [
+            "Ang mga prinsipiyong naggagabay sa tamang pag-uugali sa pananaliksik — katotohanan, integridad, at paggalang sa mga kalahok",
+            "Ang bilang ng sources sa research paper",
+            "Ang haba ng research paper",
+            "Ang ganda ng format ng paper"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Research ethics — mga prinsipyo ng katotohanan (hindi pekehin ang datos), integridad (hindi mag-plagiarize), at paggalang sa mga kalahok (informed consent)."
         }
       ]
     }
