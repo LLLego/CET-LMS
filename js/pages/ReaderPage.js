@@ -54,6 +54,37 @@ function loadSections() {
 }
 
 /**
+ * Get total content length for a section
+ */
+function getSectionContentLength(section) {
+  if (!section) return 0;
+  const blocks = section.content || section.blocks || [];
+  return blocks.reduce((sum, b) => sum + (b.value || b.text || '').length, 0);
+}
+
+/**
+ * Check if a section is sparse (< 100 chars of content)
+ */
+function isSparseSection(section) {
+  return getSectionContentLength(section) < 100;
+}
+
+/**
+ * Find the next non-sparse section index starting from `from` (inclusive).
+ * Returns `from` if it's not sparse, or the next non-sparse, or -1 if none.
+ */
+function findNextSubstantialSection(sections, from) {
+  for (let i = from; i < sections.length; i++) {
+    if (!isSparseSection(sections[i])) return i;
+  }
+  // Wrap around and check from start
+  for (let i = 0; i < from; i++) {
+    if (!isSparseSection(sections[i])) return i;
+  }
+  return from; // fallback
+}
+
+/**
  * Render the textbook reader page
  * @param {Object} params - Route params { subjectId, chapterId }
  */
@@ -215,11 +246,14 @@ function showChapterContent(subjectId, chapterId) {
         return aMaj - bMaj || aMin - bMin;
       });
     
+    // Start at first non-sparse section
+    const startIndex = findNextSubstantialSection(sections, 0);
+    
     readerState = { 
       subjectId, 
       chapter, 
       sections,
-      currentSection: 0 
+      currentSection: startIndex 
     };
 
     renderChapter();
@@ -248,6 +282,13 @@ function renderChapter() {
   const content = document.getElementById('readerContent');
   if (!content) return;
 
+  const currentSec = sections[readerState.currentSection];
+  const isCurrentSparse = isSparseSection(currentSec);
+  const prevIdx = readerState.currentSection > 0 ? readerState.currentSection - 1 : -1;
+  const nextIdx = readerState.currentSection < sections.length - 1 ? readerState.currentSection + 1 : -1;
+  const prevSec = prevIdx >= 0 ? sections[prevIdx] : null;
+  const nextSec = nextIdx >= 0 ? sections[nextIdx] : null;
+
   content.innerHTML = `
     <div class="reader-layout">
       <!-- Sidebar with section list -->
@@ -256,14 +297,16 @@ function renderChapter() {
           ← Back to chapters
         </button>
         <h2>${subject ? subject.icon : '▸'} ${chapter.title.replace(/^#+\s*/, '')}</h2>
-        ${sections.map((sec, i) => `
+        ${sections.map((sec, i) => {
+          const sparse = isSparseSection(sec);
+          return `
           <div 
-            class="reader-outline-item ${i === readerState.currentSection ? 'active' : ''}" 
+            class="reader-outline-item ${i === readerState.currentSection ? 'active' : ''} ${sparse ? 'sparse-section' : ''}" 
             onclick="goToSection(${i})"
           >
-            <span>${sec.section_number || sec.number}. ${sec.title}</span>
-          </div>
-        `).join('')}
+            <span>${sec.section_number || sec.number}. ${sec.title}${sparse ? ' (empty)' : ''}</span>
+          </div>`;
+        }).join('')}
       </div>
 
       <!-- Reading pane -->
@@ -283,7 +326,35 @@ function renderChapter() {
 
         <!-- Content -->
         <div class="reader-content" id="readerPane">
-          ${renderSection(sections[readerState.currentSection])}
+          ${renderSection(currentSec)}
+          
+          <!-- Section Navigation -->
+          <nav class="section-nav" aria-label="Section navigation">
+            <button 
+              class="section-nav-btn prev" 
+              onclick="goToSection(${prevIdx})" 
+              ${prevIdx < 0 ? 'disabled' : ''}
+              title="${prevSec ? prevSec.title : ''}"
+            >
+              <span class="nav-arrow">←</span>
+              <span class="nav-label">
+                <span class="nav-direction">Previous</span>
+                <span class="nav-title">${prevSec ? escapeHTML(prevSec.section_number || prevSec.number + '. ' + prevSec.title) : '—'}</span>
+              </span>
+            </button>
+            <button 
+              class="section-nav-btn next" 
+              onclick="goToSection(${nextIdx})" 
+              ${nextIdx < 0 ? 'disabled' : ''}
+              title="${nextSec ? nextSec.title : ''}"
+            >
+              <span class="nav-arrow">→</span>
+              <span class="nav-label">
+                <span class="nav-direction">Next</span>
+                <span class="nav-title">${nextSec ? escapeHTML(nextSec.section_number || nextSec.number + '. ' + nextSec.title) : '—'}</span>
+              </span>
+            </button>
+          </nav>
         </div>
       </div>
     </div>
@@ -315,9 +386,20 @@ function renderSection(section) {
 
   const blocks = section.content || section.blocks || [];
 
-  // Calculate total content length — skip near-empty sections
+  // Check if section is sparse — show message with skip button
   const totalContent = blocks.reduce((sum, b) => sum + (b.value || b.text || '').length, 0);
-  // Removed short-content threshold — always render whatever content exists
+  if (totalContent < 100) {
+    const nextIdx = readerState ? findNextSubstantialSection(readerState.sections, readerState.currentSection + 1) : -1;
+    const canSkip = nextIdx >= 0 && nextIdx !== readerState?.currentSection;
+    return `
+      <h2 class="section-title">${section.title || 'Section'}</h2>
+      <div class="sparse-section-msg">
+        <span class="sparse-icon">📄</span>
+        <p>This section has no content yet.</p>
+        ${canSkip ? `<button class="auto-advance-btn" onclick="goToSection(${nextIdx})">Skip to next section →</button>` : ''}
+      </div>
+    `;
+  }
 
   let html = `<h2 class="section-title">${section.title || 'Section'}</h2>`;
   const renderedDiagrams = new Set(); // track rendered diagram names to prevent duplicates
@@ -336,10 +418,13 @@ function renderSection(section) {
         } else if (isPropertyDetails(value)) {
           html += renderPropertyDetails(value);
         } else if (isPropertyLabel(value)) {
-          // "What they are" / "Why they exist" as standalone labels — render as styled label
           html += `<div class="property-field"><span class="property-label">${value.replace(/[.:]+$/, '')}:</span></div>`;
         } else if (isDenseHierarchy(value)) {
           html += renderHierarchy(value);
+        } else if (isNumberedList(value)) {
+          html += renderNumberedList(value);
+        } else if (isBulletList(value)) {
+          html += renderBulletList(value);
         } else {
           // Detect inline headings within text blocks
           const splitResult = splitInlineHeadings(value);
@@ -347,7 +432,6 @@ function renderSection(section) {
         }
         break;
       case 'heading': {
-        // Check if this heading is actually a property label — render with card styling
         if (isPropertyLabel(value)) {
           const cleanLabel = value.replace(/^[^—–]+[—–]\s*/, '').replace(/[.:]+$/, '');
           const context = value.includes('—') ? value.split('—')[0].trim() : '';
@@ -361,7 +445,6 @@ function renderSection(section) {
         html += `<div class="definition" key="${key}"><span class="term">${block.term || 'Term'}</span> <span class="def-value">${value}</span></div>`;
         break;
       case 'example': {
-        // Check for diagram references in examples
         const exampleDiagram = matchDiagram(value, readerState?.subjectId, readerState?.chapter?.title, section?.title, renderedDiagrams);
         if (exampleDiagram) {
           html += `<div class="example" key="${key}"><strong>Example:</strong> ${value}</div>`;
@@ -372,9 +455,8 @@ function renderSection(section) {
         break;
       }
       case 'formula':
-        // If block has no math symbols and is long, render as regular text (not formula font)
         if (value.length > 100 && !/[√≈≠≤≥π⊂∈ℤℚℝℕ∂∫∑∏∇∞±×÷°²³¹⁰ⁿ⊆⊃∪∩→←↔∴∵°C°F]/.test(value)) {
-          html += `<p>${value.replace(/\n/g, '<br>')}</p>`;
+          html += renderRichParagraphs(value);
         } else {
           html += `<div class="formula math-notation" key="${key}">${value.replace(/\n/g, '<br>')}</div>`;
         }
@@ -387,7 +469,6 @@ function renderSection(section) {
         html += `<div class="practice-problem" key="${key}"><strong>✧ Practice:</strong> ${value}</div>`;
         break;
       case 'note': {
-        // Check for diagram references in notes
         const noteDiagram = matchDiagram(value, readerState?.subjectId, readerState?.chapter?.title, section?.title, renderedDiagrams);
         if (noteDiagram) {
           html += `<div class="note" key="${key}"><strong>📌 Note:</strong> ${value}</div>`;
@@ -404,20 +485,182 @@ function renderSection(section) {
         html += `<div class="tip" key="${key}"><strong>✧ Tip:</strong> ${value}</div>`;
         break;
       default: {
-        // Check for diagram references in any block type
         const diagram = matchDiagram(value, readerState?.subjectId, readerState?.chapter?.title, section?.title, renderedDiagrams);
         if (diagram) {
           html += `<div class="diagram-container">${diagram}</div>`;
         } else if (isTableContent(value)) {
           html += renderTable(value);
         } else {
-          html += `<p>${value}</p>`;
+          html += renderRichParagraphs(value);
         }
       }
     }
   });
 
   return html;
+}
+
+/**
+ * Render text as rich paragraphs — splits long wall-of-text blocks into multiple <p> tags.
+ * This improves readability for PDF-extracted content that has no paragraph breaks.
+ */
+function renderRichParagraphs(value) {
+  if (!value) return '';
+  
+  // If already has newlines, respect them
+  if (value.includes('\n')) {
+    const parts = value.split(/\n\n+/).filter(p => p.trim());
+    if (parts.length > 1) {
+      return parts.map(p => `<p>${p.trim().replace(/\n/g, '<br>')}</p>`).join('');
+    }
+    return `<p>${value.replace(/\n/g, '<br>')}</p>`;
+  }
+  
+  // Split long text blocks at sentence boundaries for readability
+  if (value.length > 500) {
+    const paragraphs = splitIntoParagraphs(value);
+    if (paragraphs.length > 1) {
+      return paragraphs.map(p => `<p>${p}</p>`).join('');
+    }
+  }
+  
+  return `<p>${value}</p>`;
+}
+
+/**
+ * Split a long text block into paragraphs at sentence boundaries.
+ * Targets ~200-400 chars per paragraph for comfortable reading.
+ */
+function splitIntoParagraphs(text) {
+  if (!text || text.length < 500) return [text];
+  
+  // Split at sentence boundaries: period/question/exclamation followed by space and uppercase
+  const sentences = text.match(/[^.!?]*[.!?]+\s*/g);
+  if (!sentences || sentences.length < 3) return [text];
+  
+  const paragraphs = [];
+  let current = '';
+  
+  for (const sentence of sentences) {
+    current += sentence;
+    // Aim for 200-400 char paragraphs; break sooner if we hit a natural break point
+    if (current.length >= 250) {
+      paragraphs.push(current.trim());
+      current = '';
+    }
+  }
+  
+  if (current.trim()) {
+    // If leftover is short, append to last paragraph instead
+    if (paragraphs.length > 0 && current.trim().length < 80) {
+      paragraphs[paragraphs.length - 1] += ' ' + current.trim();
+    } else {
+      paragraphs.push(current.trim());
+    }
+  }
+  
+  return paragraphs.length > 1 ? paragraphs : [text];
+}
+
+/**
+ * Detect numbered lists in text blocks.
+ * Pattern: "1. Item text 2. Item text 3. Item text" or "1) Item text 2) Item text"
+ */
+function isNumberedList(value) {
+  if (!value || value.length < 20) return false;
+  // Match "N. " or "N) " patterns — need at least 3 for a list
+  const dotMatches = value.match(/(?:^|\s)\d{1,2}\.\s+[A-Z]/g);
+  const parenMatches = value.match(/(?:^|\s)\d{1,2}\)\s+[A-Z]/g);
+  return (dotMatches && dotMatches.length >= 3) || (parenMatches && parenMatches.length >= 3);
+}
+
+/**
+ * Render a numbered list detected in a text block.
+ */
+function renderNumberedList(value) {
+  // Try "N. " pattern first
+  let items = splitListItems(value, /(?:^|\s)(\d{1,2})\.\s+/);
+  if (items.length < 3) {
+    // Try "N) " pattern
+    items = splitListItems(value, /(?:^|\s)(\d{1,2})\)\s+/);
+  }
+  if (items.length < 3) return `<p>${value}</p>`;
+  
+  // Check if there's a title/prefix before the first item
+  const firstItemStart = value.search(/\d{1,2}[.)]\s+[A-Z]/);
+  const prefix = firstItemStart > 0 ? value.substring(0, firstItemStart).trim() : '';
+  
+  let html = '';
+  if (prefix) html += `<p>${prefix}</p>`;
+  html += '<ol>';
+  for (const item of items) {
+    html += `<li>${item}</li>`;
+  }
+  html += '</ol>';
+  return html;
+}
+
+/**
+ * Detect bullet lists in text blocks.
+ * Pattern: lines starting with "• ", "- ", "– ", "* "
+ */
+function isBulletList(value) {
+  if (!value || value.length < 20) return false;
+  // Check for bullet patterns — need at least 3
+  const bullets = value.match(/(?:^|\n)\s*[•\-\*–]\s+\S/g);
+  return bullets && bullets.length >= 3;
+}
+
+/**
+ * Render a bullet list detected in a text block.
+ */
+function renderBulletList(value) {
+  const lines = value.split(/\n/);
+  const items = [];
+  let prefix = '';
+  let inList = false;
+  
+  for (const line of lines) {
+    const trimmed = line.trim();
+    const bulletMatch = trimmed.match(/^[•\-\*–]\s+(.+)/);
+    if (bulletMatch) {
+      inList = true;
+      items.push(bulletMatch[1]);
+    } else if (!inList && trimmed) {
+      prefix += (prefix ? ' ' : '') + trimmed;
+    } else if (trimmed) {
+      // Continuation of previous item
+      if (items.length > 0) {
+        items[items.length - 1] += ' ' + trimmed;
+      }
+    }
+  }
+  
+  if (items.length < 3) return `<p>${value}</p>`;
+  
+  let html = '';
+  if (prefix) html += `<p>${prefix}</p>`;
+  html += '<ul>';
+  for (const item of items) {
+    html += `<li>${item}</li>`;
+  }
+  html += '</ul>';
+  return html;
+}
+
+/**
+ * Split text into list items using a regex pattern.
+ * Returns array of item text strings.
+ */
+function splitListItems(value, pattern) {
+  const parts = value.split(pattern);
+  const items = [];
+  // parts[0] is text before first match, then alternating: number, text, number, text...
+  for (let i = 1; i < parts.length; i += 2) {
+    const text = (parts[i + 1] || '').trim();
+    if (text) items.push(text);
+  }
+  return items;
 }
 
 /**
@@ -484,14 +727,14 @@ function splitInlineHeadings(value) {
       }
 
       let result = '';
-      if (before.trim().length > 0) result += `<p>${before}</p>`;
+      if (before.trim().length > 0) result += renderRichParagraphs(before);
       result += `<h3 class="reader-heading">${headingText}</h3>`;
-      if (after.trim().length > 0) result += `<p>${after}</p>`;
+      if (after.trim().length > 0) result += renderRichParagraphs(after);
       return result;
     }
   }
 
-  return `<p>${value}</p>`;
+  return renderRichParagraphs(value);
 }
 
 /**
@@ -633,7 +876,6 @@ function renderHierarchy(value) {
  */
 function isPropertyDetails(value) {
   if (!value || value.length < 80) return false;
-  // Check for "What they are" / "Why they exist" / "Key rule" patterns
   const hasWhatThey = /What they are/i.test(value);
   const hasWhyThey = /Why they exist/i.test(value);
   const hasKeyRule = /Key rule/i.test(value);
@@ -653,9 +895,7 @@ function isPropertyLabel(value) {
   const labels = ['What they are', 'What they', 'Why they exist', 'Why they', 
                   'Key rule', 'Key Property', 'Famous ones', 'Coverage', 'Big Idea',
                   'Big idea', 'Section Reminders'];
-  // Direct match
   if (labels.includes(trimmed)) return true;
-  // Context-prefixed match: "Natural Numbers — What they are"
   for (const label of labels) {
     if (trimmed.includes('— ' + label) || trimmed.includes('– ' + label) || 
         trimmed.endsWith(label)) return true;
@@ -665,10 +905,8 @@ function isPropertyLabel(value) {
 
 /**
  * Render a Property Details block as structured definition cards.
- * Parses "What they are", "Why they exist", "Key rule", "Example", etc. into separate styled blocks.
  */
 function renderPropertyDetails(value) {
-  // Split at known sub-field boundaries
   const fields = [];
   const fieldPatterns = [
     { label: 'What they are', regex: /What they are\s*/i },
@@ -684,9 +922,7 @@ function renderPropertyDetails(value) {
   ];
   
   let remaining = value;
-  let lastEnd = 0;
   
-  // Find all field positions
   const positions = [];
   for (const fp of fieldPatterns) {
     const match = remaining.match(fp.regex);
@@ -695,10 +931,8 @@ function renderPropertyDetails(value) {
     }
   }
   
-  // Sort by position
   positions.sort((a, b) => a.index - b.index);
   
-  // Extract field values
   for (let i = 0; i < positions.length; i++) {
     const start = positions[i].end;
     const end = i + 1 < positions.length ? positions[i + 1].index : remaining.length;
@@ -708,7 +942,6 @@ function renderPropertyDetails(value) {
     }
   }
   
-  // If no fields found, return as-is
   if (fields.length === 0) return `<p>${value}</p>`;
   
   let html = '<div class="property-details">';
@@ -726,26 +959,21 @@ function renderPropertyDetails(value) {
 
 /**
  * Detect whether a text value contains pipe-delimited table data.
- * Returns true if 2+ lines contain pipe characters forming a table structure.
  */
 function isTableContent(text) {
   if (!text || typeof text !== 'string') return false;
   const lines = text.split('\n').filter(l => l.trim());
   const pipeLines = lines.filter(l => l.includes('|') && l.trim().startsWith('|'));
-  // Need at least a header row + separator or 2+ pipe-delimited rows
   if (pipeLines.length < 2) {
-    // Also check for single-line tables with 6+ pipes
     const singleLine = lines.find(l => (l.match(/\|/g) || []).length >= 6);
     if (!singleLine) return false;
   }
-  // Check for separator line like |---|---|
   const hasSeparator = lines.some(l => /\|[\s-]+\|/.test(l));
   return hasSeparator || pipeLines.length >= 3;
 }
 
 /**
  * Convert pipe-delimited text into an HTML table.
- * Parses header, separator, and data rows.
  */
 function renderTable(text) {
   const lines = text.split('\n').filter(l => l.trim());
@@ -753,7 +981,6 @@ function renderTable(text) {
 
   if (pipeLines.length === 0) return `<p>${text}</p>`;
 
-  // Parse cells from a pipe-delimited line
   function parseRow(line) {
     return line
       .replace(/^\|/, '').replace(/\|$/, '')
@@ -761,7 +988,6 @@ function renderTable(text) {
       .map(cell => cell.trim());
   }
 
-  // Find header (first pipe line) and skip separator lines
   const headerCells = parseRow(pipeLines[0]);
   const dataLines = pipeLines.slice(1).filter(l => !/^[\s|:-]+$/.test(l.replace(/\|/g, '').trim()));
 
@@ -783,8 +1009,13 @@ function renderTable(text) {
 // Global functions for onclick handlers
 window.goToSection = function(index) {
   if (!readerState) return;
+  if (index < 0 || index >= readerState.sections.length) return;
   readerState.currentSection = index;
   renderChapter();
+  // Scroll the reader pane to top
+  const pane = document.querySelector('.reader-pane');
+  if (pane) pane.scrollTop = 0;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
 window.changeFontSize = function(delta) {
@@ -830,19 +1061,18 @@ window.searchInChapter = function() {
   let matchCount = 0;
   const escapedTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const regex = new RegExp(`(${escapedTerm})`, 'gi');
-  // Walk all rendered content elements in readerPane and highlight matches
   const blocks = document.querySelectorAll(
     '#readerPane p, #readerPane h2, #readerPane h3, #readerPane td, #readerPane th, ' +
     '#readerPane .definition, #readerPane .example, #readerPane .note, #readerPane .tip, ' +
     '#readerPane .practice-problem, #readerPane .formula, #readerPane .hierarchy-block, ' +
-    '#readerPane .def-value, #readerPane .property-field, #readerPane .property-example'
+    '#readerPane .def-value, #readerPane .property-field, #readerPane .property-example, ' +
+    '#readerPane li'
   );
   blocks.forEach(block => {
     const text = block.textContent.toLowerCase();
     if (text.includes(lower)) {
       matchCount++;
       block.classList.add('search-match-highlight');
-      // Walk text nodes to safely highlight matches without corrupting HTML
       const walker = document.createTreeWalker(block, NodeFilter.SHOW_TEXT, null, false);
       const textNodes = [];
       let node;
@@ -856,7 +1086,6 @@ window.searchInChapter = function() {
         const parts = textNode.nodeValue.split(regex);
         parts.forEach((part, i) => {
           if (i % 2 === 1) {
-            // Odd indices are captured groups (the match)
             const mark = document.createElement('mark');
             mark.className = 'search-mark';
             mark.textContent = part;
@@ -869,18 +1098,15 @@ window.searchInChapter = function() {
       });
     }
   });
-  // Scroll to first match
   const firstMatch = document.querySelector('.search-mark');
   if (firstMatch) {
     firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
-  // Show result count
   if (matchCount > 0) {
     toast.success(`Found ${matchCount} matching block${matchCount > 1 ? 's' : ''} for "${term}"`);
   } else {
     toast.info(`No matches found for "${term}"`);
   }
-  // Auto-clear highlights after 8 seconds
   setTimeout(() => {
     document.querySelectorAll('.search-mark').forEach(el => {
       const parent = el.parentNode;
