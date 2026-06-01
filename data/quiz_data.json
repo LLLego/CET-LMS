@@ -515,30 +515,6 @@
           "explanation": "The correct value is 90, as stated in the textbook."
         },
         {
-          "q": "Which statement about sequences - Math is TRUE?",
-          "opts": [
-            "sequences - Math was disproven by modern research",
-            "sequences - Math only applies in very limited contexts",
-            "is Fun - Number patterns, sequences - Softschools.com - Pattern",
-            "sequences - Math is the opposite of what it actually means"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "sequences - Math is defined as: is Fun - Number patterns, sequences - Softschools.com - Pattern"
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "What one mistake is the opposite of what it actually means",
-            "What one mistake was disproven by modern research",
-            "are you most likely to make on this topic?",
-            "What one mistake only applies in very limited contexts"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
-        },
-        {
           "q": "Which numerical value is accurate based on the source material?",
           "opts": [
             "180",
@@ -1125,42 +1101,6 @@
           "ans": 1,
           "difficulty": "easy",
           "explanation": "The correct value is 100, as stated in the textbook."
-        },
-        {
-          "q": "Which statement about No reptiles is TRUE?",
-          "opts": [
-            "are mammals.",
-            "No reptiles was disproven by modern research",
-            "No reptiles is the opposite of what it actually means",
-            "No reptiles only applies in very limited contexts"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "No reptiles is defined as: are mammals."
-        },
-        {
-          "q": "Which statement about birds is TRUE?",
-          "opts": [
-            "birds only applies in very limited contexts",
-            "birds was disproven by modern research",
-            "birds is the opposite of what it actually means",
-            "are penguins. - D) Some birds are not penguins. Answer: A) Penguin can"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "birds is defined as: are penguins. - D) Some birds are not penguins. Answer: A) Penguin can"
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "What one mistake only applies in very limited contexts",
-            "What one mistake was disproven by modern research",
-            "What one mistake is the opposite of what it actually means",
-            "are you most likely to make on this topic?"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
         },
         {
           "q": "Which of the following is an example of No reptiles?",
@@ -1876,30 +1816,6 @@
           "ans": 0,
           "difficulty": "medium",
           "explanation": "The correct value is 2, as stated in the textbook."
-        },
-        {
-          "q": "Which statement about North is TRUE?",
-          "opts": [
-            "North was disproven by modern research",
-            "North only applies in very limited contexts",
-            "North is the opposite of what it actually means",
-            "is UP — Lagi ay Hilaga sa taas sa mapa"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "North is defined as: is UP — Lagi ay Hilaga sa taas sa mapa"
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "are you most likely to make on this topic?",
-            "What one mistake is the opposite of what it actually means",
-            "What one mistake was disproven by modern research",
-            "What one mistake only applies in very limited contexts"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
         },
         {
           "q": "Which numerical value is accurate based on the source material?",
@@ -6244,30 +6160,6 @@
           "explanation": "The correct value is 3, as stated in the textbook."
         },
         {
-          "q": "Which statement about Overusing passive - Passive is TRUE?",
-          "opts": [
-            "Overusing passive - Passive only applies in very limited contexts",
-            "is wordier and less clear (use active when possible)",
-            "Overusing passive - Passive is the opposite of what it actually means",
-            "Overusing passive - Passive was disproven by modern research"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "Overusing passive - Passive is defined as: is wordier and less clear (use active when possible)"
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "What one mistake is the opposite of what it actually means",
-            "What one mistake only applies in very limited contexts",
-            "are you most likely to make on this topic?",
-            "What one mistake was disproven by modern research"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
-        },
-        {
           "q": "Which numerical value is accurate based on the source material?",
           "opts": [
             "3",
@@ -6913,42 +6805,6 @@
           "explanation": "The correct value is 5, as stated in the textbook."
         },
         {
-          "q": "Which statement about Syntax is TRUE?",
-          "opts": [
-            "The arrangement of words/phrases to create well-formed sentences.",
-            "Syntax was disproven by modern research",
-            "Syntax only applies in very limited contexts",
-            "Syntax is the opposite of what it actually means"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Syntax is defined as: The arrangement of words/phrases to create well-formed sentences."
-        },
-        {
-          "q": "Which statement about of books is TRUE?",
-          "opts": [
-            "is heavy.” (Subject = box, singular)",
-            "of books is the opposite of what it actually means",
-            "of books only applies in very limited contexts",
-            "of books was disproven by modern research"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "of books is defined as: is heavy.” (Subject = box, singular)"
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "What one mistake only applies in very limited contexts",
-            "What one mistake was disproven by modern research",
-            "What one mistake is the opposite of what it actually means",
-            "are you most likely to make on this topic?"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
-        },
-        {
           "q": "Which numerical value is accurate based on the source material?",
           "opts": [
             "2.5",
@@ -7534,66 +7390,6 @@
           "explanation": "'Ephemeral' means lasting for a very short time; transitory. Example: 'Fame can be ephemeral—here today, gone tomorrow.'"
         },
         {
-          "q": "Which statement about Maintain that the data is TRUE?",
-          "opts": [
-            "Maintain that the data only applies in very limited contexts",
-            "Maintain that the data was disproven by modern research",
-            "is accurate.",
-            "Maintain that the data is the opposite of what it actually means"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "Maintain that the data is defined as: is accurate."
-        },
-        {
-          "q": "Which statement about Many academic words is TRUE?",
-          "opts": [
-            "Many academic words is the opposite of what it actually means",
-            "are the same in Filipino academic writing",
-            "Many academic words only applies in very limited contexts",
-            "Many academic words was disproven by modern research"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "Many academic words is defined as: are the same in Filipino academic writing"
-        },
-        {
-          "q": "Which statement about Bill Gates is TRUE?",
-          "opts": [
-            "Bill Gates is the opposite of what it actually means",
-            "Bill Gates only applies in very limited contexts",
-            "Bill Gates was disproven by modern research",
-            "is a philanthropist."
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "Bill Gates is defined as: is a philanthropist."
-        },
-        {
-          "q": "Which statement about prince is TRUE?",
-          "opts": [
-            "prince only applies in very limited contexts",
-            "prince is the opposite of what it actually means",
-            "The prince is the successor to the throne.",
-            "prince was disproven by modern research"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "prince is defined as: The prince is the successor to the throne."
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "What one mistake is the opposite of what it actually means",
-            "What one mistake was disproven by modern research",
-            "are you most likely to make on this topic?",
-            "What one mistake only applies in very limited contexts"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
-        },
-        {
           "q": "'The CET is as much about strategy as it is about knowledge. Knowing the format,' — What term is being described?",
           "opts": [
             "CET",
@@ -8131,66 +7927,6 @@
           "ans": 3,
           "difficulty": "medium",
           "explanation": "The correct value is 3, as stated in the textbook."
-        },
-        {
-          "q": "Which statement about Patience is TRUE?",
-          "opts": [
-            "Patience only applies in very limited contexts",
-            "Patience is the opposite of what it actually means",
-            "Patience was disproven by modern research",
-            "is intrinsic to teaching."
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "Patience is defined as: is intrinsic to teaching."
-        },
-        {
-          "q": "Which statement about Smartphones is TRUE?",
-          "opts": [
-            "are ubiquitous now.",
-            "Smartphones is the opposite of what it actually means",
-            "Smartphones only applies in very limited contexts",
-            "Smartphones was disproven by modern research"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Smartphones is defined as: are ubiquitous now."
-        },
-        {
-          "q": "Which statement about Many advanced words is TRUE?",
-          "opts": [
-            "Many advanced words is the opposite of what it actually means",
-            "Many advanced words only applies in very limited contexts",
-            "Many advanced words was disproven by modern research",
-            "are used in Filipino academic writing"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "Many advanced words is defined as: are used in Filipino academic writing"
-        },
-        {
-          "q": "Which statement about company is TRUE?",
-          "opts": [
-            "company is the opposite of what it actually means",
-            "The company is in the red this quarter.",
-            "company was disproven by modern research",
-            "company only applies in very limited contexts"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "company is defined as: The company is in the red this quarter."
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "What one mistake was disproven by modern research",
-            "are you most likely to make on this topic?",
-            "What one mistake is the opposite of what it actually means",
-            "What one mistake only applies in very limited contexts"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
         },
         {
           "q": "Which numerical value is accurate based on the source material?",
@@ -9095,54 +8831,6 @@
           "explanation": "The correct value is 1, as stated in the textbook."
         },
         {
-          "q": "Which statement about Main Idea - What is TRUE?",
-          "opts": [
-            "is the text MOSTLY about?",
-            "Main Idea - What is the opposite of what it actually means",
-            "Main Idea - What was disproven by modern research",
-            "Main Idea - What only applies in very limited contexts"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Main Idea - What is defined as: is the text MOSTLY about?"
-        },
-        {
-          "q": "Which statement about Inference - What is TRUE?",
-          "opts": [
-            "Inference - What only applies in very limited contexts",
-            "Inference - What is the opposite of what it actually means",
-            "Inference - What was disproven by modern research",
-            "is IMPLICIT (not directly stated)?"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "Inference - What is defined as: is IMPLICIT (not directly stated)?"
-        },
-        {
-          "q": "Which statement about Picking a detail as main idea - Main idea is TRUE?",
-          "opts": [
-            "Picking a detail as main idea - Main idea only applies in very limited contexts",
-            "Picking a detail as main idea - Main idea was disproven by modern research",
-            "Picking a detail as main idea - Main idea is the opposite of what it actually means",
-            "is BIGGER (summarizes all)"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "Picking a detail as main idea - Main idea is defined as: is BIGGER (summarizes all)"
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "What one mistake was disproven by modern research",
-            "What one mistake is the opposite of what it actually means",
-            "are you most likely to make on this topic?",
-            "What one mistake only applies in very limited contexts"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
-        },
-        {
           "q": "Which numerical value is accurate based on the source material?",
           "opts": [
             "1.5",
@@ -9919,150 +9607,6 @@
           "ans": 3,
           "difficulty": "medium",
           "explanation": "The correct value is 100, as stated in the textbook."
-        },
-        {
-          "q": "Which statement about Analogy Format is TRUE?",
-          "opts": [
-            "Analogy Format only applies in very limited contexts",
-            "Analogy Format is the opposite of what it actually means",
-            "A : B :: C : D (A is to B as C is to D)",
-            "Analogy Format was disproven by modern research"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "Analogy Format is defined as: A : B :: C : D (A is to B as C is to D)"
-        },
-        {
-          "q": "Which statement about Hot and Warm is TRUE?",
-          "opts": [
-            "are synonyms, like Cold and",
-            "Hot and Warm only applies in very limited contexts",
-            "Hot and Warm was disproven by modern research",
-            "Hot and Warm is the opposite of what it actually means"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Hot and Warm is defined as: are synonyms, like Cold and"
-        },
-        {
-          "q": "Which statement about Hot is TRUE?",
-          "opts": [
-            "Hot only applies in very limited contexts",
-            "is opposite of Cold, like Happy is",
-            "Hot is the opposite of what it actually means",
-            "Hot was disproven by modern research"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "Hot is defined as: is opposite of Cold, like Happy is"
-        },
-        {
-          "q": "Which statement about Wheel is TRUE?",
-          "opts": [
-            "Wheel only applies in very limited contexts",
-            "Wheel is the opposite of what it actually means",
-            "Wheel was disproven by modern research",
-            "is PART of Car, like Page is PART of"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "Wheel is defined as: is PART of Car, like Page is PART of"
-        },
-        {
-          "q": "Which statement about Rose is TRUE?",
-          "opts": [
-            "Rose only applies in very limited contexts",
-            "Rose is the opposite of what it actually means",
-            "Rose was disproven by modern research",
-            "is a TYPE of Flower, like Dog is a TYPE"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "Rose is defined as: is a TYPE of Flower, like Dog is a TYPE"
-        },
-        {
-          "q": "Which statement about Pen is TRUE?",
-          "opts": [
-            "Pen was disproven by modern research",
-            "Pen only applies in very limited contexts",
-            "is USED to Write, like Knife is USED to",
-            "Pen is the opposite of what it actually means"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "Pen is defined as: is USED to Write, like Knife is USED to"
-        },
-        {
-          "q": "Which statement about Warm is TRUE?",
-          "opts": [
-            "Warm was disproven by modern research",
-            "is LESS Hot, like Cool is LESS Cold",
-            "Warm is the opposite of what it actually means",
-            "Warm only applies in very limited contexts"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "Warm is defined as: is LESS Hot, like Cool is LESS Cold"
-        },
-        {
-          "q": "Which statement about No reptiles is TRUE?",
-          "opts": [
-            "No reptiles was disproven by modern research",
-            "are mammals.",
-            "No reptiles is the opposite of what it actually means",
-            "No reptiles only applies in very limited contexts"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "No reptiles is defined as: are mammals."
-        },
-        {
-          "q": "Which statement about birds is TRUE?",
-          "opts": [
-            "birds was disproven by modern research",
-            "birds only applies in very limited contexts",
-            "birds is the opposite of what it actually means",
-            "are penguins. - D) Some birds are not penguins. Answer: A) Penguin can"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "birds is defined as: are penguins. - D) Some birds are not penguins. Answer: A) Penguin can"
-        },
-        {
-          "q": "Which statement about Socrates is TRUE?",
-          "opts": [
-            "Socrates only applies in very limited contexts",
-            "Socrates was disproven by modern research",
-            "is mortal. - Result: VALID deduction = 100% certain (if premises true)",
-            "Socrates is the opposite of what it actually means"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "Socrates is defined as: is mortal. - Result: VALID deduction = 100% certain (if premises true)"
-        },
-        {
-          "q": "Which statement about dogs is TRUE?",
-          "opts": [
-            "dogs is the opposite of what it actually means",
-            "dogs only applies in very limited contexts",
-            "dogs was disproven by modern research",
-            "are Buddy. - C) Buddy has no tail. - D) Some dogs have no tails."
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "dogs is defined as: are Buddy. - C) Buddy has no tail. - D) Some dogs have no tails."
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "What one mistake is the opposite of what it actually means",
-            "are you most likely to make on this topic?",
-            "What one mistake was disproven by modern research",
-            "What one mistake only applies in very limited contexts"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
         },
         {
           "q": "Which numerical value is accurate based on the source material?",
@@ -11321,30 +10865,6 @@
           "explanation": "The correct value is 85, as stated in the textbook."
         },
         {
-          "q": "Which statement about Whoever is TRUE?",
-          "opts": [
-            "is available",
-            "Whoever only applies in very limited contexts",
-            "Whoever was disproven by modern research",
-            "Whoever is the opposite of what it actually means"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Whoever is defined as: is available"
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "What one mistake was disproven by modern research",
-            "are you most likely to make on this topic?",
-            "What one mistake is the opposite of what it actually means",
-            "What one mistake only applies in very limited contexts"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
-        },
-        {
           "q": "Which numerical value is accurate based on the source material?",
           "opts": [
             "42.5",
@@ -11795,78 +11315,6 @@
           "ans": 3,
           "difficulty": "medium",
           "explanation": "The correct value is 5, as stated in the textbook."
-        },
-        {
-          "q": "Which statement about Parenthetical is TRUE?",
-          "opts": [
-            "The book, which is red, is mine.",
-            "Parenthetical was disproven by modern research",
-            "Parenthetical only applies in very limited contexts",
-            "Parenthetical is the opposite of what it actually means"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Parenthetical is defined as: The book, which is red, is mine."
-        },
-        {
-          "q": "Which statement about Coordinate adjectives is TRUE?",
-          "opts": [
-            "Coordinate adjectives only applies in very limited contexts",
-            "Coordinate adjectives is the opposite of what it actually means",
-            "Coordinate adjectives was disproven by modern research",
-            "A hot, humid day."
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "Coordinate adjectives is defined as: A hot, humid day."
-        },
-        {
-          "q": "Which statement about Possessive is TRUE?",
-          "opts": [
-            "The girl’s book (singular), The girls’ books (plural)",
-            "Possessive was disproven by modern research",
-            "Possessive only applies in very limited contexts",
-            "Possessive is the opposite of what it actually means"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Possessive is defined as: The girl’s book (singular), The girls’ books (plural)"
-        },
-        {
-          "q": "Which statement about box of books is TRUE?",
-          "opts": [
-            "box of books is the opposite of what it actually means",
-            "box of books was disproven by modern research",
-            "box of books only applies in very limited contexts",
-            "The box of books are heavy."
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "box of books is defined as: The box of books are heavy."
-        },
-        {
-          "q": "Which statement about Due to the fact that she is TRUE?",
-          "opts": [
-            "Due to the fact that she is the opposite of what it actually means",
-            "Due to the fact that she only applies in very limited contexts",
-            "is happy, everyone knows. - B) Because she is happy, everyone",
-            "Due to the fact that she was disproven by modern research"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "Due to the fact that she is defined as: is happy, everyone knows. - B) Because she is happy, everyone"
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "are you most likely to make on this topic?",
-            "What one mistake is the opposite of what it actually means",
-            "What one mistake only applies in very limited contexts",
-            "What one mistake was disproven by modern research"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
         },
         {
           "q": "Which numerical value is accurate based on the source material?",
@@ -12950,18 +12398,6 @@
           "explanation": "The correct value is 3, as stated in the textbook."
         },
         {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "are you most likely to make on this topic?",
-            "What one mistake is the opposite of what it actually means",
-            "What one mistake was disproven by modern research",
-            "What one mistake only applies in very limited contexts"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
-        },
-        {
           "q": "Which numerical value is accurate based on the source material?",
           "opts": [
             "4.5",
@@ -13391,30 +12827,6 @@
           "explanation": "The correct value is 10, as stated in the textbook."
         },
         {
-          "q": "Which statement about Performance under pressure is TRUE?",
-          "opts": [
-            "Performance under pressure is the opposite of what it actually means",
-            "Performance under pressure was disproven by modern research",
-            "is a skill. The students who master exam-day stress",
-            "Performance under pressure only applies in very limited contexts"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "Performance under pressure is defined as: is a skill. The students who master exam-day stress"
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "What one mistake is the opposite of what it actually means",
-            "What one mistake only applies in very limited contexts",
-            "What one mistake was disproven by modern research",
-            "are you most likely to make on this topic?"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
-        },
-        {
           "q": "Which numerical value is accurate based on the source material?",
           "opts": [
             "15",
@@ -13842,42 +13254,6 @@
           "ans": 1,
           "difficulty": "medium",
           "explanation": "The correct value is 5, as stated in the textbook."
-        },
-        {
-          "q": "Which statement about Dogs is TRUE?",
-          "opts": [
-            "Dogs is the opposite of what it actually means",
-            "are loyal pets (Covers whole passage ✓",
-            "Dogs was disproven by modern research",
-            "Dogs only applies in very limited contexts"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "Dogs is defined as: are loyal pets (Covers whole passage ✓"
-        },
-        {
-          "q": "Which statement about No C is TRUE?",
-          "opts": [
-            "No C is the opposite of what it actually means",
-            "No C was disproven by modern research",
-            "No C only applies in very limited contexts",
-            "are B Answer: A) All C are B (Deductive logic ✓"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "No C is defined as: are B Answer: A) All C are B (Deductive logic ✓"
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "are you most likely to make on this topic?",
-            "What one mistake only applies in very limited contexts",
-            "What one mistake is the opposite of what it actually means",
-            "What one mistake was disproven by modern research"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
         },
         {
           "q": "Which numerical value is accurate based on the source material?",
@@ -14515,66 +13891,6 @@
           "ans": 0,
           "difficulty": "hard",
           "explanation": "Ang 'napakaganda' ay may panlapi (affix). Ang 'napaka-' ay isang unlaping nagpapahiwatig ng sobrang antas ng katangian."
-        },
-        {
-          "q": "Which statement about Pangngalang Pambalana (Common Noun) is TRUE?",
-          "opts": [
-            "Tumutukoy sa pangkalahatang tao, bagay, o lugar. Halimbawa: lungsod, babae, bayani, buwan.",
-            "Pangngalang Pambalana (Common Noun) only applies in very limited contexts",
-            "Pangngalang Pambalana (Common Noun) is the opposite of what it actually means",
-            "Pangngalang Pambalana (Common Noun) was disproven by modern research"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Pangngalang Pambalana (Common Noun) is defined as: Tumutukoy sa pangkalahatang tao, bagay, o lugar. Halimbawa: lungsod, babae, bayani, buwan."
-        },
-        {
-          "q": "Which statement about Pangngalang Konkretong (Concrete Noun) is TRUE?",
-          "opts": [
-            "Pangngalang Konkretong (Concrete Noun) only applies in very limited contexts",
-            "Mga bagay na nahahawakan o nakikita. Halimbawa: mesa, tubig, libro, bola.",
-            "Pangngalang Konkretong (Concrete Noun) was disproven by modern research",
-            "Pangngalang Konkretong (Concrete Noun) is the opposite of what it actually means"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "Pangngalang Konkretong (Concrete Noun) is defined as: Mga bagay na nahahawakan o nakikita. Halimbawa: mesa, tubig, libro, bola."
-        },
-        {
-          "q": "Which statement about Pangngalang Di-Konkretong (Abstract Noun) is TRUE?",
-          "opts": [
-            "Pangngalang Di-Konkretong (Abstract Noun) was disproven by modern research",
-            "Pangngalang Di-Konkretong (Abstract Noun) only applies in very limited contexts",
-            "Mga ideya, damdamin, o katangiang hindi nahahawakan. Halimbawa: pag-ibig, katarungan, kaligayahan, talino.",
-            "Pangngalang Di-Konkretong (Abstract Noun) is the opposite of what it actually means"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "Pangngalang Di-Konkretong (Abstract Noun) is defined as: Mga ideya, damdamin, o katangiang hindi nahahawakan. Halimbawa: pag-ibig, katarungan, kaligayahan, talino."
-        },
-        {
-          "q": "Which statement about Panghalip Pananong (Interrogative Pronouns) is TRUE?",
-          "opts": [
-            "Panghalip Pananong (Interrogative Pronouns) is the opposite of what it actually means",
-            "Panghalip Pananong (Interrogative Pronouns) only applies in very limited contexts",
-            "Panghalip Pananong (Interrogative Pronouns) was disproven by modern research",
-            "Sino (who), ano (what), alin (which), saan (where), kailan (when), bakit (why), paano (how). Ginagamit sa pagtatanong."
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "Panghalip Pananong (Interrogative Pronouns) is defined as: Sino (who), ano (what), alin (which), saan (where), kailan (when), bakit (why), paano (how). Ginagamit sa pagtatanong."
-        },
-        {
-          "q": "Which statement about Pangatnig na Padagdag (Additive Conjunction) is TRUE?",
-          "opts": [
-            "Pangatnig na Padagdag (Additive Conjunction) only applies in very limited contexts",
-            "Nagdaragdag ng ideya. Mga halimbawa: at (and), pati (also), saka (and then), gayundin (likewise). 'Kumain siya NG kanin AT ulam.'",
-            "Pangatnig na Padagdag (Additive Conjunction) was disproven by modern research",
-            "Pangatnig na Padagdag (Additive Conjunction) is the opposite of what it actually means"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "Pangatnig na Padagdag (Additive Conjunction) is defined as: Nagdaragdag ng ideya. Mga halimbawa: at (and), pati (also), saka (and then), gayundin (likewise). 'Kumain siya NG kanin AT ulam.'"
         },
         {
           "q": "'Tumutukoy sa natatanging tao, lugar, o bagay. Karaniwang nagsisimula sa malaking...' — What term is being described?",
@@ -19781,18 +19097,6 @@
           "explanation": "Ang idyoma na 'maamong tupa' ay nangangahulugang mabait o mahinahon, katulad ng tupa na kilala sa kanyang kaamuan."
         },
         {
-          "q": "Which statement about — Hulapi (Suffix) is TRUE?",
-          "opts": [
-            "— Hulapi (Suffix) is the opposite of what it actually means",
-            "Panlapi na idinadagdag sa dulo ng salitang ugat. Mga halimbawa: -an, -in, -hin.",
-            "— Hulapi (Suffix) was disproven by modern research",
-            "— Hulapi (Suffix) only applies in very limited contexts"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "— Hulapi (Suffix) is defined as: Panlapi na idinadagdag sa dulo ng salitang ugat. Mga halimbawa: -an, -in, -hin."
-        },
-        {
           "q": "Ano ang talasalitaan (vocabulary)?",
           "opts": [
             "Ang kabuuang mga salitang kilala at nagagamit ng isang tao",
@@ -20392,102 +19696,6 @@
           "explanation": "The correct value is 0.5, as stated in the textbook."
         },
         {
-          "q": "Which statement about — Bahagi ng Sanaysay: is TRUE?",
-          "opts": [
-            "— Bahagi ng Sanaysay: was disproven by modern research",
-            "1. Panimula (Introduction) — nagpapakilala sa paksa at nagbibigay ng thesis statement.",
-            "— Bahagi ng Sanaysay: is the opposite of what it actually means",
-            "— Bahagi ng Sanaysay: only applies in very limited contexts"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "— Bahagi ng Sanaysay: is defined as: 1. Panimula (Introduction) — nagpapakilala sa paksa at nagbibigay ng thesis statement."
-        },
-        {
-          "q": "Which statement about — Mga Elemento ng Komunikasyon: is TRUE?",
-          "opts": [
-            "— Mga Elemento ng Komunikasyon: only applies in very limited contexts",
-            "— Mga Elemento ng Komunikasyon: was disproven by modern research",
-            "1. Sender (Nagpadala) — ang taong nagpapadala ng mensahe.",
-            "— Mga Elemento ng Komunikasyon: is the opposite of what it actually means"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "— Mga Elemento ng Komunikasyon: is defined as: 1. Sender (Nagpadala) — ang taong nagpapadala ng mensahe."
-        },
-        {
-          "q": "Which statement about — Mga Uri ng Komunikasyon: is TRUE?",
-          "opts": [
-            "— Mga Uri ng Komunikasyon: is the opposite of what it actually means",
-            "— Mga Uri ng Komunikasyon: only applies in very limited contexts",
-            "— Mga Uri ng Komunikasyon: was disproven by modern research",
-            "1. Verbal (Pasalita) — gamit ang salita, maaaring pasalita o nakasulat."
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "— Mga Uri ng Komunikasyon: is defined as: 1. Verbal (Pasalita) — gamit ang salita, maaaring pasalita o nakasulat."
-        },
-        {
-          "q": "Which statement about — Register ng Wika is TRUE?",
-          "opts": [
-            "ang antas o estilo ng wika na ginagamit depende sa sitwasyon at audience. Ang mga uri ay:",
-            "— Register ng Wika was disproven by modern research",
-            "— Register ng Wika is the opposite of what it actually means",
-            "— Register ng Wika only applies in very limited contexts"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "— Register ng Wika is defined as: ang antas o estilo ng wika na ginagamit depende sa sitwasyon at audience. Ang mga uri ay:"
-        },
-        {
-          "q": "Which statement about — Mga Bahagi ng Research Paper: is TRUE?",
-          "opts": [
-            "1. Pamagat (Title) — malinaw at sumasalamin sa nilalaman ng pananaliksik.",
-            "— Mga Bahagi ng Research Paper: is the opposite of what it actually means",
-            "— Mga Bahagi ng Research Paper: was disproven by modern research",
-            "— Mga Bahagi ng Research Paper: only applies in very limited contexts"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "— Mga Bahagi ng Research Paper: is defined as: 1. Pamagat (Title) — malinaw at sumasalamin sa nilalaman ng pananaliksik."
-        },
-        {
-          "q": "Which statement about — Research Ethics (Etika ng Pananaliksik) is TRUE?",
-          "opts": [
-            "— Research Ethics (Etika ng Pananaliksik) was disproven by modern research",
-            "— Research Ethics (Etika ng Pananaliksik) is the opposite of what it actually means",
-            "— Research Ethics (Etika ng Pananaliksik) only applies in very limited contexts",
-            "ang mga prinsipiyong naggagabay sa tamang pag-uugali sa pagsasaliksik. Kasama rito:"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "— Research Ethics (Etika ng Pananaliksik) is defined as: ang mga prinsipiyong naggagabay sa tamang pag-uugali sa pagsasaliksik. Kasama rito:"
-        },
-        {
-          "q": "Which statement about — Mga Karaniwang Uri ng Tanong sa CET Filipino: is TRUE?",
-          "opts": [
-            "— Mga Karaniwang Uri ng Tanong sa CET Filipino: only applies in very limited contexts",
-            "— Mga Karaniwang Uri ng Tanong sa CET Filipino: is the opposite of what it actually means",
-            "1. Reading Comprehension — pagsusuri ng teksto, pangunahing ideya, paghuhulo.",
-            "— Mga Karaniwang Uri ng Tanong sa CET Filipino: was disproven by modern research"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "— Mga Karaniwang Uri ng Tanong sa CET Filipino: is defined as: 1. Reading Comprehension — pagsusuri ng teksto, pangunahing ideya, paghuhulo."
-        },
-        {
-          "q": "Which statement about — Transition Words (Salitang Pang-ugnay) is TRUE?",
-          "opts": [
-            "— Transition Words (Salitang Pang-ugnay) only applies in very limited contexts",
-            "— Transition Words (Salitang Pang-ugnay) was disproven by modern research",
-            "mga salitang nag-uugnay ng mga ideya sa pagitan ng mga pangungusap o talata. Mga halimbawa:",
-            "— Transition Words (Salitang Pang-ugnay) is the opposite of what it actually means"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "— Transition Words (Salitang Pang-ugnay) is defined as: mga salitang nag-uugnay ng mga ideya sa pagitan ng mga pangungusap o talata. Mga halimbawa:"
-        },
-        {
           "q": "Which numerical value is accurate based on the source material?",
           "opts": [
             "0.2",
@@ -20946,30 +20154,6 @@
           "ans": 3,
           "difficulty": "medium",
           "explanation": "The correct value is 90, as stated in the textbook."
-        },
-        {
-          "q": "Which statement about History on the CET is TRUE?",
-          "opts": [
-            "History on the CET only applies in very limited contexts",
-            "History on the CET is the opposite of what it actually means",
-            "History on the CET was disproven by modern research",
-            "isn’t about memorizing every date — it’s about understanding cause"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "History on the CET is defined as: isn’t about memorizing every date — it’s about understanding cause"
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "What one mistake was disproven by modern research",
-            "are you most likely to make on this topic?",
-            "What one mistake only applies in very limited contexts",
-            "What one mistake is the opposite of what it actually means"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
         },
         {
           "q": "Which numerical value is accurate based on the source material?",
@@ -21436,42 +20620,6 @@
           "ans": 1,
           "difficulty": "hard",
           "explanation": "The American period introduced the public education system to the Philippines, including free elementary education and English as medium of instruction."
-        },
-        {
-          "q": "Which statement about History on the CET is TRUE?",
-          "opts": [
-            "isn’t about memorizing every date — it’s about understanding cause",
-            "History on the CET was disproven by modern research",
-            "History on the CET is the opposite of what it actually means",
-            "History on the CET only applies in very limited contexts"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "History on the CET is defined as: isn’t about memorizing every date — it’s about understanding cause"
-        },
-        {
-          "q": "Which statement about soon as a stable government is TRUE?",
-          "opts": [
-            "soon as a stable government only applies in very limited contexts",
-            "soon as a stable government is the opposite of what it actually means",
-            "soon as a stable government was disproven by modern research",
-            "is established”) - 1934: Tydings-Mc Duffie Act (set 10-year"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "soon as a stable government is defined as: is established”) - 1934: Tydings-Mc Duffie Act (set 10-year"
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "What one mistake was disproven by modern research",
-            "are you most likely to make on this topic?",
-            "What one mistake is the opposite of what it actually means",
-            "What one mistake only applies in very limited contexts"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
         },
         {
           "q": "Which of the following is an example of History on the CET?",
@@ -21999,30 +21147,6 @@
           "ans": 2,
           "difficulty": "medium",
           "explanation": "The correct value is 24, as stated in the textbook."
-        },
-        {
-          "q": "Which statement about how they interact is TRUE?",
-          "opts": [
-            "how they interact only applies in very limited contexts",
-            "is essential for the General Information section.",
-            "how they interact is the opposite of what it actually means",
-            "how they interact was disproven by modern research"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "how they interact is defined as: is essential for the General Information section."
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "are you most likely to make on this topic?",
-            "What one mistake is the opposite of what it actually means",
-            "What one mistake was disproven by modern research",
-            "What one mistake only applies in very limited contexts"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
         },
         {
           "q": "Which numerical value is accurate based on the source material?",
@@ -24061,42 +23185,6 @@
           "ans": 2,
           "difficulty": "hard",
           "explanation": "Democracy originated in ancient Greece, specifically in Athens around the 5th century BC, where citizens could vote on laws."
-        },
-        {
-          "q": "Which statement about Current is TRUE?",
-          "opts": [
-            "Current was disproven by modern research",
-            "Current is the opposite of what it actually means",
-            "Issues (2024-2026): - Climate Change: Global warming, rising sea levels,",
-            "Current only applies in very limited contexts"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "Current is defined as: Issues (2024-2026): - Climate Change: Global warming, rising sea levels,"
-        },
-        {
-          "q": "Which statement about Contemporary is TRUE?",
-          "opts": [
-            "Issues = Kasalukuyang Isyu",
-            "Contemporary was disproven by modern research",
-            "Contemporary is the opposite of what it actually means",
-            "Contemporary only applies in very limited contexts"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Contemporary is defined as: Issues = Kasalukuyang Isyu"
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "What one mistake is the opposite of what it actually means",
-            "What one mistake only applies in very limited contexts",
-            "What one mistake was disproven by modern research",
-            "are you most likely to make on this topic?"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
         },
         {
           "q": "Which of the following is an example of Current?",
@@ -26717,318 +25805,6 @@
           "chapter": "ch1",
           "difficulty": "hard",
           "explanation": "The absolute value of any number is its distance from zero, always non-negative. So |−15| = 15. The answer is never negative."
-        },
-        {
-          "q": "Which statement about The Number System is TRUE?",
-          "opts": [
-            "The Number System was disproven by modern research",
-            "The Number System only applies in very limited contexts",
-            "A Hierarchy of Sets",
-            "The Number System is the opposite of what it actually means"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "The Number System is defined as: A Hierarchy of Sets"
-        },
-        {
-          "q": "Which statement about But not all numbers is TRUE?",
-          "opts": [
-            "But not all numbers only applies in very limited contexts",
-            "But not all numbers is the opposite of what it actually means",
-            "are the same. Just like you have different words for “one cat”",
-            "But not all numbers was disproven by modern research"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "But not all numbers is defined as: are the same. Just like you have different words for “one cat”"
-        },
-        {
-          "q": "Which statement about And there is TRUE?",
-          "opts": [
-            "is no “smallest” either — you can always go negative. This simple fact",
-            "And there is the opposite of what it actually means",
-            "And there was disproven by modern research",
-            "And there only applies in very limited contexts"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "And there is defined as: is no “smallest” either — you can always go negative. This simple fact"
-        },
-        {
-          "q": "Which statement about Integers is TRUE?",
-          "opts": [
-            "Integers is the opposite of what it actually means",
-            "Integers was disproven by modern research",
-            "Integers only applies in very limited contexts",
-            "ARE rational! Every integer can be written as itself over 1"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "Integers is defined as: ARE rational! Every integer can be written as itself over 1"
-        },
-        {
-          "q": "Which statement about every number is TRUE?",
-          "opts": [
-            "every number was disproven by modern research",
-            "is a fraction. Picture a perfect square with sides of",
-            "every number is the opposite of what it actually means",
-            "every number only applies in very limited contexts"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "every number is defined as: is a fraction. Picture a perfect square with sides of"
-        },
-        {
-          "q": "Which statement about If a number is TRUE?",
-          "opts": [
-            "is rational and positive, which MUST be true?",
-            "If a number only applies in very limited contexts",
-            "If a number is the opposite of what it actually means",
-            "If a number was disproven by modern research"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "If a number is defined as: is rational and positive, which MUST be true?"
-        },
-        {
-          "q": "Which statement about Number System is TRUE?",
-          "opts": [
-            "Number System only applies in very limited contexts",
-            "A Hierarchy of Sets — shows how number sets nest inside each",
-            "Number System was disproven by modern research",
-            "Number System is the opposite of what it actually means"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "Number System is defined as: A Hierarchy of Sets — shows how number sets nest inside each"
-        },
-        {
-          "q": "Which statement about NON-perfect-square is TRUE?",
-          "opts": [
-            "NON-perfect-square is the opposite of what it actually means",
-            "NON-perfect-square only applies in very limited contexts",
-            "is ALWAYS irrational. Don’t let (b) √9 trick you — √9",
-            "NON-perfect-square was disproven by modern research"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "NON-perfect-square is defined as: is ALWAYS irrational. Don’t let (b) √9 trick you — √9"
-        },
-        {
-          "q": "Which statement about All points is TRUE?",
-          "opts": [
-            "All points was disproven by modern research",
-            "All points only applies in very limited contexts",
-            "are Real numbers (ℝ)",
-            "All points is the opposite of what it actually means"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "All points is defined as: are Real numbers (ℝ)"
-        },
-        {
-          "q": "Which statement about Imagine math is TRUE?",
-          "opts": [
-            "is a game. For the game to be fair, everyone has to follow the same",
-            "Imagine math is the opposite of what it actually means",
-            "Imagine math only applies in very limited contexts",
-            "Imagine math was disproven by modern research"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Imagine math is defined as: is a game. For the game to be fair, everyone has to follow the same"
-        },
-        {
-          "q": "Which statement about properties of operations is TRUE?",
-          "opts": [
-            "properties of operations is the opposite of what it actually means",
-            "The properties of operations are these rules. They tell us: - Can we swap",
-            "properties of operations only applies in very limited contexts",
-            "properties of operations was disproven by modern research"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "properties of operations is defined as: The properties of operations are these rules. They tell us: - Can we swap"
-        },
-        {
-          "q": "Which statement about Arithmetic tricks is TRUE?",
-          "opts": [
-            "Arithmetic tricks is the opposite of what it actually means",
-            "are shortcuts — they help you solve problems faster, and on the",
-            "Arithmetic tricks was disproven by modern research",
-            "Arithmetic tricks only applies in very limited contexts"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "Arithmetic tricks is defined as: are shortcuts — they help you solve problems faster, and on the"
-        },
-        {
-          "q": "Which statement about A number is TRUE?",
-          "opts": [
-            "A number was disproven by modern research",
-            "A number is the opposite of what it actually means",
-            "A number only applies in very limited contexts",
-            "A number is"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "A number is defined as: A number is"
-        },
-        {
-          "q": "Which statement about Last digit is TRUE?",
-          "opts": [
-            "Last digit is the opposite of what it actually means",
-            "Last digit only applies in very limited contexts",
-            "Last digit was disproven by modern research",
-            "is even (0, 2, 4, 6, 8)"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "Last digit is defined as: is even (0, 2, 4, 6, 8)"
-        },
-        {
-          "q": "Which statement about Sum of digits is TRUE?",
-          "opts": [
-            "is divisible by 3",
-            "Sum of digits is the opposite of what it actually means",
-            "Sum of digits was disproven by modern research",
-            "Sum of digits only applies in very limited contexts"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Sum of digits is defined as: is divisible by 3"
-        },
-        {
-          "q": "Which statement about real numbers is TRUE?",
-          "opts": [
-            "real numbers was disproven by modern research",
-            "real numbers only applies in very limited contexts",
-            "The real numbers are the complete number system — every single point on the",
-            "real numbers is the opposite of what it actually means"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "real numbers is defined as: The real numbers are the complete number system — every single point on the"
-        },
-        {
-          "q": "Which statement about number line is TRUE?",
-          "opts": [
-            "number line was disproven by modern research",
-            "The number line is continuous — no gaps. Between any two real numbers, there’s",
-            "number line is the opposite of what it actually means",
-            "number line only applies in very limited contexts"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "number line is defined as: The number line is continuous — no gaps. Between any two real numbers, there’s"
-        },
-        {
-          "q": "Which statement about Exactly ONE is TRUE?",
-          "opts": [
-            "Exactly ONE was disproven by modern research",
-            "is true: a < b, a = b, or a > b",
-            "Exactly ONE only applies in very limited contexts",
-            "Exactly ONE is the opposite of what it actually means"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "Exactly ONE is defined as: is true: a < b, a = b, or a > b"
-        },
-        {
-          "q": "Which statement about Negative numbers is TRUE?",
-          "opts": [
-            "are to the left of 0; positives to the right",
-            "Negative numbers was disproven by modern research",
-            "Negative numbers is the opposite of what it actually means",
-            "Negative numbers only applies in very limited contexts"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Negative numbers is defined as: are to the left of 0; positives to the right"
-        },
-        {
-          "q": "Which statement about All integers is TRUE?",
-          "opts": [
-            "All integers only applies in very limited contexts",
-            "are rational (can write as n/1), NOT the other way",
-            "All integers was disproven by modern research",
-            "All integers is the opposite of what it actually means"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "All integers is defined as: are rational (can write as n/1), NOT the other way"
-        },
-        {
-          "q": "Which statement about Between any two reals is TRUE?",
-          "opts": [
-            "Between any two reals only applies in very limited contexts",
-            "is another real",
-            "Between any two reals is the opposite of what it actually means",
-            "Between any two reals was disproven by modern research"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "Between any two reals is defined as: is another real"
-        },
-        {
-          "q": "Which statement about Arithmetic operations is TRUE?",
-          "opts": [
-            "are the four basic tools of math. Think of them as the",
-            "Arithmetic operations is the opposite of what it actually means",
-            "Arithmetic operations only applies in very limited contexts",
-            "Arithmetic operations was disproven by modern research"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Arithmetic operations is defined as: are the four basic tools of math. Think of them as the"
-        },
-        {
-          "q": "Which statement about Exponents is TRUE?",
-          "opts": [
-            "Exponents was disproven by modern research",
-            "Exponents only applies in very limited contexts",
-            "Exponents is the opposite of what it actually means",
-            "are shorthand for repeated multiplication. Instead of writing 2 ×"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "Exponents is defined as: are shorthand for repeated multiplication. Instead of writing 2 ×"
-        },
-        {
-          "q": "Which statement about Writing very large or very small numbers as is TRUE?",
-          "opts": [
-            "Writing very large or very small numbers as is the opposite of what it actually means",
-            "a × 10^n, where 1 ≤ a < 10",
-            "Writing very large or very small numbers as only applies in very limited contexts",
-            "Writing very large or very small numbers as was disproven by modern research"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "Writing very large or very small numbers as is defined as: a × 10^n, where 1 ≤ a < 10"
-        },
-        {
-          "q": "Which statement about Key CET trap is TRUE?",
-          "opts": [
-            "Key CET trap was disproven by modern research",
-            "Key CET trap is the opposite of what it actually means",
-            "A fraction like (2+3)/(4−1) means both numerator and denominator must",
-            "Key CET trap only applies in very limited contexts"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "Key CET trap is defined as: A fraction like (2+3)/(4−1) means both numerator and denominator must"
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "are you most likely to make on this topic?",
-            "What one mistake is the opposite of what it actually means",
-            "What one mistake was disproven by modern research",
-            "What one mistake only applies in very limited contexts"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
         },
         {
           "q": "'A Hierarchy of Sets' — What term is being described?",
@@ -34360,18 +33136,6 @@
           "explanation": "To find the inverse of f(x) = x³, solve y = x³ for x: x = y^(1/3). So f⁻¹(x) = x^(1/3) (cube root)."
         },
         {
-          "q": "Which statement about Rational function is TRUE?",
-          "opts": [
-            "Rational function is the opposite of what it actually means",
-            "f(x) = P(x)/Q(x) where P and Q are polynomials. Domain excludes values where Q(x) = 0.",
-            "Rational function only applies in very limited contexts",
-            "Rational function was disproven by modern research"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "Rational function is defined as: f(x) = P(x)/Q(x) where P and Q are polynomials. Domain excludes values where Q(x) = 0."
-        },
-        {
           "q": "'A function is a rule that assigns exactly ONE output to each input. Think of it ...' — What term is being described?",
           "opts": [
             "Logarithm",
@@ -35910,114 +34674,6 @@
           "ans": 2,
           "difficulty": "hard",
           "explanation": "A cube has 6 faces, each a square with area s². Total surface area = 6s²."
-        },
-        {
-          "q": "Which statement about Line segment is TRUE?",
-          "opts": [
-            "Line segment only applies in very limited contexts",
-            "A part of a line between two endpoints (has a definite length).",
-            "Line segment was disproven by modern research",
-            "Line segment is the opposite of what it actually means"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "Line segment is defined as: A part of a line between two endpoints (has a definite length)."
-        },
-        {
-          "q": "Which statement about Complementary angles is TRUE?",
-          "opts": [
-            "Complementary angles only applies in very limited contexts",
-            "Complementary angles is the opposite of what it actually means",
-            "Two angles that add up to 90°. Example: 30° and 60° are complementary.",
-            "Complementary angles was disproven by modern research"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "Complementary angles is defined as: Two angles that add up to 90°. Example: 30° and 60° are complementary."
-        },
-        {
-          "q": "Which statement about Supplementary angles is TRUE?",
-          "opts": [
-            "Supplementary angles is the opposite of what it actually means",
-            "Two angles that add up to 180°. Example: 110° and 70° are supplementary.",
-            "Supplementary angles was disproven by modern research",
-            "Supplementary angles only applies in very limited contexts"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "Supplementary angles is defined as: Two angles that add up to 180°. Example: 110° and 70° are supplementary."
-        },
-        {
-          "q": "Which statement about Radius (r) is TRUE?",
-          "opts": [
-            "Radius (r) was disproven by modern research",
-            "Radius (r) only applies in very limited contexts",
-            "Distance from center to any point on the circle.",
-            "Radius (r) is the opposite of what it actually means"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "Radius (r) is defined as: Distance from center to any point on the circle."
-        },
-        {
-          "q": "Which statement about Diameter (d) is TRUE?",
-          "opts": [
-            "Diameter (d) was disproven by modern research",
-            "Diameter (d) is the opposite of what it actually means",
-            "Distance across the circle through the center. d = 2r.",
-            "Diameter (d) only applies in very limited contexts"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "Diameter (d) is defined as: Distance across the circle through the center. d = 2r."
-        },
-        {
-          "q": "Which statement about Chord is TRUE?",
-          "opts": [
-            "Chord only applies in very limited contexts",
-            "Chord was disproven by modern research",
-            "A line segment with both endpoints on the circle.",
-            "Chord is the opposite of what it actually means"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "Chord is defined as: A line segment with both endpoints on the circle."
-        },
-        {
-          "q": "Which statement about Secant is TRUE?",
-          "opts": [
-            "A line that intersects the circle at two points.",
-            "Secant was disproven by modern research",
-            "Secant only applies in very limited contexts",
-            "Secant is the opposite of what it actually means"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Secant is defined as: A line that intersects the circle at two points."
-        },
-        {
-          "q": "Which statement about Arc is TRUE?",
-          "opts": [
-            "Arc is the opposite of what it actually means",
-            "A portion of the circle's circumference between two points.",
-            "Arc only applies in very limited contexts",
-            "Arc was disproven by modern research"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "Arc is defined as: A portion of the circle's circumference between two points."
-        },
-        {
-          "q": "Which statement about Sector is TRUE?",
-          "opts": [
-            "A 'pie slice' region bounded by two radii and an arc.",
-            "Sector was disproven by modern research",
-            "Sector only applies in very limited contexts",
-            "Sector is the opposite of what it actually means"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Sector is defined as: A 'pie slice' region bounded by two radii and an arc."
         },
         {
           "q": "'A location in space with no size, represented by a dot and labeled with a capita...' — What term is being described?",
@@ -40064,18 +38720,6 @@
           "explanation": "The correct value is 1, as stated in the textbook."
         },
         {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "What one mistake only applies in very limited contexts",
-            "What one mistake was disproven by modern research",
-            "are you most likely to make on this topic?",
-            "What one mistake is the opposite of what it actually means"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
-        },
-        {
           "q": "Which numerical value is accurate based on the source material?",
           "opts": [
             "1.5",
@@ -41404,126 +40048,6 @@
           "ans": 0,
           "difficulty": "medium",
           "explanation": "The correct value is 5, as stated in the textbook."
-        },
-        {
-          "q": "Which statement about 7.1 Sequences and Series is TRUE?",
-          "opts": [
-            "Finding patterns, arithmetic and geometric progressions, summation notation",
-            "7.1 Sequences and Series was disproven by modern research",
-            "7.1 Sequences and Series is the opposite of what it actually means",
-            "7.1 Sequences and Series only applies in very limited contexts"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "7.1 Sequences and Series is defined as: Finding patterns, arithmetic and geometric progressions, summation notation"
-        },
-        {
-          "q": "Which statement about 7.2 Matrices and Determinants is TRUE?",
-          "opts": [
-            "7.2 Matrices and Determinants is the opposite of what it actually means",
-            "Organizing data in grids, matrix operations, solving systems with determinants",
-            "7.2 Matrices and Determinants only applies in very limited contexts",
-            "7.2 Matrices and Determinants was disproven by modern research"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "7.2 Matrices and Determinants is defined as: Organizing data in grids, matrix operations, solving systems with determinants"
-        },
-        {
-          "q": "Which statement about 7.3 Complex Numbers is TRUE?",
-          "opts": [
-            "7.3 Complex Numbers was disproven by modern research",
-            "7.3 Complex Numbers is the opposite of what it actually means",
-            "7.3 Complex Numbers only applies in very limited contexts",
-            "The imaginary unit i, operations with complex numbers, powers of i"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "7.3 Complex Numbers is defined as: The imaginary unit i, operations with complex numbers, powers of i"
-        },
-        {
-          "q": "Which statement about 7.4 Vectors and Basic Operations is TRUE?",
-          "opts": [
-            "7.4 Vectors and Basic Operations was disproven by modern research",
-            "7.4 Vectors and Basic Operations is the opposite of what it actually means",
-            "7.4 Vectors and Basic Operations only applies in very limited contexts",
-            "Directed quantities, vector addition, dot product, magnitude"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "7.4 Vectors and Basic Operations is defined as: Directed quantities, vector addition, dot product, magnitude"
-        },
-        {
-          "q": "Which statement about Series is TRUE?",
-          "opts": [
-            "Series only applies in very limited contexts",
-            "Series is the opposite of what it actually means",
-            "The sum of the terms of a sequence.",
-            "Series was disproven by modern research"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "Series is defined as: The sum of the terms of a sequence."
-        },
-        {
-          "q": "Which statement about Summation Notation is TRUE?",
-          "opts": [
-            "Summation Notation was disproven by modern research",
-            "Summation Notation is the opposite of what it actually means",
-            "Summation Notation only applies in very limited contexts",
-            "Sigma from k=m to n of a sub k means add up all terms a sub k as k goes from m to n."
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "Summation Notation is defined as: Sigma from k=m to n of a sub k means add up all terms a sub k as k goes from m to n."
-        },
-        {
-          "q": "Which statement about Square Matrix is TRUE?",
-          "opts": [
-            "Square Matrix was disproven by modern research",
-            "Same number of rows and columns (n by n). Only square matrices have determinants.",
-            "Square Matrix only applies in very limited contexts",
-            "Square Matrix is the opposite of what it actually means"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "Square Matrix is defined as: Same number of rows and columns (n by n). Only square matrices have determinants."
-        },
-        {
-          "q": "Which statement about Zero Matrix is TRUE?",
-          "opts": [
-            "All entries are 0. Like the number 0 for matrices: A + 0 = A.",
-            "Zero Matrix is the opposite of what it actually means",
-            "Zero Matrix was disproven by modern research",
-            "Zero Matrix only applies in very limited contexts"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Zero Matrix is defined as: All entries are 0. Like the number 0 for matrices: A + 0 = A."
-        },
-        {
-          "q": "Which statement about Imaginary Unit (i) is TRUE?",
-          "opts": [
-            "Imaginary Unit (i) is the opposite of what it actually means",
-            "Defined as i = square root of -1. Therefore i squared = -1.",
-            "Imaginary Unit (i) only applies in very limited contexts",
-            "Imaginary Unit (i) was disproven by modern research"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "Imaginary Unit (i) is defined as: Defined as i = square root of -1. Therefore i squared = -1."
-        },
-        {
-          "q": "Which statement about Zero Vector is TRUE?",
-          "opts": [
-            "Zero Vector only applies in very limited contexts",
-            "<0, 0> - has magnitude 0 and no defined direction.",
-            "Zero Vector is the opposite of what it actually means",
-            "Zero Vector was disproven by modern research"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "Zero Vector is defined as: <0, 0> - has magnitude 0 and no defined direction."
         },
         {
           "q": "Which numerical value is accurate based on the source material?",
@@ -43993,42 +42517,6 @@
           "ans": 2,
           "difficulty": "medium",
           "explanation": "The correct value is 3, as stated in the textbook."
-        },
-        {
-          "q": "Which statement about Interquartile Range (IQR) is TRUE?",
-          "opts": [
-            "IQR = Q3 - Q1. Measures the spread of the middle 50% of data. Robust against outliers.",
-            "Interquartile Range (IQR) was disproven by modern research",
-            "Interquartile Range (IQR) is the opposite of what it actually means",
-            "Interquartile Range (IQR) only applies in very limited contexts"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Interquartile Range (IQR) is defined as: IQR = Q3 - Q1. Measures the spread of the middle 50% of data. Robust against outliers."
-        },
-        {
-          "q": "Which statement about Conditional Probability is TRUE?",
-          "opts": [
-            "P(A|B) = P(A and B) / P(B). The probability of A given that B has already occurred.",
-            "Conditional Probability only applies in very limited contexts",
-            "Conditional Probability is the opposite of what it actually means",
-            "Conditional Probability was disproven by modern research"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Conditional Probability is defined as: P(A|B) = P(A and B) / P(B). The probability of A given that B has already occurred."
-        },
-        {
-          "q": "Which statement about A probability distribution is TRUE?",
-          "opts": [
-            "is a list of all possible outcomes and their probabilities.",
-            "A probability distribution was disproven by modern research",
-            "A probability distribution is the opposite of what it actually means",
-            "A probability distribution only applies in very limited contexts"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "A probability distribution is defined as: is a list of all possible outcomes and their probabilities."
         },
         {
           "q": "Which numerical value is accurate based on the source material?",
@@ -48674,78 +47162,6 @@
           "explanation": "The correct value is 100, as stated in the textbook."
         },
         {
-          "q": "Which statement about Electron configuration is TRUE?",
-          "opts": [
-            "Electron configuration was disproven by modern research",
-            "Electron configuration is the opposite of what it actually means",
-            "Electron configuration only applies in very limited contexts",
-            "is like filling a movie theater: - Shells = Floor levels (ground"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "Electron configuration is defined as: is like filling a movie theater: - Shells = Floor levels (ground"
-        },
-        {
-          "q": "Which statement about some is TRUE?",
-          "opts": [
-            "some is the opposite of what it actually means",
-            "some only applies in very limited contexts",
-            "are takers (nonmetals), and some are sharers.",
-            "some was disproven by modern research"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "some is defined as: are takers (nonmetals), and some are sharers."
-        },
-        {
-          "q": "Which statement about Hydrogen is TRUE?",
-          "opts": [
-            "Hydrogen was disproven by modern research",
-            "Hydrogen only applies in very limited contexts",
-            "Hydrogen is the opposite of what it actually means",
-            "is NOT an alkali metal — it’s placed above Group 1 but is a"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "Hydrogen is defined as: is NOT an alkali metal — it’s placed above Group 1 but is a"
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "are you most likely to make on this topic?",
-            "What one mistake is the opposite of what it actually means",
-            "What one mistake only applies in very limited contexts",
-            "What one mistake was disproven by modern research"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
-        },
-        {
-          "q": "Which statement about Limiting Reactant is TRUE?",
-          "opts": [
-            "Limiting Reactant only applies in very limited contexts",
-            "Limiting Reactant was disproven by modern research",
-            "Limiting Reactant is the opposite of what it actually means",
-            "The reactant that runs out first (limits product amount). Excess"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "Limiting Reactant is defined as: The reactant that runs out first (limits product amount). Excess"
-        },
-        {
-          "q": "Which statement about Reactant is TRUE?",
-          "opts": [
-            "The reactant left over after reaction stops. Percent Yield: (Actual yield /",
-            "Reactant was disproven by modern research",
-            "Reactant is the opposite of what it actually means",
-            "Reactant only applies in very limited contexts"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Reactant is defined as: The reactant left over after reaction stops. Percent Yield: (Actual yield /"
-        },
-        {
           "q": "Which numerical value is accurate based on the source material?",
           "opts": [
             "150",
@@ -50151,18 +48567,6 @@
           "explanation": "The correct value is 760, as stated in the textbook."
         },
         {
-          "q": "Which statement about STP (Standard Temperature and Pressure) is TRUE?",
-          "opts": [
-            "STP (Standard Temperature and Pressure) only applies in very limited contexts",
-            "STP (Standard Temperature and Pressure) is the opposite of what it actually means",
-            "0°C (273.15 K) and 1 atm. At STP, 1 mole of any ideal gas occupies exactly 22.4 L.",
-            "STP (Standard Temperature and Pressure) was disproven by modern research"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "STP (Standard Temperature and Pressure) is defined as: 0°C (273.15 K) and 1 atm. At STP, 1 mole of any ideal gas occupies exactly 22.4 L."
-        },
-        {
           "q": "Which numerical value is accurate based on the source material?",
           "opts": [
             "380",
@@ -51470,19 +49874,6 @@
           "explanation": "Work is calculated as W = F × d, where F is force applied in the direction of displacement and d is the displacement. Work is measured in Joules."
         },
         {
-          "q": "Power is defined as:",
-          "opts": [
-            "Force × distance",
-            "Work / time",
-            "Mass × acceleration",
-            "Energy × time"
-          ],
-          "ans": 1,
-          "chapter": "ch14",
-          "difficulty": "hard",
-          "explanation": "Power is the rate at which work is done or energy is transferred. P = W/t, measured in Watts (W). One Watt equals one Joule per second."
-        },
-        {
           "q": "Momentum equals:",
           "opts": [
             "Mass × velocity",
@@ -51938,66 +50329,6 @@
           "ans": 1,
           "difficulty": "medium",
           "explanation": "The correct value is 50, as stated in the textbook."
-        },
-        {
-          "q": "Which statement about Free Fall is TRUE?",
-          "opts": [
-            "Free Fall only applies in very limited contexts",
-            "a = g = 9.8 m/s² (≈ 10 m/s² for quick CET calculations) - Objects accelerate",
-            "Free Fall is the opposite of what it actually means",
-            "Free Fall was disproven by modern research"
-          ],
-          "ans": 1,
-          "difficulty": "hard",
-          "explanation": "Free Fall is defined as: a = g = 9.8 m/s² (≈ 10 m/s² for quick CET calculations) - Objects accelerate"
-        },
-        {
-          "q": "Which statement about Solution is TRUE?",
-          "opts": [
-            "Solution was disproven by modern research",
-            "Solution only applies in very limited contexts",
-            "Solution is the opposite of what it actually means",
-            "a = Δv/Δt = (30 − 10)/5 = 20/5 = 4 m/s² Answer: 4 m/s²."
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "Solution is defined as: a = Δv/Δt = (30 − 10)/5 = 20/5 = 4 m/s² Answer: 4 m/s²."
-        },
-        {
-          "q": "Which statement about Acceleration due to gravity is TRUE?",
-          "opts": [
-            "Acceleration due to gravity is the opposite of what it actually means",
-            "Acceleration due to gravity only applies in very limited contexts",
-            "is constant at −9.8 m/s² throughout motion. Step 3: Many",
-            "Acceleration due to gravity was disproven by modern research"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "Acceleration due to gravity is defined as: is constant at −9.8 m/s² throughout motion. Step 3: Many"
-        },
-        {
-          "q": "Which statement about Momentum is TRUE?",
-          "opts": [
-            "Momentum only applies in very limited contexts",
-            "Momentum was disproven by modern research",
-            "Momentum is the opposite of what it actually means",
-            "is “mass in motion” — p = mv. A freight train moving slowly has huge"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "Momentum is defined as: is “mass in motion” — p = mv. A freight train moving slowly has huge"
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "What one mistake is the opposite of what it actually means",
-            "What one mistake only applies in very limited contexts",
-            "What one mistake was disproven by modern research",
-            "are you most likely to make on this topic?"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
         },
         {
           "q": "Which numerical value is accurate based on the source material?",
@@ -53232,78 +51563,6 @@
           "ans": 1,
           "difficulty": "medium",
           "explanation": "The correct value is 343, as stated in the textbook."
-        },
-        {
-          "q": "Which statement about Sound and light is TRUE?",
-          "opts": [
-            "Sound and light was disproven by modern research",
-            "Sound and light is the opposite of what it actually means",
-            "Sound and light only applies in very limited contexts",
-            "are both waves, but they’re fundamentally different. Sound needs air (or"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "Sound and light is defined as: are both waves, but they’re fundamentally different. Sound needs air (or"
-        },
-        {
-          "q": "Which statement about Electricity is TRUE?",
-          "opts": [
-            "is the flow of electrons — like water flowing through pipes. Voltage is the",
-            "Electricity is the opposite of what it actually means",
-            "Electricity was disproven by modern research",
-            "Electricity only applies in very limited contexts"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Electricity is defined as: is the flow of electrons — like water flowing through pipes. Voltage is the"
-        },
-        {
-          "q": "Which statement about resistance is TRUE?",
-          "opts": [
-            "is how narrow the pipe is. Ohm’s Law (V = IR) connects these three: more",
-            "resistance is the opposite of what it actually means",
-            "resistance only applies in very limited contexts",
-            "resistance was disproven by modern research"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "resistance is defined as: is how narrow the pipe is. Ohm’s Law (V = IR) connects these three: more"
-        },
-        {
-          "q": "Which statement about Electricity and magnetism is TRUE?",
-          "opts": [
-            "are two sides of the same coin. Run current through a wire →",
-            "Electricity and magnetism only applies in very limited contexts",
-            "Electricity and magnetism was disproven by modern research",
-            "Electricity and magnetism is the opposite of what it actually means"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Electricity and magnetism is defined as: are two sides of the same coin. Run current through a wire →"
-        },
-        {
-          "q": "Which statement about Marble is TRUE?",
-          "opts": [
-            "is metamorphic (from limestone), NOT igneous",
-            "Marble is the opposite of what it actually means",
-            "Marble was disproven by modern research",
-            "Marble only applies in very limited contexts"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "Marble is defined as: is metamorphic (from limestone), NOT igneous"
-        },
-        {
-          "q": "Which statement about What one mistake is TRUE?",
-          "opts": [
-            "What one mistake only applies in very limited contexts",
-            "What one mistake is the opposite of what it actually means",
-            "What one mistake was disproven by modern research",
-            "are you most likely to make on this topic?"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "What one mistake is defined as: are you most likely to make on this topic?"
         },
         {
           "q": "Which numerical value is accurate based on the source material?",
