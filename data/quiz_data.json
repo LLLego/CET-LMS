@@ -18082,18 +18082,6 @@
           "explanation": "The real numbers (ℝ) include all rational numbers (ℚ), which include all integers (ℤ), which include all natural numbers (ℕ). So ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ. The reals also include irrational numbers like √2 and π."
         },
         {
-          "q": "'is no “smallest” either — you can always go negative. This simple fact' — What term is being described?",
-          "opts": [
-            "And there",
-            "Key CET trap",
-            "Summation Notation",
-            "Writing very large or very small numbers as"
-          ],
-          "ans": 0,
-          "difficulty": "easy",
-          "explanation": "'And there' is defined as: is no “smallest” either — you can always go negative. This simple fact"
-        },
-        {
           "q": "'is a fraction. Picture a perfect square with sides of' — What term is being described?",
           "opts": [
             "every number",
@@ -18190,18 +18178,6 @@
           "explanation": "'These' is defined as: are inside ℝbut NOT inside ℚ"
         },
         {
-          "q": "'is a game. For the game to be fair, everyone has to follow the same' — What term is being described?",
-          "opts": [
-            "Imagine math",
-            "And there",
-            "Sum of digits",
-            "All points"
-          ],
-          "ans": 0,
-          "difficulty": "easy",
-          "explanation": "'Imagine math' is defined as: is a game. For the game to be fair, everyone has to follow the same"
-        },
-        {
           "q": "'The properties of operations are these rules. They tell us: - Can we swap' — What term is being described?",
           "opts": [
             "Last digit",
@@ -18212,18 +18188,6 @@
           "ans": 3,
           "difficulty": "easy",
           "explanation": "'properties of operations' is defined as: The properties of operations are these rules. They tell us: - Can we swap"
-        },
-        {
-          "q": "'is the same height. The distributive property is like a crane: it lifts' — What term is being described?",
-          "opts": [
-            "interval method",
-            "These rules",
-            "wall",
-            "And there"
-          ],
-          "ans": 2,
-          "difficulty": "easy",
-          "explanation": "'wall' is defined as: is the same height. The distributive property is like a crane: it lifts"
         },
         {
           "q": "'aren’t boring — they’re the reason math works at all! Ali' — What term is being described?",
@@ -18334,18 +18298,6 @@
           "explanation": "'Negative numbers' is defined as: are to the left of 0; positives to the right"
         },
         {
-          "q": "'are rational (can write as n/1), NOT the other way' — What term is being described?",
-          "opts": [
-            "Arithmetic tricks",
-            "All integers",
-            "And there",
-            "Inequalities"
-          ],
-          "ans": 1,
-          "difficulty": "easy",
-          "explanation": "'All integers' is defined as: are rational (can write as n/1), NOT the other way"
-        },
-        {
           "q": "'is an integer IV. The set of real numbers is the union of rationals and irration...' — What term is being described?",
           "opts": [
             "Key CET trap",
@@ -18368,18 +18320,6 @@
           "ans": 3,
           "difficulty": "easy",
           "explanation": "'Between any two reals' is defined as: is another real"
-        },
-        {
-          "q": "'are the four basic tools of math. Think of them as the' — What term is being described?",
-          "opts": [
-            "And there",
-            "Which of these",
-            "Arithmetic operations",
-            "Last digit"
-          ],
-          "ans": 2,
-          "difficulty": "easy",
-          "explanation": "'Arithmetic operations' is defined as: are the four basic tools of math. Think of them as the"
         },
         {
           "q": "'are shorthand for repeated multiplication. Instead of writing 2 ×' — What term is being described?",
@@ -18442,18 +18382,6 @@
           "explanation": "'interval notation' is defined as: The interval notation is a short way to write all those infinite numbers:"
         },
         {
-          "q": "'is flipping the sign when multiplying/dividing by' — What term is being described?",
-          "opts": [
-            "interval method",
-            "Which number",
-            "part with inequalities",
-            "And there"
-          ],
-          "ans": 2,
-          "difficulty": "easy",
-          "explanation": "'part with inequalities' is defined as: is flipping the sign when multiplying/dividing by"
-        },
-        {
           "q": "'The interval method is super useful for CET exams, it saves time' — What term is being described?",
           "opts": [
             "Inequalities",
@@ -18464,18 +18392,6 @@
           "ans": 1,
           "difficulty": "easy",
           "explanation": "'interval method' is defined as: The interval method is super useful for CET exams, it saves time"
-        },
-        {
-          "q": "'is not a number, always use parentheses with ∞' — What term is being described?",
-          "opts": [
-            "Which of these",
-            "Inequalities",
-            "And there",
-            "Infinity"
-          ],
-          "ans": 3,
-          "difficulty": "easy",
-          "explanation": "'Infinity' is defined as: is not a number, always use parentheses with ∞"
         },
         {
           "q": "'is above ground (D < 0), it never crosses — no real' — What term is being described?",
@@ -18730,18 +18646,6 @@
           "explanation": "This example illustrates properties of operations: The properties of operations are these rules. They tell us: - Can we swap"
         },
         {
-          "q": "The following is an example of which concept? 'Example 2 (Standard — Fraction Operations): Simplify: 3/4 + 1/6...'",
-          "opts": [
-            "properties of operations",
-            "And there",
-            "Inequalities",
-            "Composition"
-          ],
-          "ans": 0,
-          "difficulty": "easy",
-          "explanation": "This example illustrates properties of operations: The properties of operations are these rules. They tell us: - Can we swap"
-        },
-        {
           "q": "The following is an example of which concept? 'Example 4 (Indian Method — Cross-Multiplication): Which is larger, 5/8 or 3/5?...'",
           "opts": [
             "Which of these",
@@ -18920,18 +18824,6 @@
           "ans": 3,
           "difficulty": "easy",
           "explanation": "This example illustrates Combinations: are for unordered groups (teams: ABC = BCA). Factorial (n!) is"
-        },
-        {
-          "q": "A student encounters 'is no “smallest” either — you can always go negati...' — which concept does this illustrate?",
-          "opts": [
-            "And there",
-            "number line",
-            "Last digit",
-            "Event"
-          ],
-          "ans": 0,
-          "difficulty": "medium",
-          "explanation": "This describes And there: is no “smallest” either — you can always go negative. This simple fact"
         },
         {
           "q": "A student encounters 'ARE rational! Every integer can be written as itse...' — which concept does this illustrate?",
@@ -19114,18 +19006,6 @@
           "explanation": "This describes A number: A number is"
         },
         {
-          "q": "A student encounters 'is even (0, 2, 4, 6, 8)...' — which concept does this illustrate?",
-          "opts": [
-            "These rules",
-            "Last digit",
-            "properties of operations",
-            "And there"
-          ],
-          "ans": 1,
-          "difficulty": "medium",
-          "explanation": "This describes Last digit: is even (0, 2, 4, 6, 8)"
-        },
-        {
           "q": "A student encounters 'is divisible by 3...' — which concept does this illustrate?",
           "opts": [
             "A polynomial",
@@ -19160,18 +19040,6 @@
           "ans": 3,
           "difficulty": "medium",
           "explanation": "This describes Sum of digits: is divisible by 9"
-        },
-        {
-          "q": "A student encounters 'The real numbers are the complete number system — ...' — which concept does this illustrate?",
-          "opts": [
-            "7.4 Vectors and Basic Operations",
-            "Perimeter",
-            "real numbers",
-            "And there"
-          ],
-          "ans": 2,
-          "difficulty": "medium",
-          "explanation": "This describes real numbers: The real numbers are the complete number system — every single point on the"
         },
         {
           "q": "A student encounters 'The number line is continuous — no gaps. Between a...' — which concept does this illustrate?",
@@ -19328,18 +19196,6 @@
           "ans": 1,
           "difficulty": "medium",
           "explanation": "This describes part with inequalities: is flipping the sign when multiplying/dividing by"
-        },
-        {
-          "q": "A student encounters 'The interval method is super useful for CET exams,...' — which concept does this illustrate?",
-          "opts": [
-            "45-45-90 Triangle",
-            "interval method",
-            "And there",
-            "number"
-          ],
-          "ans": 1,
-          "difficulty": "medium",
-          "explanation": "This describes interval method: The interval method is super useful for CET exams, it saves time"
         },
         {
           "q": "A student encounters 'is not a number, always use parentheses with ∞...' — which concept does this illustrate?",
@@ -19678,18 +19534,6 @@
           "explanation": "'Negative numbers' is defined as: are to the left of 0; positives to the right"
         },
         {
-          "q": "Which term matches this description: 'are rational (can write as n/1), NOT the other way'?",
-          "opts": [
-            "NON-perfect-square",
-            "Factorial",
-            "And there",
-            "All integers"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "'All integers' is defined as: are rational (can write as n/1), NOT the other way"
-        },
-        {
           "q": "Which term matches this description: 'is an integer IV. The set of real numbers is the union of rationals and irration...'?",
           "opts": [
             "Number System",
@@ -19748,18 +19592,6 @@
           "ans": 2,
           "difficulty": "hard",
           "explanation": "'Key CET trap' is defined as: A fraction like (2+3)/(4−1) means both numerator and denominator must"
-        },
-        {
-          "q": "Which term matches this description: 'are like equations, but instead of saying two things are equal, they'?",
-          "opts": [
-            "Inequalities",
-            "Which number",
-            "here",
-            "And there"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "'Inequalities' is defined as: are like equations, but instead of saying two things are equal, they"
         },
         {
           "q": "Which term matches this description: 'are equations with wiggle room. Instead of x being exactly 2, x can be'?",
@@ -19834,18 +19666,6 @@
           "explanation": "'formula' is defined as: The formula is just geometry in algebraic form! Completing the square"
         },
         {
-          "q": "Which term matches this description: 'are for unordered groups (teams: ABC = BCA). Factorial (n!) is'?",
-          "opts": [
-            "interval method",
-            "number",
-            "And there",
-            "Combinations"
-          ],
-          "ans": 3,
-          "difficulty": "hard",
-          "explanation": "'Combinations' is defined as: are for unordered groups (teams: ABC = BCA). Factorial (n!) is"
-        },
-        {
           "q": "Which term matches this description: 'is like a chain reaction: 5! = 5×4×3×2×1 = 120.'?",
           "opts": [
             "Factorial",
@@ -19868,18 +19688,6 @@
           "ans": 1,
           "difficulty": "hard",
           "explanation": "'here' is defined as: is mixing up n Pr and n Cr."
-        },
-        {
-          "q": "Which term matches this description: 'is always smaller than n Pr for the same n and r, because it'?",
-          "opts": [
-            "n Cr",
-            "Number System",
-            "And there",
-            "Sum of digits"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "'n Cr' is defined as: is always smaller than n Pr for the same n and r, because it"
         },
         {
           "q": "Which concept is best illustrated by the following: 'ARE rational! Every integer can be written as itself over 1'?",
@@ -19916,18 +19724,6 @@
           "ans": 3,
           "difficulty": "hard",
           "explanation": "This describes Which of these: is rational? (a) √7, (b) 0.333…, (c) √16, (d) e"
-        },
-        {
-          "q": "Which concept is best illustrated by the following: 'is NOT rational?'?",
-          "opts": [
-            "Which number",
-            "And there",
-            "Identities",
-            "n Cr"
-          ],
-          "ans": 0,
-          "difficulty": "hard",
-          "explanation": "This describes Which number: is NOT rational?"
         },
         {
           "q": "Which concept is best illustrated by the following: 'is ALWAYS true?'?",
@@ -22676,18 +22472,6 @@
           "explanation": "This example illustrates Function: A function is a rule that assigns exactly ONE output to each input. Think of it as a machine: you feed in a number (input), the machine applies a rule, and out comes exactly one result (output)."
         },
         {
-          "q": "The following is an example of which concept? 'Example 3: If g(x) = x − 4 and f(x) = √x, find domain of (f ∘ g)(x). Solution: (...'",
-          "opts": [
-            "And there",
-            "Vertical Line Test",
-            "Domain",
-            "Vector"
-          ],
-          "ans": 2,
-          "difficulty": "easy",
-          "explanation": "This example illustrates Domain: The set of all valid input values (x-values) for which the function is defined."
-        },
-        {
           "q": "A student encounters 'A function is a rule that assigns exactly ONE outp...' — which concept does this illustrate?",
           "opts": [
             "Slope",
@@ -24091,18 +23875,6 @@
           "explanation": "This example illustrates Radius (r): Distance from center to any point on the circle."
         },
         {
-          "q": "The following is an example of which concept? 'Example 1: Find distance between A(1, 2) and B(4, 6). Solution: d = √[(4−1)² + (...'",
-          "opts": [
-            "here",
-            "Between any two reals",
-            "Supplementary angles",
-            "And there"
-          ],
-          "ans": 1,
-          "difficulty": "easy",
-          "explanation": "This example illustrates Between any two reals: is another real"
-        },
-        {
           "q": "The following is an example of which concept? 'Example 2: Find midpoint of (1, 2) and (5, 8). Solution: M = ((1+5)/2, (2+8)/2) ...'",
           "opts": [
             "Unit Vector",
@@ -24593,18 +24365,6 @@
           "ans": 0,
           "difficulty": "medium",
           "explanation": "This describes Line symmetry: A shape has line symmetry if you can fold it along a line and both halves match. A square has 4 lines of symmetry. A circle has infinite lines of symmetry."
-        },
-        {
-          "q": "A student encounters 'A shape has rotational symmetry if it looks the sa...' — which concept does this illustrate?",
-          "opts": [
-            "Rotational symmetry",
-            "Function",
-            "Exactly ONE",
-            "And there"
-          ],
-          "ans": 0,
-          "difficulty": "medium",
-          "explanation": "This describes Rotational symmetry: A shape has rotational symmetry if it looks the same after rotating less than 360°. A square has order 4 rotational symmetry (looks same at 90°, 180°, 270°, 360°)."
         },
         {
           "q": "A student needs to apply a formula. Which one is correct?",
@@ -26079,18 +25839,6 @@
           "explanation": "This describes Amplitude: The distance from the midline to the peak (or trough) of a trig graph. It measures how 'tall' the wave is."
         },
         {
-          "q": "A student encounters 'The horizontal length of one complete cycle. For y...' — which concept does this illustrate?",
-          "opts": [
-            "Range",
-            "And there",
-            "Function",
-            "Period"
-          ],
-          "ans": 3,
-          "difficulty": "medium",
-          "explanation": "This describes Period: The horizontal length of one complete cycle. For y = sin(Bx), the period = 360°/|B| or 2π/|B|."
-        },
-        {
           "q": "A student encounters 'A horizontal shift of the graph. For y = sin(x - C...' — which concept does this illustrate?",
           "opts": [
             "Point",
@@ -27009,18 +26757,6 @@
           "ans": 0,
           "difficulty": "medium",
           "explanation": "This describes Complex Conjugate: The conjugate of z = a + bi is z bar = a - bi. Multiplying a complex number by its conjugate always gives a real number: (a + bi)(a - bi) = a squared + b squared."
-        },
-        {
-          "q": "A student encounters 'A quantity with both magnitude and direction. Repr...' — which concept does this illustrate?",
-          "opts": [
-            "Vector",
-            "And there",
-            "Rectangle",
-            "Pythagorean Theorem"
-          ],
-          "ans": 0,
-          "difficulty": "medium",
-          "explanation": "This describes Vector: A quantity with both magnitude and direction. Represented as a directed line segment (arrow)."
         },
         {
           "q": "A student encounters '<0, 0> - has magnitude 0 and no defined direction....' — which concept does this illustrate?",
@@ -29281,18 +29017,6 @@
           "ans": 0,
           "difficulty": "hard",
           "explanation": "The correct formula/rule is: Mean: x̄ = Σx / n"
-        },
-        {
-          "q": "A student sees this in a problem: 'Example 9.1.1: Find the mean, median, and mode of: 3, 7, 5, 7, 2, 9, 7....' — what concept should they identify?",
-          "opts": [
-            "And there",
-            "Vertical Line Test",
-            "Mean (Average)",
-            "SOH-CAH-TOA"
-          ],
-          "ans": 2,
-          "difficulty": "hard",
-          "explanation": "This example illustrates Mean (Average): The sum of all values divided by the number of values. Formula: x̄ = Σx / n. The most common measure of center, but sensitive to outliers."
         },
         {
           "q": "A student sees this in a problem: 'Example 9.1.2: Find the variance and SD of: 2, 4, 4, 4, 5, 5, 7, 9....' — what concept should they identify?",
