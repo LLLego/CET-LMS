@@ -13104,6 +13104,66 @@
           "ans": 1,
           "difficulty": "hard",
           "explanation": "This example illustrates What one mistake: are you most likely to make on this topic?"
+        },
+        {
+          "q": "What are the typical sections of a CET exam?",
+          "opts": [
+            "Mathematics, Science, English, Filipino, Abstract Reasoning, General Information",
+            "Math and English only",
+            "Science and Reading only",
+            "Varies by university but always includes essay"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Most CETs (UPCAT, ACET, DCAT, USTET) cover Mathematics, Science, English, Filipino, Abstract Reasoning, and General Information. Some add essays or specialized tests."
+        },
+        {
+          "q": "What is the difference between UPCAT and ACET?",
+          "opts": [
+            "UPCAT has no essay; ACET includes an essay and focuses more on aptitude and critical thinking",
+            "They are identical exams",
+            "UPCAT is harder in all sections",
+            "ACET has no math section"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "UPCAT focuses on subject knowledge (Math, Science, English, Filipino). ACET (Ateneo) includes an essay and places more weight on aptitude and critical thinking skills."
+        },
+        {
+          "q": "What is an effective time management strategy for CET exams?",
+          "opts": [
+            "Answer easy questions first, skip hard ones and come back, leave no blanks",
+            "Spend equal time on every question",
+            "Answer only what you know and leave the rest blank",
+            "Start from the hardest question"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Effective CET strategy: (1) Answer easy questions first, (2) Skip and mark hard ones to return to, (3) Never leave blanks — guess if needed, (4) Reserve 5-10 min for review."
+        },
+        {
+          "q": "Should you guess on CET questions if you don't know the answer?",
+          "opts": [
+            "Yes — there is usually no penalty for wrong answers, so always answer every question",
+            "No — wrong answers are penalized",
+            "Only if you can eliminate 2 choices",
+            "Only on the math section"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Most Philippine CETs do NOT penalize wrong answers. Always answer every question — even a random guess has a 25% chance of being correct (4 choices). Leaving it blank is 0%."
+        },
+        {
+          "q": "What is the UPCAT grading formula?",
+          "opts": [
+            "40% CET score + 60% high school grades (UPG)",
+            "100% CET score only",
+            "50% CET + 50% interview",
+            "60% CET + 40% grades"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "The University Predicted Grade (UPG) combines 40% UPCAT score and 60% high school grades. This means your school grades matter as much as the exam itself."
         }
       ]
     },
@@ -19731,6 +19791,150 @@
           "ans": 1,
           "difficulty": "hard",
           "explanation": "— Hulapi (Suffix) is defined as: Panlapi na idinadagdag sa dulo ng salitang ugat. Mga halimbawa: -an, -in, -hin."
+        },
+        {
+          "q": "Ano ang talasalitaan (vocabulary)?",
+          "opts": [
+            "Ang kabuuang mga salitang kilala at nagagamit ng isang tao",
+            "Ang bilang ng mga libro na nabasa",
+            "Ang haba ng isang sanaysay",
+            "Ang dami ng pantig sa isang salita"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Ang talasalitaan ay ang kabuuang mga salitang kilala at nagagamit ng isang tao sa pagsasalita at pagsulat."
+        },
+        {
+          "q": "Ano ang salitang ugat?",
+          "opts": [
+            "Ang pinakasimpleng anyo ng salita na hindi pa dinadagdagan ng panlapi",
+            "Ang pinakamahabang anyo ng salita",
+            "Ang salitang may pinakamaraming kahulugan",
+            "Ang salitang hiram sa ibang wika"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Salitang ugat — ang pinakasimpleng anyo ng salita bago dagdagan ng panlapi. Halimbawa: \"takbo\" (ugat) vs. \"tumakbo\" (may unlapi)."
+        },
+        {
+          "q": "Ano ang pagkakaiba ng unlapi, gitlapi, at hulapi?",
+          "opts": [
+            "Unlapi = unahan; Gitlapi = loob; Hulapi = dulo ng ugat",
+            "Pareho lang sila",
+            "Lahat ay nasa unahan ng ugat",
+            "Unlapi = dulo; Hulapi = unahan"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Unlapi (prefix) — nasa unahan (mag-, nag-). Gitlapi (infix) — nasa loob, pagkatapos ng unang katinig (-um-, -in-). Hulapi (suffix) — nasa dulo (-an, -hin)."
+        },
+        {
+          "q": "Ano ang unlapi ng salitang \"nagluto\"?",
+          "opts": [
+            "nag-",
+            "luto",
+            "-o",
+            "naglu-"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Sa \"nagluto\": ang ugat ay \"luto\" at ang unlapi ay \"nag-\". Ipinapahiwatig nito ang kilos na ginawa ng paksa."
+        },
+        {
+          "q": "Ano ang tamang gamit ng panlaping \"mag-\"?",
+          "opts": [
+            "Nagpapakita ng kilos o aksyon na isinasagawa ng paksa",
+            "Nagpapahiwatig ng lugar",
+            "Nagpapakita ng kulay",
+            "Nagpapahiwatig ng bilang"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Ang panlaping \"mag-\" ay nagpapakita ng kilos o aksyon na isinasagawa ng paksa. Halimbawa: \"magluto\" (to cook), \"magbasa\" (to read)."
+        },
+        {
+          "q": "Ano ang context clue?",
+          "opts": [
+            "Pahiwatig mula sa mga salitang nakapalibot sa hindi kilalang salita upang hulaan ang kahulugan",
+            "Ang unang titik ng salita",
+            "Ang huling pantig ng salita",
+            "Ang diksyunaryo mismo"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Context clues — mga pahiwatig mula sa pangungusap o talata na tumutulong upang hulaan ang kahulugan ng hindi kilalang salita nang hindi gumagamit ng diksyunaryo."
+        },
+        {
+          "q": "Basahin: \"Ang mga estudyante ay nagpupunyagi sa kanilang mga proyekto upang makamit ang mataas na grado.\" Ano ang kahulugan ng \"nagpupunyagi\" batay sa context clues?",
+          "opts": [
+            "Nagsusumikap o nagtatrabaho nang husto",
+            "Natutulog",
+            "Naglalaro",
+            "Umuwi na"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Batay sa context — \"upang makamit ang mataas na grado\" — ang \"nagpupunyagi\" ay nangangahulugang nagsusumikap o nagtatrabaho nang husto para sa isang layunin."
+        },
+        {
+          "q": "Alin ang pinakamabisang estratehiya sa pagpapalawak ng talasalitaan?",
+          "opts": [
+            "Pagbabasa ng iba't ibang teksto araw-araw",
+            "Pagmemonize ng diksyunaryo",
+            "Paggamit ng iisang salita palagi",
+            "Pananahimik lang"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Ang pinakamabisang paraan ay ang pagbabasa ng iba't ibang teksto — dyaryo, libro, artikulo. Natural na nalalaman ang mga bagong salita sa konteksto."
+        },
+        {
+          "q": "Ano ang gitlapi? Magbigay ng halimbawa.",
+          "opts": [
+            "Panlapi na isinasingit sa loob ng ugat — hal. -um- sa \"tumakbo\"",
+            "Panlapi sa unahan ng ugat",
+            "Panlapi sa dulo ng ugat",
+            "Salitang hiram sa Kastila"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Gitlapi (infix) — panlapi na isinisingit sa loob ng ugat pagkatapos ng unang katinig. Halimbawa: -um- sa \"tumakbo\" (ugat: takbo), -in- sa \"sinulat\" (ugat: sulat)."
+        },
+        {
+          "q": "Ano ang hulapi ng salitang \"basahin\"?",
+          "opts": [
+            "-in",
+            "basa",
+            "ba-",
+            "mag-"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Sa \"basahin\": ang ugat ay \"basa\" at ang hulapi (suffix) ay \"-in\". Ang hulapi ay idinadagdag sa dulo ng salitang ugat."
+        },
+        {
+          "q": "Ano ang pinakamabisang paraan para matuto ng bagong salita batay sa textbook?",
+          "opts": [
+            "Gamitin ang context clues muna bago ang diksyunaryo",
+            "Laging gumamit ng diksyunaryo",
+            "Hulaan lang palagi",
+            "Iwasan ang mga hindi kilalang salita"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Ang paggamit ng context clues ang pinakaaktibong paraan — sanayin ang pag-unawa sa konteksto bago tumingin sa diksyunaryo. Ito rin ang skill na kailangan sa CET."
+        },
+        {
+          "q": "Ano ang tamang paraan ng pagtala ng bagong salita para sa vocabulary building?",
+          "opts": [
+            "Isulat ang salita, kahulugan, gamit sa pangungusap, at sinonim/antonim",
+            "Isulat lang ang salita",
+            "Isulat ang salita at tamang baybay lang",
+            "Hindi kailangang magsulat"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Epektibong flashcard: salita + kahulugan + halimbawang pangungusap + sinonim/antonim. Ang konteksto ang nagpapatatag ng pagkatuto."
         }
       ]
     },
@@ -19977,6 +20181,126 @@
           "ans": 1,
           "difficulty": "hard",
           "explanation": "The correct value is 45, as stated in the textbook."
+        },
+        {
+          "q": "Ano ang reading comprehension?",
+          "opts": [
+            "Ang kakayahang maunawaan, suriin, at magbigay-kahulugan sa teksto",
+            "Ang bilis ng pagbabasa",
+            "Ang dami ng nabasang libro",
+            "Ang kakayahang magbasa nang malakas"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Reading comprehension — hindi lang pagbasa kundi pag-unawa sa nilalaman, pagsusuri ng teksto, at pagkuha ng kahulugan."
+        },
+        {
+          "q": "Ano ang tamang estratehiya sa pagsagot ng reading comprehension questions sa CET?",
+          "opts": [
+            "Basahin muna ang mga tanong bago ang teksto, pagkatapos ay i-skim ang teksto",
+            "Basahin ang buong teksto nang paulit-ulit",
+            "Hulaan agad nang hindi binabasa",
+            "Basahin lang ang unang pangungusap"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Estratehiya: (1) Basahin muna ang tanong para malaman kung ano ang hahanapin, (2) I-skim ang teksto, (3) Balikan ang tiyak na bahagi para sa mga sagot."
+        },
+        {
+          "q": "Ano ang main idea ng isang talata?",
+          "opts": [
+            "Ang pangunahing punto o argumento na nais iparating ng may-akda",
+            "Ang unang pangungusap lang",
+            "Ang pinakamahabang pangungusap",
+            "Ang huling pangungusap lang"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Ang main idea ay ang pangunahing punto o argumento ng teksto. Karaniwang makikita sa unang o huling pangungusap ng talata, pero minsan ay ipinapahiwatig sa buong talata."
+        },
+        {
+          "q": "Ano ang pagkakaiba ng explicit at implicit na impormasyon sa teksto?",
+          "opts": [
+            "Explicit = hayagang sinabi; Implicit = ipinapahiwatig lang o kailangang hulaan",
+            "Pareho lang sila",
+            "Explicit = mahirap intindihin; Implicit = madali",
+            "Explicit = opinyon; Implicit = katotohanan"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Explicit — hayagang nakasulat sa teksto. Implicit — hindi direktang sinabi pero maaaring mapagkailusan mula sa konteksto, tono, o mga pahiwatig."
+        },
+        {
+          "q": "Kapag ang teksto ay nagsasabing \"Ang edukasyon sa Pilipinas ay may mga positibong pagbabago ngunit may mga hamon pa rin,\" ano ang tono ng may-akda?",
+          "opts": [
+            "Balanseng pagtatasa — may positibo at negatibo",
+            "Lubos na positibo",
+            "Lubos na negatibo",
+            "Walang pakialam"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Ang salitang \"ngunit\" ay nagpapakita ng balanseng pananaw — kinikilala ang positibo habang inaamin ang mga hamon. Ito ay balanseng pagtatasa."
+        },
+        {
+          "q": "Ano ang inference?",
+          "opts": [
+            "Pagkuha ng konklusyon mula sa mga ebidensya sa teksto na hindi direktang sinabi",
+            "Pagbabasa nang mabilis",
+            "Pagkopya ng teksto",
+            "Pagtatanong sa guro"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Inference — pagkuha ng konklusyon batay sa mga ebidensya at pahiwatig sa teksto, kahit hindi ito direktang sinabi ng may-akda."
+        },
+        {
+          "q": "Ano ang pagkakaiba ng fact at opinion sa isang teksto?",
+          "opts": [
+            "Fact ay maaaring patunayan; Opinion ay personal na paniniwala o paghatol",
+            "Pareho lang sila",
+            "Fact ay palaging tama; Opinion ay palaging mali",
+            "Opinion ay mas mahalaga kaysa fact"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Fact — pahayag na maaaring patunayan o beripikahin (datos, pangyayari). Opinion — personal na paniniwala, paghatol, o damdamin na hindi maaaring patunayan."
+        },
+        {
+          "q": "Kapag ang teksto ay gumagamit ng salitang dapat, kailangan, o nararapat, ano ang ipinapahiwatig nito?",
+          "opts": [
+            "Opinion o rekomendasyon ng may-akda, hindi fact",
+            "Katotohanang siyentipiko",
+            "Isang batas ng gobyerno",
+            "Isang pangyayaring naganap"
+          ],
+          "ans": 0,
+          "difficulty": "hard",
+          "explanation": "Ang mga salitang \"dapat,\" \"kailangan,\" \"nararapat\" ay nagpapahiwatig ng opinion o rekomendasyon — hindi ito fact dahil hindi ito maaaring patunayan objectively."
+        },
+        {
+          "q": "Ano ang purpose ng transition words sa isang teksto?",
+          "opts": [
+            "Nag-uugnay ng mga ideya sa pagitan ng mga pangungusap o talata",
+            "Nagpapaganda ng penmanship",
+            "Nagpapahaba ng teksto",
+            "Nagpapakilala ng bagong paksa lang"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Transition words (hal., gayundin, subalit, samakatuwid) ay nag-uugnay ng mga ideya — nagpapakita ng relasyon (sanhi, pagkakasunod, pagtutol) sa pagitan ng mga pangungusap."
+        },
+        {
+          "q": "Ano ang skimming at scanning?",
+          "opts": [
+            "Skimming = mabilis na pagbabasa para sa pangkalahatang ideya; Scanning = paghahanap ng tiyak na impormasyon",
+            "Pareho lang sila",
+            "Scanning ang mas mabagal",
+            "Skimming ay pagbabasa nang paulit-ulit"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Skimming — mabilis na pagbabasa para sa main idea (unang/uling pangungusap). Scanning — paghahanap ng tiyak na datos (pangalan, numero, petsa) nang hindi binabasa ang lahat."
         }
       ]
     },
@@ -20174,6 +20498,214 @@
           "ans": 1,
           "difficulty": "hard",
           "explanation": "The correct value is 0.5, as stated in the textbook."
+        },
+        {
+          "q": "Ano ang thesis statement sa isang sanaysay?",
+          "opts": [
+            "Ang pangunahing pahayag na naglalaman ng posisyon o pangunahing ideya",
+            "Ang huling pangungusap ng sanaysay",
+            "Ang pamagat ng sanaysay",
+            "Ang listahan ng mga sanggunian"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Ang thesis statement ang pinakamahalagang bahagi ng sanaysay — ito ang pangunahing pahayag na naglalaman ng posisyon o pangunahing ideya ng manunulat.",
+          "chapter": "chfilipino-29"
+        },
+        {
+          "q": "Alin ang tamang pagkakasunod-sunod ng bahagi ng sanaysay?",
+          "opts": [
+            "Panimula → Katawan → Konklusyon",
+            "Konklusyon → Panimula → Katawan",
+            "Katawan → Panimula → Konklusyon",
+            "Panimula → Konklusyon → Katawan"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Ang tamang ayos: Panimula (nagpapakilala sa paksa), Katawan (mga argumento at ebidensya), Konklusyon (nagbabalik-loob sa thesis).",
+          "chapter": "chfilipino-29"
+        },
+        {
+          "q": "Alin ang pinakamahusay na thesis statement?",
+          "opts": [
+            "Masama ang social media.",
+            "Ang labis na paggamit ng social media ay nagdudulot ng pagbaba ng academic performance ng mga mag-aaral.",
+            "Maraming gumagamit ng social media.",
+            "Ang social media ay sikat."
+          ],
+          "ans": 1,
+          "difficulty": "medium",
+          "explanation": "Magandang thesis statement ay tiyak (specific), may posisyon, at maaaring suportahan ng ebidensya — hindi masyadong malawak o makitid.",
+          "chapter": "chfilipino-29"
+        },
+        {
+          "q": "Ano ang tawag sa unang yugto ng proseso ng pagsulat kung saan nag-iisip ng paksa at gumagawa ng outline?",
+          "opts": [
+            "Drafting",
+            "Pre-writing",
+            "Editing",
+            "Publishing"
+          ],
+          "ans": 1,
+          "difficulty": "easy",
+          "explanation": "Ang pre-writing ang unang yugto: nag-iisip ng paksa, nagre-research, at gumagawa ng outline bago magsulat ng draft.",
+          "chapter": "chfilipino-29"
+        },
+        {
+          "q": "Ano ang liham-pangangalakal?",
+          "opts": [
+            "Pormal na liham para sa mga transaksyon sa negosyo o opisyal na pakikipag-ugnayan",
+            "Liham para sa kaibigan",
+            "Liham na may kasamang regalo",
+            "Liham para sa editor ng dyaryo"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Ang liham-pangangalakal (business letter) ay isang pormal na liham para sa mga transaksyon sa negosyo o opisyal na pakikipag-ugnayan.",
+          "chapter": "chfilipino-29"
+        },
+        {
+          "q": "Alin ang tatlong pangunahing elemento ng komunikasyon?",
+          "opts": [
+            "Sender, Message, Channel",
+            "Writer, Reader, Book",
+            "Speaker, Listener, Silence",
+            "Teacher, Student, Subject"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Tatlong elemento: Sender (nagpadala), Message (mensahe), at Channel (daluyan). Walang komunikasyon kung kulang ang isa.",
+          "chapter": "chfilipino-29"
+        },
+        {
+          "q": "Ano ang active listening?",
+          "opts": [
+            "Pakinig na may buong atensyon at layuning maunawaan ang mensahe",
+            "Paggamit ng earphones habang nakikinig",
+            "Pagsasalita habang may nagsasalita",
+            "Pagtext habang nakikinig"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Active listening — pakikinig na may buong atensyon at layuning maunawaan ang mensahe. Hindi lang naririnig ang salita kundi naiintindihan ang kahulugan.",
+          "chapter": "chfilipino-29"
+        },
+        {
+          "q": "Ano ang register ng wika?",
+          "opts": [
+            "Ang antas o estilo ng wika depende sa sitwasyon at audience",
+            "Ang pagkakasunod-sunod ng mga salita",
+            "Ang dami ng salitang alam ng isang tao",
+            "Ang bilis ng pagsasalita"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Register ng wika — antas o estilo depende sa sitwasyon. Pormal para sa opisyal na okasyon, di-pormal para sa kaibigan at pamilya.",
+          "chapter": "chfilipino-29"
+        },
+        {
+          "q": "Halimbawa: \"Nais ko pong ipaalam na hindi ako makakadalo.\" Aling register ito?",
+          "opts": [
+            "Pormal",
+            "Di-pormal",
+            "Balbal",
+            "Lalawiganin"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Ginagamit ang salitang \"nais ko pong ipaalam\" — ito ay pormal na register dahil malinis, magalang, at opisyal ang tono.",
+          "chapter": "chfilipino-29"
+        },
+        {
+          "q": "Ano ang pagkakaiba ng misinformation at disinformation?",
+          "opts": [
+            "Misinformation ay hindi sinasadya; disinformation ay sinasadya para linlangin",
+            "Pareho lang sila",
+            "Misinformation ang mas masama",
+            "Disinformation ay tungkol sa data lang"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Misinformation — maling impormasyon na kumakalat nang hindi sinasadya. Disinformation — maling impormasyon na sinasadyang ikalat para linlangin.",
+          "chapter": "chfilipino-29"
+        },
+        {
+          "q": "Alin ang palatandaan ng hindi mapagkakatiwalaang source?",
+          "opts": [
+            "Walang author, gumagamit ng emosyonal na wika, walang sanggunian",
+            "May malinaw na author at organisasyon",
+            "Mula sa kilalang news outlet",
+            "May mga sanggunian at datos"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Red flags: walang author/organisasyon, emosyonal ang wika (SHOCKING!, NAKAKAGULAT!), walang sanggunian, at hindi ma-verify.",
+          "chapter": "chfilipino-29"
+        },
+        {
+          "q": "Ano ang tamang hakbang kapag nakakita ng viral post na may nakakagulat na balita?",
+          "opts": [
+            "Suriin ang source, basahin ang buong artikulo, i-cross-check sa ibang source",
+            "Agad ishare para mapaalalahanan ang lahat",
+            "Maniwala agad kung maraming likes at shares",
+            "I-comment \"FAKE!\" agad"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Fact-checking: (1) Suriin ang source, (2) Basahin ang buong artikulo (hindi headline lang), (3) I-cross-check sa ibang mapagkakatiwalaang source.",
+          "chapter": "chfilipino-29"
+        },
+        {
+          "q": "Ano ang pagkakaiba ng primary at secondary sources?",
+          "opts": [
+            "Primary = orihinal na datos; Secondary = pagsusuri ng primary sources",
+            "Primary = bago; Secondary = luma",
+            "Mas reliable ang secondary",
+            "Pareho lang sila"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Primary sources — orihinal na datos/dokumento (interview, datos, liham). Secondary sources — pagsusuri/interpretasyon (aklat-aralin, artikulo).",
+          "chapter": "chfilipino-29"
+        },
+        {
+          "q": "Ano ang plagiarism?",
+          "opts": [
+            "Paggamit ng ideya ng iba nang walang tamang citation o pagkilala",
+            "Paggawa ng sariling research",
+            "Pagbabasa ng maraming libro",
+            "Pagsulat ng sanaysay mula sa sariling ideya"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Plagiarism — pagnanakaw ng akda. Kapag ginamit ang ideya, salita, o datos ng iba, kailangan laging mag-cite ng source.",
+          "chapter": "chfilipino-29"
+        },
+        {
+          "q": "Alin ang tamang APA in-text citation?",
+          "opts": [
+            "(Santos, 2023)",
+            "Santos wrote this in 2023",
+            "[Santos 2023]",
+            "Santos (year 2023)"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Sa APA format, ang in-text citation ay nasa format na (Author, Taon) — halimbawa: (Santos, 2023).",
+          "chapter": "chfilipino-29"
+        },
+        {
+          "q": "Ano ang mas malakas na research question: \"Ang social media ba ay mabuti o masama?\" o \"Paano nakakaapekto ang social media sa study habits ng Grade 12 students sa NCR?\"",
+          "opts": [
+            "Ang pangalawa — mas tiyak at maaaring imbestigahan",
+            "Ang una — mas malawak kaya mas maganda",
+            "Pantay lang sila",
+            "Parehong mahina"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Magandang research question ay tiyak (specific), may saklaw (scope), at maaaring sagutin gamit ang datos. Ang malawak na tanong ay mahirap imbestigahan.",
+          "chapter": "chfilipino-29"
         }
       ]
     }
@@ -20594,6 +21126,114 @@
           "ans": 0,
           "difficulty": "hard",
           "explanation": "This example illustrates Ion: An atom or molecule with a net electric charge due to loss or gain of electrons. Cations are positive (lost electrons, e.g., Na⁺). Anions are negative (gained electrons, e.g., Cl⁻)."
+        },
+        {
+          "q": "What was the oldest university in Asia, founded in 1611 in the Philippines?",
+          "opts": [
+            "University of Santo Tomas",
+            "University of the Philippines",
+            "Ateneo de Manila",
+            "De La Salle University"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "University of Santo Tomas (UST), founded in 1611 by the Dominicans, is the oldest existing university in Asia."
+        },
+        {
+          "q": "What was the Manila-Acapulco Galleon Trade?",
+          "opts": [
+            "A 250-year trade route (1565-1815) between the Philippines and Mexico",
+            "A local market in Manila",
+            "A trade agreement with China",
+            "A modern shipping route"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "The Galleon Trade (1565-1815) was a 250-year maritime trade route connecting Manila to Acapulco, Mexico — the first trans-Pacific trade system."
+        },
+        {
+          "q": "What was the Encomienda system during the Spanish period?",
+          "opts": [
+            "A system where Spanish colonists were granted land and the right to collect tribute from natives",
+            "A Filipino farming technique",
+            "A type of Philippine government",
+            "A Spanish military formation"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "The Encomienda system granted Spanish colonists (encomenderos) land and the right to collect tribute from Filipinos in exchange for supposed protection and Christianization."
+        },
+        {
+          "q": "What was the Propaganda Movement?",
+          "opts": [
+            "A movement by Filipino intellectuals in Spain calling for reforms, representation, and equal rights",
+            "A Spanish military campaign",
+            "A religious movement",
+            "A farming reform program"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "The Propaganda Movement (1880s-1890s) was led by Filipino ilustrados in Spain — including Rizal, Del Pilar, and Lopez Jaena — calling for reforms, representation in the Spanish Cortes, and secularization."
+        },
+        {
+          "q": "Who wrote the Noli Me Tangere and El Filibusterismo?",
+          "opts": [
+            "José Rizal",
+            "Andres Bonifacio",
+            "Emilio Aguinaldo",
+            "Marcelo del Pilar"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "José Rizal wrote Noli Me Tangere (1887) and El Filibusterismo (1891) — novels that exposed the abuses of Spanish colonial rule and inspired the Philippine Revolution."
+        },
+        {
+          "q": "What was the Katipunan?",
+          "opts": [
+            "A secret revolutionary society founded by Andres Bonifacio in 1892 to fight for Philippine independence",
+            "A Spanish military unit",
+            "A Filipino dance group",
+            "A religious organization"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "The Katipunan (KKK) was a secret revolutionary society founded by Andres Bonifacio on July 7, 1892. It aimed to win independence from Spain through armed revolution."
+        },
+        {
+          "q": "What was the Cry of Pugad Lawin (or Balintawak)?",
+          "opts": [
+            "The start of the Philippine Revolution in August 1896 when Katipuneros tore their cedulas",
+            "A battle against the Americans",
+            "A speech by Jose Rizal",
+            "A Philippine festival"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "The Cry of Pugad Lawin (August 1896) marked the start of the Philippine Revolution — Katipuneros tore their cedulas (tax certificates) as a symbol of defiance against Spain."
+        },
+        {
+          "q": "What writing system did pre-colonial Filipinos use?",
+          "opts": [
+            "Baybayin (ancient Philippine script)",
+            "Alibata (a misnomer)",
+            "Chinese characters",
+            "Latin alphabet"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Pre-colonial Filipinos used Baybayin — an ancient syllabic writing system. \"Alibata\" is a common misnomer coined in 1914; the correct term is Baybayin."
+        },
+        {
+          "q": "What was the primary religion of pre-colonial Filipinos before Spanish arrival?",
+          "opts": [
+            "Animism — belief that spirits inhabited natural objects like trees, rivers, and mountains",
+            "Islam only",
+            "Catholicism",
+            "Buddhism only"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Most pre-colonial Filipinos practiced Animism — belief that spirits (anito/diwata) inhabited natural objects. Islam was already established in Mindanao and parts of Luzon."
         }
       ]
     },
@@ -21012,6 +21652,90 @@
           "ans": 0,
           "difficulty": "hard",
           "explanation": "This example illustrates West Philippine Sea: The official Philippine name for the eastern part of the South China Sea that falls within the Philippines' exclusive economic zone (EEZ). The 2016 Permanent Court of Arbitration ruling upheld the Philippines' sovereign rights in this area."
+        },
+        {
+          "q": "When did the Philippines declare independence from Spain?",
+          "opts": [
+            "June 12, 1898",
+            "July 4, 1946",
+            "August 23, 1896",
+            "February 25, 1986"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "The Philippines declared independence from Spain on June 12, 1898, in Kawit, Cavite — now celebrated as Philippine Independence Day."
+        },
+        {
+          "q": "What treaty ended the Spanish-American War and ceded the Philippines to the United States?",
+          "opts": [
+            "Treaty of Paris (1898)",
+            "Treaty of Versailles",
+            "Treaty of Tordesillas",
+            "Treaty of Manila"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "The Treaty of Paris (December 10, 1898) ended the Spanish-American War. Spain ceded the Philippines to the US for $20 million — without consulting Filipinos."
+        },
+        {
+          "q": "What was the Philippine-American War (1899-1902)?",
+          "opts": [
+            "A conflict between Filipino revolutionaries and American forces after the US took control of the Philippines",
+            "A war between Spain and America",
+            "A civil war within the Philippines",
+            "A trade dispute"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "The Philippine-American War (1899-1902) erupted when Filipino forces resisted American colonization after Spain ceded the Philippines to the US in the Treaty of Paris."
+        },
+        {
+          "q": "When did the Philippines gain full independence from the United States?",
+          "opts": [
+            "July 4, 1946",
+            "June 12, 1898",
+            "August 23, 1896",
+            "September 21, 1972"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "The Philippines gained full independence on July 4, 1946, as agreed in the Tydings-McDuffie Act. (Independence Day was later moved to June 12 in 1962.)"
+        },
+        {
+          "q": "What happened during the EDSA People Power Revolution of 1986?",
+          "opts": [
+            "A peaceful uprising that toppled the Marcos dictatorship and installed Corazon Aquino as president",
+            "A military coup against Aguinaldo",
+            "A student protest against the Spanish",
+            "The declaration of independence"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "The EDSA Revolution (February 22-25, 1986) was a peaceful mass uprising along EDSA that ended the 21-year rule of Ferdinand Marcos and installed Corazon Aquino as president."
+        },
+        {
+          "q": "What was Martial Law in the Philippines?",
+          "opts": [
+            "A period (1972-1981) when President Marcos suspended civil liberties and ruled by decree",
+            "A military training program",
+            "A law about martial arts",
+            "A Spanish colonial law"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Martial Law (Proclamation 1081, Sept 21, 1972) was declared by Ferdinand Marcos, suspending civil liberties, closing Congress, and arresting political opponents. It lasted until 1981."
+        },
+        {
+          "q": "What is the significance of the K-12 program in the Philippines?",
+          "opts": [
+            "It added 2 years of Senior High School to align with international education standards",
+            "It reduced education to 12 years",
+            "It removed Filipino from the curriculum",
+            "It made college optional"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "The K-12 program (implemented 2013) added Grades 11-12 (Senior High School) to the Philippine education system, aligning it with international standards and preparing students for work or college."
         }
       ]
     },
@@ -23589,6 +24313,78 @@
           "ans": 1,
           "difficulty": "hard",
           "explanation": "This example illustrates Current: Issues (2024-2026): - West Philippine Sea (WPS): Territorial disputes with"
+        },
+        {
+          "q": "What was the Renaissance?",
+          "opts": [
+            "A cultural movement (14th-17th century) that revived art, science, and learning in Europe",
+            "A type of government",
+            "A religious war",
+            "An economic depression"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "The Renaissance (\"rebirth\") was a cultural movement starting in Italy (14th century) that revived interest in classical art, literature, science, and humanism."
+        },
+        {
+          "q": "What was the Industrial Revolution?",
+          "opts": [
+            "A period of rapid industrialization (late 18th-19th century) that transformed manufacturing, transportation, and society",
+            "A political revolution in France",
+            "A scientific discovery",
+            "An art movement"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "The Industrial Revolution (c. 1760-1840) began in Britain — the shift from hand production to machines, factories, and mass production. It transformed economics, society, and daily life."
+        },
+        {
+          "q": "What were the main causes of World War I?",
+          "opts": [
+            "Militarism, alliances, imperialism, and nationalism (MAIN)",
+            "Economic depression only",
+            "Religious conflicts",
+            "A single assassination only"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "WWI causes: Militarism, Alliances, Imperialism, Nationalism (MAIN). The assassination of Archduke Franz Ferdinand was the trigger, but these deeper causes made war nearly inevitable."
+        },
+        {
+          "q": "What was the Cold War?",
+          "opts": [
+            "A geopolitical rivalry (1947-1991) between the US and Soviet Union fought through proxy wars, espionage, and ideology",
+            "A literal war in cold climates",
+            "A trade war between Europe and Asia",
+            "A civil war in Russia"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "The Cold War (1947-1991) was the US-Soviet rivalry — democracy/capitalism vs. communism. Fought through proxy wars (Korea, Vietnam), nuclear arms race, and space race, never through direct military conflict."
+        },
+        {
+          "q": "What was the significance of the United Nations (UN)?",
+          "opts": [
+            "An international organization founded in 1945 to maintain peace, security, and international cooperation",
+            "A military alliance against Germany",
+            "A European trade organization",
+            "A world government"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "The UN was founded in 1945 after WWII to prevent future wars, promote human rights, foster development, and coordinate international cooperation. It has 193 member states."
+        },
+        {
+          "q": "What was the Holocaust?",
+          "opts": [
+            "The systematic genocide of 6 million Jews and millions of others by Nazi Germany during WWII",
+            "A religious holiday",
+            "A type of warfare",
+            "An economic policy"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "The Holocaust was the systematic, state-sponsored persecution and murder of 6 million Jews — along with Roma, disabled people, political prisoners, and others — by Nazi Germany (1933-1945)."
         }
       ]
     },
@@ -42598,6 +43394,292 @@
           "ans": 3,
           "difficulty": "hard",
           "explanation": "The correct formula/rule is: f'(x) = lim(h→0) [f(x+h) - f(x)] / h"
+        },
+        {
+          "q": "What does lim(x→a) f(x) = L mean?",
+          "opts": [
+            "As x approaches a, f(x) approaches L",
+            "f(a) is exactly equal to L",
+            "x can never equal a",
+            "f(x) is always L"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "The limit describes what value f(x) APPROACHES as x gets closer to a — it does NOT require f(a) to exist or equal L."
+        },
+        {
+          "q": "Find: lim(x→3) (x² + 2x)",
+          "opts": [
+            "15",
+            "9",
+            "11",
+            "6"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Direct substitution: 3² + 2(3) = 9 + 6 = 15. Always try direct substitution first for polynomials."
+        },
+        {
+          "q": "When direct substitution gives 0/0, what should you try next?",
+          "opts": [
+            "Factor and cancel, then retry substitution",
+            "The limit does not exist",
+            "Give up",
+            "Multiply by 0"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "0/0 is indeterminate, not \"does not exist.\" Try factoring numerator and denominator, cancel common factors, then substitute again."
+        },
+        {
+          "q": "Find: lim(x→2) (x² - 4)/(x - 2)",
+          "opts": [
+            "4",
+            "0",
+            "Undefined",
+            "2"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Factor: (x+2)(x-2)/(x-2) = x+2. Then lim(x→2) (x+2) = 4. The hole at x=2 doesn't prevent the limit from existing."
+        },
+        {
+          "q": "True or False: A limit can exist even if the function is undefined at that point.",
+          "opts": [
+            "True",
+            "False"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "TRUE. The limit describes behavior NEAR a point, not AT the point. Example: (x²-4)/(x-2) is undefined at x=2, but the limit is 4."
+        },
+        {
+          "q": "For the overall lim(x→a) f(x) to exist, what must be true?",
+          "opts": [
+            "Both left-hand and right-hand limits must exist and be equal",
+            "Only the left-hand limit must exist",
+            "f(a) must be defined",
+            "The function must be continuous"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "The limit exists only if lim(x→a⁻) = lim(x→a⁺) — both one-sided limits exist AND are equal. f(a) itself doesn't need to exist."
+        },
+        {
+          "q": "What are the THREE conditions for continuity at x = a?",
+          "opts": [
+            "f(a) is defined, lim(x→a) f(x) exists, lim = f(a)",
+            "f(a) is positive, continuous, differentiable",
+            "lim exists, f(a) > 0, f is smooth",
+            "f(a) = 0, lim exists, f is a polynomial"
+          ],
+          "ans": 0,
+          "difficulty": "hard",
+          "explanation": "Three conditions: (1) f(a) is defined, (2) lim(x→a) f(x) exists, (3) lim(x→a) f(x) = f(a). If ANY fails, there's a discontinuity."
+        },
+        {
+          "q": "What does the derivative f'(x) measure?",
+          "opts": [
+            "The instantaneous rate of change (slope of tangent line)",
+            "The area under the curve",
+            "The value of f(x)",
+            "The distance from the origin"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "The derivative measures how fast f(x) is changing at any instant — geometrically, it's the slope of the tangent line at that point."
+        },
+        {
+          "q": "What is the derivative of x⁵ using the power rule?",
+          "opts": [
+            "5x⁴",
+            "4x⁵",
+            "5x⁵",
+            "x⁴"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "Power rule: d/dx [xⁿ] = n·xⁿ⁻¹. So d/dx [x⁵] = 5x⁴. Bring the exponent down, reduce by 1."
+        },
+        {
+          "q": "What is d/dx [eˣ]?",
+          "opts": [
+            "eˣ",
+            "xeˣ⁻¹",
+            "eˣ⁻¹",
+            "ln(x)"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "eˣ is its own derivative! d/dx [eˣ] = eˣ. This is the unique and special property of the exponential function."
+        },
+        {
+          "q": "What is d/dx [sin x]?",
+          "opts": [
+            "cos x",
+            "-sin x",
+            "tan x",
+            "-cos x"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "d/dx [sin x] = cos x. Memory trick: sine → cosine (positive), cosine → negative sine, tangent → secant squared."
+        },
+        {
+          "q": "What is d/dx [ln x]?",
+          "opts": [
+            "1/x",
+            "ln(x)",
+            "x",
+            "eˣ"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "d/dx [ln x] = 1/x. This is one of the most commonly tested derivative formulas on the CET."
+        },
+        {
+          "q": "Find d/dx [3x⁴ - 5x² + 7x - 2].",
+          "opts": [
+            "12x³ - 10x + 7",
+            "12x⁴ - 10x + 7",
+            "3x³ - 5x + 7",
+            "12x³ - 10x² + 7"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Differentiate term by term: 3(4x³) - 5(2x) + 7(1) - 0 = 12x³ - 10x + 7. Constants vanish (derivative of a constant = 0)."
+        },
+        {
+          "q": "What is the product rule for d/dx [f(x)·g(x)]?",
+          "opts": [
+            "f'(x)·g(x) + f(x)·g'(x)",
+            "f'(x)·g'(x)",
+            "f'(x)/g'(x)",
+            "f(x)·g(x) - f'(x)·g'(x)"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Product rule: \"first times derivative of second PLUS second times derivative of first.\" (fg)' = f'g + fg'."
+        },
+        {
+          "q": "What is the quotient rule for d/dx [f(x)/g(x)]?",
+          "opts": [
+            "[f'(x)·g(x) - f(x)·g'(x)] / [g(x)]²",
+            "[f'(x) + g'(x)] / g(x)",
+            "f'(x)/g'(x)",
+            "[f(x)·g(x)]' = f'g + fg'"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Quotient rule: \"Lo dHi minus Hi dLo, over the square of what's below.\" (f/g)' = (f'g - fg') / g². Note the MINUS sign (unlike product rule's plus)."
+        },
+        {
+          "q": "What is the chain rule for d/dx [f(g(x))]?",
+          "opts": [
+            "f'(g(x)) · g'(x)",
+            "f'(x) · g'(x)",
+            "f(g'(x))",
+            "f'(x) + g'(x)"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Chain rule: \"Derivative of the outside (keeping inside unchanged) times derivative of the inside.\" This is the MOST tested CET calculus rule."
+        },
+        {
+          "q": "Find d/dx [(3x + 1)⁵].",
+          "opts": [
+            "15(3x + 1)⁴",
+            "5(3x + 1)⁴",
+            "5(3x + 1)⁵",
+            "15(3x + 1)⁵"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Chain rule: outer = u⁵ → 5u⁴, inner = 3x+1 → 3. So 5(3x+1)⁴ · 3 = 15(3x+1)⁴. Pattern for (ax+b)ⁿ: n·a·(ax+b)ⁿ⁻¹."
+        },
+        {
+          "q": "Find d/dx [sin(2x²)].",
+          "opts": [
+            "4x·cos(2x²)",
+            "cos(2x²)",
+            "2x·cos(2x²)",
+            "4x·sin(2x²)"
+          ],
+          "ans": 0,
+          "difficulty": "hard",
+          "explanation": "Chain rule: outer = sin(u) → cos(u), inner = 2x² → 4x. So cos(2x²) · 4x = 4x·cos(2x²)."
+        },
+        {
+          "q": "Find d/dx [x·eˣ].",
+          "opts": [
+            "eˣ(1 + x)",
+            "eˣ",
+            "xeˣ",
+            "eˣ + x"
+          ],
+          "ans": 0,
+          "difficulty": "hard",
+          "explanation": "Product rule: (1)·eˣ + x·(eˣ) = eˣ + xeˣ = eˣ(1+x). The product rule with chain rule (eˣ derivative is eˣ)."
+        },
+        {
+          "q": "What is a critical point of f(x)?",
+          "opts": [
+            "Where f'(x) = 0 or f'(x) is undefined",
+            "Where f(x) = 0",
+            "Where f''(x) = 0",
+            "The maximum value only"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "Critical points occur where f'(x)=0 or f'(x) is undefined. These are candidates for local maxima and minima."
+        },
+        {
+          "q": "If f'(x) changes from positive to negative at x = c, what does f have at c?",
+          "opts": [
+            "Local maximum",
+            "Local minimum",
+            "Inflection point",
+            "Nothing special"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "f' changes + to - means f goes from increasing to decreasing → that's a peak = local maximum. Conversely, - to + = local minimum."
+        },
+        {
+          "q": "Find the tangent line to f(x) = x³ - 2x at x = 1.",
+          "opts": [
+            "y = x - 2",
+            "y = x - 1",
+            "y = x + 2",
+            "y = 3x - 2"
+          ],
+          "ans": 0,
+          "difficulty": "hard",
+          "explanation": "f(1) = 1-2 = -1. f'(x) = 3x²-2, so f'(1) = 1. Tangent: y-(-1) = 1(x-1) → y = x-2. Formula: y - f(a) = f'(a)(x-a)."
+        },
+        {
+          "q": "A farmer has 100m of fencing for a rectangular field. What dimensions maximize the area?",
+          "opts": [
+            "25m × 25m (a square)",
+            "50m × 25m",
+            "100m × 1m",
+            "33m × 33m"
+          ],
+          "ans": 0,
+          "difficulty": "hard",
+          "explanation": "Constraint: 2l+2w=100 → l=50-w. Area = w(50-w) = 50w-w². A'(w)=50-2w=0 → w=25, l=25. Max area = 625m². Classic optimization: a square maximizes area for a fixed perimeter."
+        },
+        {
+          "q": "What is f''(x) used for?",
+          "opts": [
+            "Determining concavity and finding inflection points",
+            "Finding the slope of the tangent line",
+            "Finding critical points",
+            "Finding the area under the curve"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "f''(x) tells you concavity: f''>0 = concave up (∪), f''<0 = concave down (∩). Inflection points occur where concavity changes."
         }
       ]
     },
@@ -54970,6 +56052,102 @@
           "ans": 3,
           "difficulty": "hard",
           "explanation": "The correct value is 500, as stated in the textbook."
+        },
+        {
+          "q": "What subjects are emphasized in the STEM strand?",
+          "opts": [
+            "Advanced Mathematics, Physics, Chemistry, Biology",
+            "Accounting, Economics, Business Math",
+            "Literature, Philosophy, History",
+            "Cooking, Agriculture, TLE"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "STEM focuses on Science, Technology, Engineering, and Mathematics — including advanced math (calculus, trig), physics, chemistry, and biology."
+        },
+        {
+          "q": "What career paths are common for STEM graduates?",
+          "opts": [
+            "Engineering, Medicine, IT, Research, Architecture",
+            "Accounting, Banking, Entrepreneurship",
+            "Law, Political Science, Journalism",
+            "Teaching, Social Work, Counseling"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "STEM opens doors to engineering, medicine, IT, research, architecture, and other science/tech-related professions."
+        },
+        {
+          "q": "What is the focus of the ABM strand?",
+          "opts": [
+            "Accountancy, Business, and Management",
+            "Arts, Beauty, and Music",
+            "Agriculture, Biology, and Medicine",
+            "Architecture, Building, and Mechanics"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "ABM (Accountancy, Business, Management) prepares students for business-related courses — accounting, entrepreneurship, marketing, economics."
+        },
+        {
+          "q": "What does HUMSS stand for and what does it focus on?",
+          "opts": [
+            "Humanities and Social Sciences — literature, philosophy, history, political science",
+            "Health and Medical Sciences Strand",
+            "Home Economics and Management Skills Strand",
+            "Higher Understanding of Math and Science Studies"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "HUMSS (Humanities and Social Sciences) focuses on social sciences, literature, philosophy, history, communication — preparing for law, education, journalism."
+        },
+        {
+          "q": "What is the GAS strand designed for?",
+          "opts": [
+            "Students who are undecided — provides a general curriculum across disciplines",
+            "Students who want to study gas engineering",
+            "Graduate Academic Studies",
+            "General Aviation Strand"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "GAS (General Academic Strand) is for students still exploring their interests. It offers a mix of subjects from different tracks."
+        },
+        {
+          "q": "Which strand should a student choose if they want to become a Certified Public Accountant (CPA)?",
+          "opts": [
+            "ABM (Accountancy, Business, Management)",
+            "STEM",
+            "HUMSS",
+            "GAS"
+          ],
+          "ans": 0,
+          "difficulty": "easy",
+          "explanation": "ABM is the natural pathway for aspiring CPAs — it covers accounting principles, business math, economics, and organizational management."
+        },
+        {
+          "q": "Which strand is best for a student interested in pursuing Law in college?",
+          "opts": [
+            "HUMSS (Humanities and Social Sciences)",
+            "STEM",
+            "ABM",
+            "STEM-IT"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "HUMSS is the recommended pre-law strand — it covers political science, philosophy, logic, ethics, and communication skills needed for law school."
+        },
+        {
+          "q": "What CET-relevant subjects does the STEM strand cover?",
+          "opts": [
+            "Calculus, Trig, Statistics for Math; Physics, Chemistry, Bio for Science",
+            "Only basic math and science",
+            "Literature and social studies",
+            "Business and accounting"
+          ],
+          "ans": 0,
+          "difficulty": "medium",
+          "explanation": "STEM CET focus: Math = Calculus, Trigonometry, Statistics. Science = Physics, Chemistry, Biology (advanced level). These align closely with CET content."
         }
       ]
     },
