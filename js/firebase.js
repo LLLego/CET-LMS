@@ -58,16 +58,34 @@ export function initFirebase() {
       _auth = firebase.auth();
       _db = firebase.database();
 
+      // Timeout: if anonymous auth takes more than 5s, fall back to local-only
+      let settled = false;
+      const timeout = setTimeout(() => {
+        if (!settled) {
+          settled = true;
+          console.warn('[CET] Firebase auth timed out — running in local-only mode');
+          resolve(false);
+        }
+      }, 5000);
+
       // Authenticate anonymously — RTDB rules use auth.uid mapped to usernames
       _auth.signInAnonymously()
         .then(() => {
-          _firebaseReady = true;
-          console.log('[CET] Firebase ready (anonymous auth)');
-          resolve(true);
+          if (!settled) {
+            settled = true;
+            clearTimeout(timeout);
+            _firebaseReady = true;
+            console.log('[CET] Firebase ready (anonymous auth)');
+            resolve(true);
+          }
         })
         .catch(err => {
-          console.warn('[CET] Anonymous auth failed:', err.message);
-          resolve(false);
+          if (!settled) {
+            settled = true;
+            clearTimeout(timeout);
+            console.warn('[CET] Anonymous auth failed:', err.message);
+            resolve(false);
+          }
         });
     } catch (err) {
       console.warn('[CET] Firebase init failed:', err.message);
