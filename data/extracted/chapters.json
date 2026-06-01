@@ -2062,68 +2062,6 @@
     "estimated_read_minutes": 15
   },
   {
-    "id": "chmath-9",
-    "subject_id": "math",
-    "number": 9,
-    "title": "Statistics & Probability",
-    "page_start": 23,
-    "page_end": 173,
-    "sections": [
-      {
-        "number": "9.1",
-        "title": "Statistics & Probability",
-        "id": "secmath-9-9-1"
-      },
-      {
-        "number": "9.1",
-        "title": "Descriptive Statistics (",
-        "id": "secmath-1-9-1"
-      },
-      {
-        "number": "9.1",
-        "title": "Reminders",
-        "id": "secmath-1-9-1"
-      },
-      {
-        "number": "9.2",
-        "title": "Probability Basics (",
-        "id": "secmath-1-9-2"
-      },
-      {
-        "number": "9.2",
-        "title": "Reminders",
-        "id": "secmath-1-9-2"
-      },
-      {
-        "number": "9.3",
-        "title": "Permutations & Combinations (",
-        "id": "secmath-1-9-3"
-      },
-      {
-        "number": "9.3",
-        "title": "Reminders",
-        "id": "secmath-1-9-3"
-      },
-      {
-        "number": "9.4",
-        "title": "Probability Distributions (",
-        "id": "secmath-1-9-4"
-      },
-      {
-        "number": "9.4",
-        "title": "Reminders",
-        "id": "secmath-1-9-4"
-      },
-      {
-        "number": "9.5",
-        "title": "Correlation & Regression (",
-        "id": "secmath-1-9-5"
-      }
-    ],
-    "word_count": 1306,
-    "estimated_read_minutes": 7
-  },
-  {
     "id": "chscience-10",
     "subject_id": "science",
     "number": 10,
