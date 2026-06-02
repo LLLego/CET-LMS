@@ -26,32 +26,20 @@ try {
   useSerif = false;
   useNightMode = false;
 }
-
-// Fetch caches — shared Promises deduplicate concurrent requests
-let chaptersPromise = null;
-let sectionsPromise = null;
+// Fetch caches — shared Promise deduplicates concurrent requests
+let textbookDataPromise = null;
 
 /**
- * Load chapters.json with caching (shared Promise deduplicates concurrent calls)
+ * Load textbook_data.json with caching (shared Promise deduplicates concurrent calls)
  */
-function loadChapters() {
-  if (chaptersPromise) return chaptersPromise;
-  chaptersPromise = fetch('data/extracted/chapters.json')
-    .then(res => { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
-    .catch(err => { chaptersPromise = null; throw err; });
-  return chaptersPromise;
+function loadTextbookData() {
+  if (textbookDataPromise) return textbookDataPromise;
+  textbookDataPromise = fetch("data/textbook_data.json")
+    .then(res => { if (!res.ok) throw new Error("HTTP " + res.status); return res.json(); })
+    .catch(err => { textbookDataPromise = null; throw err; });
+  return textbookDataPromise;
 }
 
-/**
- * Load sections.json with caching (shared Promise deduplicates concurrent calls)
- */
-function loadSections() {
-  if (sectionsPromise) return sectionsPromise;
-  sectionsPromise = fetch('data/extracted/sections.json')
-    .then(res => { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
-    .catch(err => { sectionsPromise = null; throw err; });
-  return sectionsPromise;
-}
 
 /**
  * Get total content length for a section
@@ -170,14 +158,14 @@ function showChapterSelection(subjectId) {
   if (!content) return;
 
   // Only show spinner if data isn't cached yet (prevents flash on subsequent navigations)
-  if (!chaptersPromise) {
+  if (!textbookDataPromise) {
     content.innerHTML = renderSpinner('Loading chapters...');
   }
 
-  // Load chapters for this subject from extracted data
-  loadChapters()
-    .then(allChapters => {
-      const subjectChapters = allChapters.filter(ch => ch.subject_id === subjectId);
+  // Load chapters for this subject from textbook_data.json
+  loadTextbookData()
+    .then(data => {
+      const subjectChapters = data[subjectId];
       
       if (subjectChapters.length === 0) {
         content.innerHTML = `
@@ -210,22 +198,26 @@ function showChapterContent(subjectId, chapterId) {
   const content = document.getElementById('readerContent');
   if (!content) return;
 
-  // Only show spinner if data isn't cached yet (prevents flash on subsequent navigations)
-  if (!chaptersPromise || !sectionsPromise) {
-    content.innerHTML = renderSpinner('Loading chapter content...');
+  // Only show spinner if data is not cached yet (prevents flash on subsequent navigations)
+  if (!textbookDataPromise) {
+    content.innerHTML = renderSpinner("Loading chapter content...");
   }
 
   // Load chapter data (cached after first fetch)
-  Promise.all([
-    loadChapters(),
-    loadSections()
-  ])
-  .then(([allChapters, allSections]) => {
-    const chapter = allChapters.find(ch => 
-      ch.subject_id === subjectId && 
-      (ch.id === chapterId || ch.number.toString() === chapterId.toString())
+  loadTextbookData().then(data => {
+    const chapters = data[subjectId];
+    if (!chapters) {
+      content.innerHTML = `
+        <div class="empty-state">
+          <p>No chapters available for this subject.</p>
+          <button class="btn btn-primary" onclick="router.navigate('reader', { subjectId: '${escapeHTML(subjectId)}' })">← Back</button>
+        </div>
+      `;
+      return;
+    }
+    const chapter = chapters.find(ch =>
+      ch.id === chapterId || ch.id.toString() === chapterId.toString()
     );
-
     if (!chapter) {
       content.innerHTML = `
         <div class="empty-state">
@@ -235,18 +227,7 @@ function showChapterContent(subjectId, chapterId) {
       `;
       return;
     }
-
-    // Get sections for this chapter, sorted by section number (e.g. 1.1, 1.2, 1.3, 1.4, …)
-    const sections = allSections
-      .filter(sec => sec.chapter_id === chapter.id)
-      .sort((a, b) => {
-        const parseNum = s => (s.section_number || s.number || '0').toString().split('.').map(Number);
-        const [aMaj = 0, aMin = 0] = parseNum(a);
-        const [bMaj = 0, bMin = 0] = parseNum(b);
-        return aMaj - bMaj || aMin - bMin;
-      });
-    
-    // Start at first non-sparse section
+    const sections = chapter.sections || [];
     const startIndex = findNextSubstantialSection(sections, 0);
     
     readerState = { 
@@ -304,7 +285,7 @@ function renderChapter() {
             class="reader-outline-item ${i === readerState.currentSection ? 'active' : ''} ${sparse ? 'sparse-section' : ''}" 
             onclick="goToSection(${i})"
           >
-            <span>${sec.section_number || sec.number}. ${sec.title}${sparse ? ' (empty)' : ''}</span>
+<span>${sec.id}. ${escapeHTML(sec.title)}</span>
           </div>`;
         }).join('')}
       </div>
@@ -339,7 +320,7 @@ function renderChapter() {
               <span class="nav-arrow">←</span>
               <span class="nav-label">
                 <span class="nav-direction">Previous</span>
-                <span class="nav-title">${prevSec ? escapeHTML(prevSec.section_number || prevSec.number + '. ' + prevSec.title) : '—'}</span>
+                <span class="nav-title">${prevSec ? escapeHTML((prevSec.section_number || prevSec.number || prevSec.id) + '. ' + prevSec.title) : '—'}</span>
               </span>
             </button>
             <button 
@@ -351,7 +332,7 @@ function renderChapter() {
               <span class="nav-arrow">→</span>
               <span class="nav-label">
                 <span class="nav-direction">Next</span>
-                <span class="nav-title">${nextSec ? escapeHTML(nextSec.section_number || nextSec.number + '. ' + nextSec.title) : '—'}</span>
+                <span class="nav-title">${nextSec ? escapeHTML((nextSec.section_number || nextSec.number || nextSec.id) + '. ' + nextSec.title) : '—'}</span>
               </span>
             </button>
           </nav>
@@ -407,30 +388,155 @@ function renderSection(section) {
   // Preprocess: merge consecutive short text blocks into proper paragraphs
   const merged = mergeTextBlocks(blocks);
 
-  merged.forEach((block, idx) => {
+  // Reclassify misclassified formula blocks to text type
+  // (PDF extraction tags text content with = or × as 'formula')
+  merged.forEach(block => {
+    if (block.type !== 'formula') return;
+    const val = (block.value || '').trim();
+    const isRealFormula = /^[^a-zA-Z]*$/.test(val) || // pure math symbols
+      (/^[A-Z]=/.test(val) && val.length < 60 && /[×÷²³√∫∑±≤≥≠≈π]/.test(val)) ||
+      (/^\d+[\.\)]\s/.test(val) === false && val.length < 80 && (val.match(/[×÷²³√∫∑±≤≥≠≈π∂∇∞⊂∈ℤℚℝⁿ⊆⊃∪∩∴∵]/g) || []).length >= 2);
+    if (!isRealFormula) {
+      block.type = 'text'; // reclassify to text
+    }
+  });
+
+  // Group consecutive single-bullet text blocks into merged bullet lists
+  // Also merge split arrow chains (block ending with → followed by continuation)
+  function groupConsecutiveBullets(blocks) {
+    const result = [];
+    let pendingBullets = [];
+    const bulletRe = /^(?:•|-|\*|–|—)\s+/;
+    const inlineBulletRe = /(?:[.):\s])\s*[-–—]\s+(?=[A-Z0-9])/;
+    // Arrow chain continuation: block ending with → and next block starting with chain item
+    const arrowEndRe = /→\s*$/;
+    const arrowStartRe = /^[A-Z][a-z]+(?:\s+→|\s+[A-Z])/;
+
+    function flushBullets() {
+      if (pendingBullets.length === 0) return;
+      if (pendingBullets.length >= 2) {
+        // Merge into a single text block, stripping leading/trailing fragment markers
+        const mergedText = pendingBullets.map(b => (b.value || b.text || '').trim()).join(' ');
+        result.push({ type: 'text', value: mergedText });
+      } else {
+        result.push(pendingBullets[0]);
+      }
+      pendingBullets = [];
+    }
+
+    for (let i = 0; i < blocks.length; i++) {
+      const block = blocks[i];
+      const val = (block.value || block.text || '').trim();
+      if (block.type === 'text' && val.length < 200) {
+        const hasLineBullet = bulletRe.test(val) && val.split('\n').length === 1;
+        const hasInlineBullet = inlineBulletRe.test(val);
+        if (hasLineBullet || hasInlineBullet) {
+          pendingBullets.push(block);
+          continue;
+        }
+      }
+      flushBullets();
+
+      // Arrow chain continuation: if previous result ends with → and this block continues the chain
+      if (block.type === 'text' && result.length > 0) {
+        const prevBlock = result[result.length - 1];
+        const prevVal = (prevBlock.value || prevBlock.text || '').trim();
+        if (prevBlock.type === 'text' && arrowEndRe.test(prevVal) && arrowStartRe.test(val) && val.includes('→')) {
+          // Merge into previous block
+          result[result.length - 1] = { type: 'text', value: prevVal + ' ' + val };
+          continue;
+        }
+      }
+
+      result.push(block);
+    }
+    flushBullets();
+    return result;
+  }
+
+  const grouped = groupConsecutiveBullets(merged);
+
+  grouped.forEach((block, idx) => {
     const key = `${block.type}-${idx}`;
     const value = block.value || block.text || '';
+    if (block._consumedByPrereq) return; // skip blocks consumed by prereq box
     switch (block.type) {
-      case 'text':
+      case 'text': {
+        // Strip 'Section Reminders (Error Prevention)' and similar PDF extraction artifacts
+        let cleanValue = value
+          .replace(/\b\d+\.\s*Section Reminders\s*\(Error Prevention\)\s*/gi, '')
+          .replace(/\bSection Reminders\s*\(Error Prevention\)\s*/gi, '')
+          .replace(/\bSection Reminders\s*$/gi, '')
+          .trim();
+        if (!cleanValue) break; // nothing left after stripping
+
+        // Style 'What You Need First' as a compact collapsible prereq box
+        const prereqMatch = cleanValue.match(/^(?:What You Need First)[:\s.\-—]*([\s\S]*)$/i);
+        if (/What You Need First/i.test(cleanValue)) {
+          // Collect content: inline content + lookahead to next text block(s)
+          let prereqContent = prereqMatch && prereqMatch[1].trim() ? prereqMatch[1].trim() : '';
+          let consumed = 0;
+          // Look ahead at subsequent blocks to pull prerequisite content into the box
+          for (let li = idx + 1; li < grouped.length && consumed < 3; li++) {
+            const nextBlock = grouped[li];
+            if (nextBlock.type !== 'text') break;
+            const nv = (nextBlock.value || nextBlock.text || '').trim();
+            if (!nv) { consumed++; continue; }
+            // Stop if we hit another heading pattern
+            if (/^(The Intuition|The Build|Worked Example|Quick Check|Layman|Rescue|One-Page|Section \d|Practice)/i.test(nv)) break;
+            // Stop if it looks like a section reference only (short, starts with "Section" or "Master")
+            if (/^(Section \d|Master the fundamentals)/i.test(nv) && nv.length < 200) {
+              prereqContent += (prereqContent ? ' ' : '') + nv;
+              consumed++;
+              break;
+            }
+            prereqContent += (prereqContent ? ' ' : '') + nv;
+            consumed++;
+          }
+          // Mark consumed blocks so they don't render again
+          for (let ci = 0; ci < consumed; ci++) {
+            grouped[idx + 1 + ci]._consumedByPrereq = true;
+          }
+          if (prereqContent) {
+            html += `<details class="prereq-box"><summary>📋 What You Need First</summary><p>${prereqContent}</p></details>`;
+          } else {
+            html += `<details class="prereq-box" open><summary>📋 What You Need First</summary><p class="muted">Review the prerequisites for this section.</p></details>`;
+          }
+          break;
+        }
+
         // Detect pipe-delimited tables in text blocks
-        if (isTableContent(value)) {
-          html += renderTable(value);
-        } else if (isPropertyDetails(value)) {
-          html += renderPropertyDetails(value);
-        } else if (isPropertyLabel(value)) {
-          html += `<div class="property-field"><span class="property-label">${value.replace(/[.:]+$/, '')}:</span></div>`;
-        } else if (isDenseHierarchy(value)) {
-          html += renderHierarchy(value);
-        } else if (isNumberedList(value)) {
-          html += renderNumberedList(value);
-        } else if (isBulletList(value)) {
-          html += renderBulletList(value);
+        if (isTableContent(cleanValue)) {
+          html += renderTable(cleanValue);
+        } else if (isPropertyDetails(cleanValue)) {
+          html += renderPropertyDetails(cleanValue);
+        } else if (isPropertyLabel(cleanValue)) {
+          html += `<div class="property-field"><span class="property-label">${cleanValue.replace(/[.:]+$/, '')}:</span></div>`;
+        } else if (isDenseHierarchy(cleanValue)) {
+          html += renderHierarchy(cleanValue);
+        } else if (isNumberedList(cleanValue)) {
+          html += renderNumberedList(cleanValue);
+        } else if (isBulletList(cleanValue)) {
+          html += renderBulletList(cleanValue);
+        } else if (isArrowChain(cleanValue)) {
+          html += renderArrowChain(cleanValue);
+        } else if (isVocabList(cleanValue)) {
+          html += renderVocabList(cleanValue);
+        } else if (isRuleList(cleanValue)) {
+          html += renderRuleList(cleanValue);
+        } else if (isDefinitionList(cleanValue)) {
+          html += renderDefinitionList(cleanValue);
+        } else if (isTableLikeContent(cleanValue)) {
+          html += renderTableLikeContent(cleanValue);
         } else {
+          // Split concatenated worked examples (→ yes/→ no boundaries)
+          const withSplitExamples = splitConcatenatedExamples(cleanValue);
           // Detect inline headings within text blocks
-          const splitResult = splitInlineHeadings(value);
+          const splitResult = splitInlineHeadings(withSplitExamples);
           html += splitResult;
         }
         break;
+      }
       case 'heading': {
         if (isPropertyLabel(value)) {
           const cleanLabel = value.replace(/^[^—–]+[—–]\s*/, '').replace(/[.:]+$/, '');
@@ -441,10 +547,32 @@ function renderSection(section) {
         }
         break;
       }
-      case 'definition':
-        html += `<div class="definition" key="${key}"><span class="term">${block.term || 'Term'}</span> <span class="def-value">${value}</span></div>`;
+      case 'definition': {
+        const term = (block.term || '').trim();
+        const defValue = value.trim();
+        // Skip fragment definitions with missing/meaningless term field
+        const invalidTerms = ['Term', 'is', 'are', 'a', 'an', 'the', ''];
+        const isFragmentDef = !term || invalidTerms.includes(term.toLowerCase()) ||
+          term.length < 2 || /^(?:is|are|was|were)\b/i.test(defValue);
+        if (isFragmentDef) {
+          // Render as a regular text paragraph instead of a broken definition
+          html += `<p key="${key}">${value}</p>`;
+        } else {
+          html += `<div class="definition" key="${key}"><span class="term">${escapeHTML(term)}</span> <span class="def-value">${value}</span></div>`;
+        }
         break;
+      }
       case 'example': {
+        // Skip empty/placeholder example blocks
+        const exTrimmed = value.trim();
+        const exLower = exTrimmed.toLowerCase();
+        const emptyExamples = ['example', 'examples', 'example.', 'examples.', 'example q', 'example q.'];
+        const placeholderExamples = ['sample questions to reinforce your learning.', 'sample questions to reinforce your learning',
+          'practice questions', 'exercises', 'exercises for each skill'];
+        if (emptyExamples.includes(exLower) || placeholderExamples.includes(exLower) ||
+            (exTrimmed.length < 15 && !exTrimmed.includes(' '))) {
+          break; // skip rendering
+        }
         const exampleDiagram = matchDiagram(value, readerState?.subjectId, readerState?.chapter?.title, section?.title, renderedDiagrams);
         if (exampleDiagram) {
           html += `<div class="example" key="${key}"><strong>Example:</strong> ${value}</div>`;
@@ -454,13 +582,35 @@ function renderSection(section) {
         }
         break;
       }
-      case 'formula':
-        if (value.length > 100 && !/[√≈≠≤≥π⊂∈ℤℚℝℕ∂∫∑∏∇∞±×÷°²³¹⁰ⁿ⊆⊃∪∩→←↔∴∵°C°F]/.test(value)) {
-          html += renderRichParagraphs(value);
+      case 'formula': {
+        // Check if this is ACTUALLY a formula (math-heavy) or misclassified text content.
+        // PDF extraction tags many text blocks as 'formula' if they contain = or × symbols.
+        const isRealFormula = /^[^a-zA-Z]*$/.test(value.trim()) || // pure math symbols
+          (/^[A-Z]=/.test(value.trim()) && value.length < 60 && /[×÷²³√∫∑±≤≥≠≈π]/.test(value)) || // short formula like "E=mc²"
+          (/^\d+[\.\)]\s/.test(value.trim()) === false && value.length < 80 && (value.match(/[×÷²³√∫∑±≤≥≠≈π∂∇∞⊂∈ℤℚℝⁿ⊆⊃∪∩∴∵]/g) || []).length >= 2); // multiple math symbols (NOT - or → which appear in regular text)
+
+        if (!isRealFormula) {
+          // Not a real formula — treat as text content
+          if (isArrowChain(value)) {
+            html += renderArrowChain(value);
+          } else if (isBulletList(value)) {
+            html += renderBulletList(value);
+          } else if (isNumberedList(value)) {
+            html += renderNumberedList(value);
+          } else if (isRuleList(value)) {
+            html += renderRuleList(value);
+          } else if (isVocabList(value)) {
+            html += renderVocabList(value);
+          } else {
+            html += renderRichParagraphs(value);
+          }
+        } else if (isArrowChain(value)) {
+          html += renderArrowChain(value);
         } else {
-          html += `<div class="formula math-notation" key="${key}">${value.replace(/\n/g, '<br>')}</div>`;
+          html += `<div class="formula math-notation" key="${key}">${escapeHTML(value).replace(/\n/g, '<br>')}</div>`;
         }
         break;
+      }
       case 'table':
         html += renderTable(value);
         break;
@@ -511,20 +661,20 @@ function renderRichParagraphs(value) {
   if (value.includes('\n')) {
     const parts = value.split(/\n\n+/).filter(p => p.trim());
     if (parts.length > 1) {
-      return parts.map(p => `<p>${p.trim().replace(/\n/g, '<br>')}</p>`).join('');
+      return parts.filter(p => p.trim()).map(p => `<p>${p.trim().replace(/\n/g, '<br>')}</p>`).join('');
     }
-    return `<p>${value.replace(/\n/g, '<br>')}</p>`;
+    return value.trim() ? `<p>${value.replace(/\n/g, '<br>')}</p>` : '';
   }
   
   // Split long text blocks at sentence boundaries for readability
   if (value.length > 500) {
     const paragraphs = splitIntoParagraphs(value);
     if (paragraphs.length > 1) {
-      return paragraphs.map(p => `<p>${p}</p>`).join('');
+      return paragraphs.filter(p => p && p.trim()).map(p => `<p>${p}</p>`).join('');
     }
   }
   
-  return `<p>${value}</p>`;
+  return value.trim() ? `<p>${value}</p>` : '';
 }
 
 /**
@@ -568,10 +718,10 @@ function splitIntoParagraphs(text) {
  */
 function isNumberedList(value) {
   if (!value || value.length < 20) return false;
-  // Match "N. " or "N) " patterns — need at least 3 for a list
-  const dotMatches = value.match(/(?:^|\s)\d{1,2}\.\s+[A-Z]/g);
+  // Match "N. " or "N) " patterns — need at least 2 for a list
+  const dotMatches = value.match(/(?:^|\s|:)\s*\d{1,2}\.\s+[A-Z]/g);
   const parenMatches = value.match(/(?:^|\s)\d{1,2}\)\s+[A-Z]/g);
-  return (dotMatches && dotMatches.length >= 3) || (parenMatches && parenMatches.length >= 3);
+  return (dotMatches && dotMatches.length >= 2) || (parenMatches && parenMatches.length >= 2);
 }
 
 /**
@@ -607,8 +757,13 @@ function renderNumberedList(value) {
 function isBulletList(value) {
   if (!value || value.length < 20) return false;
   // Check for bullet patterns — need at least 3
-  const bullets = value.match(/(?:^|\n)\s*[•\-\*–]\s+\S/g);
-  return bullets && bullets.length >= 3;
+  // Pattern 1: bullets at start of lines
+  const lineBullets = value.match(/(?:^|\n)\s*[•\-\*–]\s+\S/g);
+  if (lineBullets && lineBullets.length >= 3) return true;
+  // Pattern 2: inline bullets — " - Item" preceded by end of previous item (letter/punctuation + space)
+  const inlineBullets = value.match(/(?:[.):\s])\s*[-–—]\s+(?=[A-Z0-9])/g);
+  if (inlineBullets && inlineBullets.length >= 3) return true;
+  return false;
 }
 
 /**
@@ -620,18 +775,46 @@ function renderBulletList(value) {
   let prefix = '';
   let inList = false;
   
-  for (const line of lines) {
-    const trimmed = line.trim();
-    const bulletMatch = trimmed.match(/^[•\-\*–]\s+(.+)/);
-    if (bulletMatch) {
-      inList = true;
-      items.push(bulletMatch[1]);
-    } else if (!inList && trimmed) {
-      prefix += (prefix ? ' ' : '') + trimmed;
-    } else if (trimmed) {
-      // Continuation of previous item
-      if (items.length > 0) {
-        items[items.length - 1] += ' ' + trimmed;
+  // Check if this is inline bullets (no newlines, bullets embedded in text)
+  const hasLineBullets = lines.some(l => /^\s*[•\-\*–]\s+/.test(l.trim()));
+  
+  if (!hasLineBullets && lines.length <= 2) {
+    // Inline bullet pattern — split on " - " before capital letter/number
+    const inlinePattern = /(?:[.):\s])\s*[-–—]\s+(?=[A-Z0-9])/g;
+    const matches = [...value.matchAll(/(?:^|(?:[.):\s]))\s*[-–—]\s+([A-Z0-9][^–—]*?)(?=(?:[.):\s])\s*[-–—]\s+[A-Z0-9]|$)/g)];
+    if (matches.length >= 3) {
+      // Extract prefix (text before first bullet)
+      const firstMatch = value.match(/^(.+?)\s+[-–—]\s+[A-Z0-9]/);
+      if (firstMatch) prefix = firstMatch[1].trim();
+      for (const m of matches) {
+        items.push(m[1].trim());
+      }
+    }
+    if (items.length < 3) {
+      // Fallback: try splitting on " - " more aggressively
+      const parts = value.split(/\s+[-–—]\s+/);
+      if (parts.length >= 4) { // prefix + 3 items
+        prefix = parts[0];
+        for (let i = 1; i < parts.length; i++) {
+          items.push(parts[i].trim());
+        }
+      }
+    }
+  } else {
+    // Line-based bullets
+    for (const line of lines) {
+      const trimmed = line.trim();
+      const bulletMatch = trimmed.match(/^[•\-\*–]\s+(.+)/);
+      if (bulletMatch) {
+        inList = true;
+        items.push(bulletMatch[1]);
+      } else if (!inList && trimmed) {
+        prefix += (prefix ? ' ' : '') + trimmed;
+      } else if (trimmed) {
+        // Continuation of previous item
+        if (items.length > 0) {
+          items[items.length - 1] += ' ' + trimmed;
+        }
       }
     }
   }
@@ -643,6 +826,205 @@ function renderBulletList(value) {
   html += '<ul>';
   for (const item of items) {
     html += `<li>${item}</li>`;
+  }
+  html += '</ul>';
+  return html;
+}
+
+/**
+ * Split concatenated worked examples into separate items.
+ * Detects patterns like '471 → 4+7+1=12 → 12÷3=4 → yes Last two digits...'
+ * where a worked example ends (→ yes, → no, ✓) and a new one begins.
+ */
+function splitConcatenatedExamples(value) {
+  if (!value || typeof value !== 'string') return value;
+  // Split where a result marker is followed by a capital letter or digit starting a new example
+  const parts = value.split(/(?<=[→✓]\s*(?:yes|no)\s+)(?=[A-Z\d])/i);
+  if (parts.length <= 1) return value;
+  return parts.map(p => p.trim()).filter(Boolean).join('<br>');
+}
+
+/**
+ * Detect arrow-chain content: sequences of items connected by → arrows.
+ * Examples: 'Kingdom → Phylum → Class → Order → Family →'
+ *           'Sun → Producers → Primary → Secondary → Tertiary → Decomposers'
+ */
+function isArrowChain(value) {
+  if (!value || typeof value !== 'string') return false;
+  if (value.length >= 500) return false;
+
+  // Exclude math/chemistry/logic notation
+  if (/[fF]\(x\)|\\b|lim\(|∫|dx\b|d\/dx/i.test(value)) return false;
+  if (/[∀∃∴⊂∈]/.test(value)) return false;
+  // Chemistry: subscript digits in formulas like N₂+3H₂→2NH₃
+  if (/[₀-₉]\+|→\s*\d*[A-Z]/.test(value) && /\+[₀-₉A-Z]/.test(value)) return false;
+
+  const arrows = (value.match(/→/g) || []).length;
+  if (arrows < 3) return false;
+
+  return true;
+}
+
+/**
+ * Render an arrow-chain block as styled flow visualization.
+ */
+function renderArrowChain(value) {
+  // Extract optional prefix label before the chain
+  let prefix = '';
+  let chain = value;
+  const colonMatch = value.match(/^(.+?):\s+(.+→.+)$/s);
+  if (colonMatch) {
+    prefix = colonMatch[1].trim();
+    chain = colonMatch[2].trim();
+  }
+
+  // Split on → and clean up
+  let items = chain.split(/\s*→\s*/).map(s => s.trim()).filter(Boolean);
+  // If trailing → produces empty last item, drop it
+  if (items.length && items[items.length - 1] === '') items.pop();
+
+  let html = '<div class="arrow-chain">';
+  if (prefix) {
+    html += `<div class="arrow-chain-label">${escapeHTML(prefix)}</div>`;
+  }
+  html += '<div class="arrow-chain-items">';
+  items.forEach((item, i) => {
+    html += `<span class="arrow-item">${escapeHTML(item)}</span>`;
+    if (i < items.length - 1) {
+      html += '<span class="arrow-sep">→</span>';
+    }
+  });
+  html += '</div></div>';
+  return html;
+}
+
+/**
+ * Detect vocabulary/word-list content: blocks with Word Definition Example. pattern.
+ * Examples: 'Analyze Break down into parts Analyze the data carefully. ...'
+ */
+function isVocabList(value) {
+  if (!value || typeof value !== 'string') return false;
+  if (value.length <= 200) return false;
+
+  // Pattern 1: "Word Definition Sentence." — capitalized word + capitalized def + example with period
+  const pattern1 = /(\b[A-Z][a-z]+(?:\s+[a-z]+){0,3})\s+([A-Z][a-z]+(?:[\s,]+[a-z]+){0,5})\s+([^.]+\.)/g;
+  let count = 0;
+  let match;
+  while ((match = pattern1.exec(value)) !== null) count++;
+  if (count >= 3) return true;
+
+  // Pattern 2: "Word = Translation" format (Filipino vocab in English sections)
+  const pattern2 = /\b[A-Z][a-z]+\s*=\s*[^=\n]+(?:\/[^=\n]+)?/g;
+  count = 0;
+  while ((match = pattern2.exec(value)) !== null) count++;
+  if (count >= 3) return true;
+
+  // Pattern 3: Multi-word idiom entries
+  const pattern3 = /([A-Z][a-z]+(?:\s+[a-z]+){1,5})\s+([A-Z][a-z]+(?:\s+[a-z]+){1,4})\s+([^.]+\.)/g;
+  count = 0;
+  while ((match = pattern3.exec(value)) !== null) count++;
+
+  return count >= 3;
+}
+
+/**
+ * Render a vocabulary list block as styled cards.
+ */
+function renderVocabList(value) {
+  const entries = [];
+
+  // Try Pattern 1: "Word Definition ExampleSentence."
+  const pattern1 = /(\b[A-Z][a-z]+(?:\s+[a-z]+){0,3})\s+([A-Z][a-z]+(?:[\s,]+[a-z]+){0,5})\s+([^.]+\.)\s*/g;
+  let match;
+  while ((match = pattern1.exec(value)) !== null) {
+    entries.push({ word: match[1].trim(), def: match[2].trim(), example: match[3].trim() });
+  }
+
+  // Try Pattern 2: "Word = Translation / Alt"
+  if (entries.length < 3) {
+    entries.length = 0;
+    const pattern2 = /\b([A-Z][a-z]+)\s*=\s*([^=\n]+?)(?:\s*\/\s*([^\n]+?))?(?=\s+[A-Z][a-z]+\s*=|\s*$)/g;
+    while ((match = pattern2.exec(value)) !== null) {
+      entries.push({ word: match[1].trim(), def: match[2].trim(), example: (match[3] || '').trim() });
+    }
+  }
+
+  // Try Pattern 3: Multi-word idiom entries
+  if (entries.length < 3) {
+    entries.length = 0;
+    const pattern3 = /([A-Z][a-z]+(?:\s+[a-z]+){1,5})\s+([A-Z][a-z]+(?:\s+[a-z]+){1,4})\s+([^.]+\.)\s*/g;
+    while ((match = pattern3.exec(value)) !== null) {
+      entries.push({ word: match[1].trim(), def: match[2].trim(), example: match[3].trim() });
+    }
+  }
+
+  if (entries.length === 0) return `<p>${value}</p>`;
+
+  let html = '<div class="vocab-list">';
+  for (const entry of entries) {
+    html += `<div class="vocab-item">`;
+    html += `<span class="vocab-word">${escapeHTML(entry.word)}</span>`;
+    html += `<span class="vocab-def">${escapeHTML(entry.def)}</span>`;
+    if (entry.example) html += `<span class="vocab-example">${escapeHTML(entry.example)}</span>`;
+    html += `</div>`;
+  }
+  html += '</div>';
+  return html;
+}
+
+/**
+ * Detect rule-list content: blocks with multiple divisibility rules,
+ * multiple → yes/→ no patterns, or repeated rule-starter phrases.
+ */
+function isRuleList(value) {
+  if (!value || value.length < 40) return false;
+
+  // Multiple arrow results (→ yes / → no) — worked examples batched together
+  const arrowResults = value.match(/→\s*(?:yes|no)\b/gi);
+  if (arrowResults && arrowResults.length >= 2) return true;
+
+  // Multiple rule-starter phrases
+  const ruleStarters = value.match(/(?:Divisible by|Last digit|Last two digits|Last three digits|Sum of digits)/gi);
+  if (ruleStarters && ruleStarters.length >= 2) return true;
+
+  // Multiple numbered examples with arrows (e.g. '471 → ... 532 → ...')
+  const numberedExamples = value.match(/\d+\s*→\s*\d+/g);
+  if (numberedExamples && numberedExamples.length >= 2) return true;
+
+  return false;
+}
+
+/**
+ * Render a rule-list block as a styled <ul class="rule-list">.
+ * Splits on rule boundaries: 'Divisible by N', 'Last N digits', 'Sum of digits',
+ * or on worked example result markers followed by new content.
+ */
+function renderRuleList(value) {
+  // First try splitting on rule-starter phrases
+  const ruleBoundary = /(?=(?:Divisible by|Last digit|Last two digits|Last three digits|Sum of digits)\b)/i;
+  let items = value.split(ruleBoundary).map(s => s.trim()).filter(Boolean);
+
+  // If that didn't produce multiple items, try splitting on example boundaries
+  if (items.length < 2) {
+    // Split where a result (→ yes / → no / ✓) is followed by a new capital letter or digit
+    items = value.split(/(?<=[→✓]\s*(?:yes|no)\s+)(?=[A-Z\d])/i)
+      .map(s => s.trim()).filter(Boolean);
+  }
+
+  if (items.length < 2) return `<p>${value}</p>`; // fallback
+
+  let html = '<ul class="rule-list">';
+  for (const item of items) {
+    // Further split concatenated examples within each item
+    const subItems = item.split(/(?<=[→✓]\s*(?:yes|no)\s+)(?=[A-Z\d])/i);
+    if (subItems.length > 1) {
+      for (const sub of subItems) {
+        const trimmed = sub.trim();
+        if (trimmed) html += `<li>${trimmed}</li>`;
+      }
+    } else {
+      html += `<li>${item}</li>`;
+    }
   }
   html += '</ul>';
   return html;
@@ -670,7 +1052,6 @@ function splitListItems(value, pattern) {
  */
 function splitInlineHeadings(value) {
   const inlineHeadingPatterns = [
-    'What You Need First',
     'The Intuition',
     'The Build-Up',
     'The Build-Up (Formal & Rigorous)',
@@ -746,7 +1127,7 @@ function mergeTextBlocks(blocks) {
   const result = [];
   let pendingText = '';
 
-  const headingPatterns = ['What You Need First', 'Property Details', 'Section Reminders',
+  const headingPatterns = ['Property Details', 'Section Reminders',
     'The Intuition', 'The Build-Up', 'The Build-Up (Formal & Rigorous)', 'Layman Terms',
     'Layman Terms (Rescue Track)', 'Rescue Track', 'Quick Check', 'Common Mistakes',
     'Memory Tricks', 'One-Page Lock-In', 'THE ONE THING TO NEVER FORGET',
@@ -809,16 +1190,38 @@ function mergeTextBlocks(blocks) {
       continue;
     }
 
-    // Short block that doesn't end with sentence-ending punctuation — merge
-    if (val.length < 120 && !val.endsWith('.') && !val.endsWith('?') && !val.endsWith('!') && !val.endsWith(':')) {
-      pendingText += (pendingText ? ' ' : '') + val;
+    // --- Conservative merge: only merge clear sentence fragments ---
+
+    // NEVER merge blocks that are standalone content
+    const hasArrow = /[→⇒]/.test(val);
+    const endsWithResult = /(?:→\s*(?:yes|no)|✓)\s*$/i.test(val.trim());
+    const isRulePattern = /^(?:Divisible by|Last digit|Last two digits|Last three digits|Sum of digits)/i.test(val.trim());
+    const hasNumberedOp = /\d+\s*→\s*\d+/.test(val); // e.g. '471 → 4+7+1=12'
+
+    if (hasArrow || endsWithResult || isRulePattern || hasNumberedOp) {
+      flushPending();
+      result.push(block);
       continue;
     }
 
-    // Block starts with lowercase and pending exists — continuation
-    if (pendingText && val.length < 150 && /^[a-z]/.test(val)) {
-      pendingText += ' ' + val;
+    // Only merge if this block is clearly a sentence fragment:
+    //  - Starts with lowercase (genuine continuation), OR
+    //  - Very short (< 40 chars) AND doesn't look like a standalone rule/definition
+    const startsLower = /^[a-z]/.test(val);
+    const startsConjunction = /^(?:and|but|or|so|yet|nor|for)\b/i.test(val.trim());
+    const isFragment = val.length < 40 && !val.endsWith('.') && !val.endsWith('?') &&
+                       !val.endsWith('!') && !val.endsWith(':') && !val.endsWith(';');
+
+    if (startsLower || startsConjunction) {
+      // Genuine continuation — merge with pending, then flush
+      pendingText += (pendingText ? ' ' : '') + val;
       flushPending();
+      continue;
+    }
+
+    if (isFragment && pendingText) {
+      // Short fragment after existing pending — likely a continuation
+      pendingText += (pendingText ? ' ' : '') + val;
       continue;
     }
 
@@ -963,13 +1366,23 @@ function renderPropertyDetails(value) {
 function isTableContent(text) {
   if (!text || typeof text !== 'string') return false;
   const lines = text.split('\n').filter(l => l.trim());
+  // Standard pipe table: lines starting with |
   const pipeLines = lines.filter(l => l.includes('|') && l.trim().startsWith('|'));
-  if (pipeLines.length < 2) {
-    const singleLine = lines.find(l => (l.match(/\|/g) || []).length >= 6);
-    if (!singleLine) return false;
-  }
+  if (pipeLines.length >= 2) return true;
+  // Single-line with many pipes
+  const singleLine = lines.find(l => (l.match(/\|/g) || []).length >= 6);
+  if (singleLine) return true;
   const hasSeparator = lines.some(l => /\|[\s-]+\|/.test(l));
-  return hasSeparator || pipeLines.length >= 3;
+  if (hasSeparator) return true;
+  // Inline pipe table: text with "Header | Header | Header" pattern (3+ pipes in a line, not as code)
+  const inlinePipeLines = text.split('\n').filter(l => {
+    const pipes = (l.match(/\|/g) || []).length;
+    return pipes >= 3 && /\w\s*\|\s*\w/.test(l);
+  });
+  if (inlinePipeLines.length >= 2) return true;
+  // Detect flattened table rows: "Term1 Definition1 Term2 Definition2 Term3 Definition3" with pipe separators
+  if (text.includes('|') && (text.match(/\|/g) || []).length >= 6) return true;
+  return false;
 }
 
 /**
@@ -977,11 +1390,26 @@ function isTableContent(text) {
  */
 function renderTable(text) {
   const lines = text.split('\n').filter(l => l.trim());
-  const pipeLines = lines.filter(l => l.includes('|') && l.trim().startsWith('|'));
+  let pipeLines = lines.filter(l => l.includes('|') && l.trim().startsWith('|'));
+
+  // If no standard pipe lines, try inline pipe tables: "Header1 | Header2 | Header3"
+  if (pipeLines.length < 2) {
+    pipeLines = lines.filter(l => {
+      const pipes = (l.match(/\|/g) || []).length;
+      return pipes >= 3 && /\w\s*\|\s*\w/.test(l);
+    });
+  }
+
+  // If still no lines, try single-line with many pipes
+  if (pipeLines.length === 0) {
+    const singleLine = lines.find(l => (l.match(/\|/g) || []).length >= 6);
+    if (singleLine) pipeLines = [singleLine];
+  }
 
   if (pipeLines.length === 0) return `<p>${text}</p>`;
 
   function parseRow(line) {
+    // Strip leading/trailing pipes if present, then split
     return line
       .replace(/^\|/, '').replace(/\|$/, '')
       .split('|')
@@ -1066,7 +1494,7 @@ window.searchInChapter = function() {
     '#readerPane .definition, #readerPane .example, #readerPane .note, #readerPane .tip, ' +
     '#readerPane .practice-problem, #readerPane .formula, #readerPane .hierarchy-block, ' +
     '#readerPane .def-value, #readerPane .property-field, #readerPane .property-example, ' +
-    '#readerPane li'
+    '#readerPane li, #readerPane .rule-list li'
   );
   blocks.forEach(block => {
     const text = block.textContent.toLowerCase();
@@ -1120,6 +1548,225 @@ window.searchInChapter = function() {
     });
   }, 8000);
 };
+
+/**
+ * Detect definition-list style blocks: "Title: Label1: desc. Label2: desc. Label3: desc."
+ * Examples: "Laws of Exponents: Product Rule: a^m * a^n = a^(m+n) — add exponents. Quotient Rule: ..."
+ */
+function isDefinitionList(value) {
+  if (!value || typeof value !== 'string') return false;
+  if (value.length < 150) return false;
+  // Count colons in the text — definition lists have many
+  const colons = (value.match(/:/g) || []).length;
+  if (colons < 3) return false;
+  // Check how many have a short label before them (1-3 words, <= 25 chars)
+  const parts = value.split(':');
+  let shortLabels = 0;
+  for (let i = 0; i < parts.length - 1; i++) {
+    const before = parts[i].trim();
+    const words = before.split(/\s+/);
+    const lastWords = words.slice(-3).join(' ');
+    if (lastWords.length <= 25 && /^[A-Za-z]/.test(lastWords) && !(/[.!?]$/.test(before))) {
+      shortLabels++;
+    }
+  }
+  return shortLabels >= 3;
+}
+
+/**
+ * Render a definition-list style block as a styled list with title.
+ */
+function renderDefinitionList(value) {
+  // Find the first label to extract the title prefix
+  const firstLabelMatch = value.match(/^([^:]+?):\s*/);
+  const title = firstLabelMatch ? firstLabelMatch[1].trim() : '';
+  const body = firstLabelMatch ? value.slice(firstLabelMatch[0].length) : value;
+  
+  // Split on "Label:" patterns to extract pairs
+  const labelRe = /\b([A-Z][A-Za-z]{1,}(?:\s+[A-Za-z]+){0,3}):\s*/g;
+  const parts = [];
+  let lastIdx = 0;
+  let m;
+  while ((m = labelRe.exec(body)) !== null) {
+    if (parts.length > 0) {
+      parts[parts.length - 1].desc = body.slice(lastIdx, m.index).trim();
+    }
+    parts.push({ label: m[1] });
+    lastIdx = m.index + m[0].length;
+  }
+  if (parts.length > 0) {
+    parts[parts.length - 1].desc = body.slice(lastIdx).trim();
+  }
+  
+  // Filter out very short labels that are likely noise
+  const validParts = parts.filter(p => p.label.length >= 3 && p.desc && p.desc.length >= 5);
+  if (validParts.length < 2) return `<p>${value}</p>`;
+  
+  let html = '<div class="definition-list">';
+  if (title) {
+    html += `<div class="definition-list-title">${escapeHTML(title)}</div>`;
+  }
+  html += '<dl>';
+  for (const part of validParts) {
+    html += `<dt>${escapeHTML(part.label)}</dt><dd>${escapeHTML(part.desc)}</dd>`;
+  }
+  html += '</dl></div>';
+  return html;
+}
+
+/**
+ * Detect table-like content without pipe characters.
+ * Patterns: 4+ short repeated entries like "Word1 Def1 Word2 Def2 Word3 Def3"
+ * or header row followed by data rows.
+ */
+function isTableLikeContent(value) {
+  if (!value || typeof value !== 'string') return false;
+  if (value.length < 200) return false;
+  if (value.includes('|')) return false; // already handled by isTableContent
+  
+  // Pattern: 4+ entries of "Multi-word Phrase Short description" ending with period
+  // e.g. "Wear your heart on your sleeve Show emotions openly She wears her heart on her sleeve."
+  const idiomRe = /([A-Z][a-z]+(?:\s+[a-z]+){1,6})\s+([A-Z][a-z]+(?:\s+[a-z]+){1,3})\s+([A-Z][^.]*\.)/g;
+  let count = 0;
+  let m;
+  while ((m = idiomRe.exec(value)) !== null) count++;
+  if (count >= 4) return true;
+  
+  // Pattern: header-like row of consecutive capitalized words followed by data
+  // e.g. "Filipino Idiom Literal English Actual Meaning Bukas ang tenga Open the ear Listen carefully"
+  const words = value.split(/\s+/);
+  // Group consecutive capitalized words into header groups
+  // Stop when we hit a word that's clearly not a column header
+  const headerGroups = [];
+  let hi = 0;
+  while (hi < Math.min(words.length, 15)) {
+    if (/^[A-Z][a-z]*$/.test(words[hi])) {
+      const group = [words[hi]];
+      hi++;
+      while (hi < Math.min(words.length, 15) && /^[A-Z][a-z]*$/.test(words[hi])) {
+        group.push(words[hi]);
+        hi++;
+      }
+      // Check if next word signals start of data (lowercase, non-English, etc.)
+      const nextWord = words[hi] || '';
+      const isDataStart = nextWord && !/^[A-Z][a-z]*$/.test(nextWord);
+      headerGroups.push(group.join(' '));
+      if (isDataStart && headerGroups.length >= 2) break;
+    } else {
+      break;
+    }
+  }
+  // Need at least 2 header groups (e.g. "Filipino Idiom" + "Literal English" + "Actual Meaning")
+  if (headerGroups.length >= 2 && words.length >= headerGroups.length + 4) {
+    const remaining = words.slice(hi).join(' ');
+    // Check for Filipino/mixed language content or multi-word phrases in data
+    const filipinoWords = remaining.match(/\b(ang|ng|sa|mga|nasa|kung|siya|hindi|para|aking|ko|mo|di)\b/gi);
+    if (filipinoWords && filipinoWords.length >= 2) return true;
+    // Also detect English multi-column tables with 3+ headers
+    if (headerGroups.length >= 3) return true;
+  }
+  
+  return false;
+}
+
+/**
+ * Render table-like content without pipes as an HTML table.
+ */
+function renderTableLikeContent(value) {
+  // Try idiom pattern first: "Phrase Meaning Example."
+  const idiomRe = /([A-Z][a-z]+(?:\s+[a-z]+){1,6})\s+([A-Z][a-z]+(?:\s+[a-z]+){1,3})\s+([A-Z][^.]*\.)/g;
+  const entries = [];
+  let m;
+  while ((m = idiomRe.exec(value)) !== null) {
+    entries.push({ phrase: m[1].trim(), meaning: m[2].trim(), example: m[3].trim() });
+  }
+  
+  if (entries.length >= 4) {
+    let html = '<table class="data-table"><thead><tr><th>Phrase</th><th>Meaning</th><th>Example</th></tr></thead><tbody>';
+    for (const e of entries) {
+      html += `<tr><td>${escapeHTML(e.phrase)}</td><td>${escapeHTML(e.meaning)}</td><td>${escapeHTML(e.example)}</td></tr>`;
+    }
+    html += '</tbody></table>';
+    return html;
+  }
+  
+  // Try Filipino table: header row + data rows
+  const words = value.split(/\s+/);
+  // Group consecutive capitalized words into header groups
+  // Stop when we hit a word that's clearly not a column header
+  const headerGroups = [];
+  let hi = 0;
+  while (hi < Math.min(words.length, 15)) {
+    if (/^[A-Z][a-z]*$/.test(words[hi])) {
+      const group = [words[hi]];
+      hi++;
+      while (hi < Math.min(words.length, 15) && /^[A-Z][a-z]*$/.test(words[hi])) {
+        group.push(words[hi]);
+        hi++;
+      }
+      // Check if next word signals start of data (lowercase, non-English, etc.)
+      const nextWord = words[hi] || '';
+      const isDataStart = nextWord && !/^[A-Z][a-z]*$/.test(nextWord);
+      headerGroups.push(group.join(' '));
+      if (isDataStart && headerGroups.length >= 2) break;
+    } else {
+      break;
+    }
+  }
+  
+  if (headerGroups.length >= 2) {
+    const headers = headerGroups;
+    const dataWords = words.slice(hi);
+    const colCount = headers.length;
+    
+    // Find natural row boundaries by detecting Filipino phrase starts
+    // Filipino phrases often start with distinctive patterns
+    const filipinoStarts = [];
+    for (let j = 0; j < dataWords.length; j++) {
+      const w = dataWords[j];
+      // Filipino phrase starters: short articles, distinctive words
+      if (/^(Bukas|Bulong|Agawan|Bato|Nasa|Kung|Ang|Habang|Pagkakapit)/i.test(w)) {
+        filipinoStarts.push(j);
+      }
+    }
+    
+    let rows = [];
+    if (filipinoStarts.length >= 3) {
+      // Use detected boundaries
+      for (let r = 0; r < filipinoStarts.length; r++) {
+        const start = filipinoStarts[r];
+        const end = r + 1 < filipinoStarts.length ? filipinoStarts[r + 1] : dataWords.length;
+        rows.push(dataWords.slice(start, end));
+      }
+    } else {
+      // Fallback: split evenly into chunks
+      const chunkSize = Math.ceil(dataWords.length / Math.max(3, Math.ceil(dataWords.length / (colCount * 4))));
+      for (let r = 0; r < dataWords.length; r += chunkSize) {
+        rows.push(dataWords.slice(r, r + chunkSize));
+      }
+    }
+    
+    if (rows.length >= 2) {
+      let html = '<table class="data-table"><thead><tr>';
+      for (const h of headers) html += `<th>${escapeHTML(h)}</th>`;
+      html += '</tr></thead><tbody>';
+      for (const row of rows) {
+        html += '<tr>';
+        // Split each row into colCount equal parts
+        const wordsPerCol = Math.ceil(row.length / colCount);
+        for (let c = 0; c < colCount; c++) {
+          const cellWords = row.slice(c * wordsPerCol, (c + 1) * wordsPerCol);
+          html += `<td>${escapeHTML(cellWords.join(' '))}</td>`;
+        }
+        html += '</tr>';
+      }
+      html += '</tbody></table>';
+      return html;
+    }
+  }
+  
+  return `<p>${value}</p>`;
+}
 
 window.readerScrollTop = function() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
