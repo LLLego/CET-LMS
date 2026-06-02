@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#00f2fe"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a18cd1"/>
+      <stop offset="100%" stop-color="#fbc2eb"/>
+    </linearGradient>
+    <linearGradient id="book" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e8d5b7"/>
+      <stop offset="100%" stop-color="#c9a96e"/>
+    </linearGradient>
+    <linearGradient id="pages" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8e7"/>
+      <stop offset="100%" stop-color="#f5e6c8"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect x="32" y="32" width="448" height="448" rx="96" ry="96" fill="url(#bg)"/>
+  <rect x="48" y="48" width="416" height="416" rx="80" ry="80" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.3"/>
+  <g filter="url(#softShadow)">
+    <path d="M128 180 L128 340 Q160 330 200 335 L200 175 Q160 170 128 180Z" fill="url(#book)"/>
+    <path d="M132 186 L132 334 Q162 325 196 330 L196 180 Q162 175 132 186Z" fill="url(#pages)"/>
+    <path d="M384 180 L384 340 Q352 330 312 335 L312 175 Q352 170 384 180Z" fill="url(#book)"/>
+    <path d="M380 186 L380 334 Q350 325 316 330 L316 180 Q350 175 380 186Z" fill="url(#pages)"/>
+    <path d="M200 175 Q256 195 312 175 L312 335 Q256 355 200 335Z" fill="url(#accent2)" opacity="0.4"/>
+    <line x1="256" y1="190" x2="256" y2="348" stroke="url(#accent)" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <g filter="url(#glow)">
+    <path d="M256 130 L256 170" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="256" cy="126" r="10" fill="url(#accent)"/>
+    <polygon points="256,100 320,140 256,180 192,140" fill="url(#accent)" opacity="0.9"/>
+    <polygon points="256,100 320,140 256,180 192,140" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+    <polygon points="256,110 296,140 256,170 216,140" fill="#fff" opacity="0.08"/>
+  </g>
+  <circle cx="380" cy="100" r="3" fill="#4facfe" opacity="0.6"/>
+  <circle cx="120" cy="400" r="2.5" fill="#00f2fe" opacity="0.5"/>
+  <circle cx="410" cy="380" r="2" fill="#a18cd1" opacity="0.4"/>
+  <circle cx="100" cy="130" r="2" fill="#fbc2eb" opacity="0.5"/>
+  <text x="256" y="440" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="72" font-weight="800" text-anchor="middle" fill="url(#accent)" letter-spacing="12" filter="url(#glow)">CET</text>
+  <text x="256" y="440" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="72" font-weight="800" text-anchor="middle" fill="none" stroke="#fff" stroke-width="0.5" opacity="0.15" letter-spacing="12">CET</text>
+  <text x="256" y="478" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="500" text-anchor="middle" fill="#8892b0" letter-spacing="8">LMS</text>
+</svg>
