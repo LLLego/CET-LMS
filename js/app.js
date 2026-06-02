@@ -15,7 +15,7 @@ import { initFirebase, login, autoLogin, logout, checkUsername, isFirebaseReady,
 import renderDashboard from './pages/DashboardPage.js';
 import renderSubjects from './pages/SubjectsPage.js';
 import renderSubjectDetail from './pages/SubjectDetailPage.js';
-import renderReader from './pages/ReaderPage.js?v=26';
+import renderReader from './pages/ReaderPage.js?v=28';
 import renderQuizSelect from './pages/QuizPage.js';
 import renderFlashcards from './pages/FlashcardsPage.js';
 import renderTimer from './pages/TimerPage.js';

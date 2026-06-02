@@ -285,7 +285,7 @@ function renderChapter() {
             class="reader-outline-item ${i === readerState.currentSection ? 'active' : ''} ${sparse ? 'sparse-section' : ''}" 
             onclick="goToSection(${i})"
           >
-<span>${sec.id}. ${escapeHTML(sec.title)}</span>
+><span>${escapeHTML(sec.section_number || sec.number || sec.id || '')}${sec.section_number || sec.number || sec.id ? '. ' : ''}${escapeHTML(sec.title)}</span>
           </div>`;
         }).join('')}
       </div>
@@ -320,7 +320,7 @@ function renderChapter() {
               <span class="nav-arrow">←</span>
               <span class="nav-label">
                 <span class="nav-direction">Previous</span>
-                <span class="nav-title">${prevSec ? escapeHTML((prevSec.section_number || prevSec.number || prevSec.id) + '. ' + prevSec.title) : '—'}</span>
+                <span class="nav-title">${prevSec ? escapeHTML((prevSec.section_number || prevSec.number || prevSec.id || '') + (prevSec.section_number || prevSec.number || prevSec.id ? '. ' : '') + prevSec.title) : '—'}</span>
               </span>
             </button>
             <button 
@@ -332,7 +332,7 @@ function renderChapter() {
               <span class="nav-arrow">→</span>
               <span class="nav-label">
                 <span class="nav-direction">Next</span>
-                <span class="nav-title">${nextSec ? escapeHTML((nextSec.section_number || nextSec.number || nextSec.id) + '. ' + nextSec.title) : '—'}</span>
+                <span class="nav-title">${nextSec ? escapeHTML((nextSec.section_number || nextSec.number || nextSec.id || '') + (nextSec.section_number || nextSec.number || nextSec.id ? '. ' : '') + nextSec.title) : '—'}</span>
               </span>
             </button>
           </nav>
@@ -511,7 +511,9 @@ function renderSection(section) {
         } else if (isPropertyDetails(cleanValue)) {
           html += renderPropertyDetails(cleanValue);
         } else if (isPropertyLabel(cleanValue)) {
-          html += `<div class="property-field"><span class="property-label">${cleanValue.replace(/[.:]+$/, '')}:</span></div>`;
+          // Strip "Property Details " prefix if present (it's a leading heading, not the label)
+          const labelText = cleanValue.replace(/^Property Details\s+/i, '').replace(/[.:]+$/, '');
+          html += `<div class="property-field"><span class="property-label">${labelText}:</span></div>`;
         } else if (isDenseHierarchy(cleanValue)) {
           html += renderHierarchy(cleanValue);
         } else if (isNumberedList(cleanValue)) {
@@ -548,13 +550,16 @@ function renderSection(section) {
         break;
       }
       case 'definition': {
-        const term = (block.term || '').trim();
-        const defValue = value.trim();
-        // Skip fragment definitions with missing/meaningless term field
-        const invalidTerms = ['Term', 'is', 'are', 'a', 'an', 'the', ''];
-        const isFragmentDef = !term || invalidTerms.includes(term.toLowerCase()) ||
-          term.length < 2 || /^(?:is|are|was|were)\b/i.test(defValue);
-        if (isFragmentDef) {
+              const term = (block.term || '').trim();
+              const defValue = value.trim();
+              // Skip fragment definitions with missing/meaningless term field
+              const invalidTerms = ['Term', 'is', 'are', 'a', 'an', 'the', '', 'which', 'what', 'and', 'but', 'if', 'how'];
+              // Also skip definitions where term is clearly a sentence fragment (starts with "Which", "What")
+              // or where the whole block is a question/quiz item pretending to be a definition
+              const defIsSentenceStart = /^(Which|What|How|Why|If a|If you|But not|And there)/i.test(term);
+                      const isFragmentDef = !term || invalidTerms.includes(term.toLowerCase()) ||
+                        term.length < 2 || defIsSentenceStart || /^(?:is|are|was|were)\b/i.test(defValue);
+                      if (isFragmentDef) {
           // Render as a regular text paragraph instead of a broken definition
           html += `<p key="${key}">${value}</p>`;
         } else {
@@ -1197,8 +1202,9 @@ function mergeTextBlocks(blocks) {
     const endsWithResult = /(?:→\s*(?:yes|no)|✓)\s*$/i.test(val.trim());
     const isRulePattern = /^(?:Divisible by|Last digit|Last two digits|Last three digits|Sum of digits)/i.test(val.trim());
     const hasNumberedOp = /\d+\s*→\s*\d+/.test(val); // e.g. '471 → 4+7+1=12'
+    const isStandaloneLabel = /^(?:Property Details|What they|Why they|Key rule|Key Property|Famous ones|Coverage|Big Idea)/i.test(val.trim());
 
-    if (hasArrow || endsWithResult || isRulePattern || hasNumberedOp) {
+    if (hasArrow || endsWithResult || isRulePattern || hasNumberedOp || isStandaloneLabel) {
       flushPending();
       result.push(block);
       continue;
@@ -1240,9 +1246,12 @@ function mergeTextBlocks(blocks) {
  */
 function isDenseHierarchy(value) {
   if (!value || value.length < 100) return false;
-  // Count capitalized terms followed by parenthetical symbols
-  const hierarchyTerms = value.match(/[A-Z][a-z]+ Numbers?\s*[（(][^)]+[）)]/g);
-  return hierarchyTerms && hierarchyTerms.length >= 3;
+  // Count capitalized terms followed by parenthetical symbols (supports both ASCII and fullwidth parens)
+  const hierarchyTerms = value.match(/[A-Z][a-z]+ Numbers?\s*[（(][^）)]*[）)]/g);
+  if (hierarchyTerms && hierarchyTerms.length >= 3) return true;
+  // Also detect hierarchies with unicode chars inside parens (ℝ, ℚ, ℤ, ℕ)
+  const altTerms = value.match(/(?:Natural|Integer|Rational|Real|Whole|Prime|Complex|Irrational)\s+Numbers?(?:\([^)]+\)|[（】][^）】]+[）】])?/gi);
+  return altTerms && altTerms.length >= 3;
 }
 
 /**
@@ -1297,8 +1306,11 @@ function isPropertyLabel(value) {
   const trimmed = value.trim().replace(/[.:]+$/, '');
   const labels = ['What they are', 'What they', 'Why they exist', 'Why they', 
                   'Key rule', 'Key Property', 'Famous ones', 'Coverage', 'Big Idea',
-                  'Big idea', 'Section Reminders'];
+                  'Big idea', 'Section Reminders', 'Property Details'];
   if (labels.includes(trimmed)) return true;
+  // Also match "Property Details What they" — where "Property Details" prefixes the label
+  const stripped = trimmed.replace(/^Property Details\s+/i, '').trim();
+  if (stripped !== trimmed && labels.includes(stripped.replace(/[.:]+$/, ''))) return true;
   for (const label of labels) {
     if (trimmed.includes('— ' + label) || trimmed.includes('– ' + label) || 
         trimmed.endsWith(label)) return true;
